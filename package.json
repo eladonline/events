@@ -17,9 +17,9 @@
     "antd": "^3.13.0",
     "babel-plugin-import": "^1.7.0",
     "less": "^3.9.0",
-    "next": "^7.0.0",
+    "next": "^8.0.3",
     "node-sass": "^4.9.3",
-    "react": "^16.5.2",
+    "react": "^16.8.3",
     "react-dom": "^16.5.2"
   },
   "devDependencies": {

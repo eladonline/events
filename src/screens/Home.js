@@ -5,7 +5,6 @@ export default class Homepage extends Component {
   render() {
     return (
       <div>
-        asdas
         <Menu />
         <div>
           I render here from src/components/screens/Home, <br />
