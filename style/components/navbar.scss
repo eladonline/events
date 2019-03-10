@@ -1,0 +1,77 @@
+.menu-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 15555;
+  &[data-top='true'] {
+    .ant-menu {
+      box-shadow: 0px -2px 2px 4px $red;
+      .ant-menu-item {
+        padding: 1em 2em;
+      }
+    }
+    .ant-menu-submenu {
+      .ant-menu-submenu-title {
+        padding: 1em 2em;
+      }
+    }
+  }
+}
+.home .ant-menu {
+  background: $black;
+  @include flex-row(center);
+  &.ant-menu-horizontal {
+    border: 2px solid $black;
+  }
+  // the items
+  .ant-menu-item {
+    background: $black;
+    @include md {
+      padding: 2em 4em;
+    }
+    &-active {
+      color: $red;
+      border-bottom: 2px solid $red !important;
+      > a {
+        color: $red !important;
+      }
+    }
+    // the text inside
+    a {
+      color: white;
+      @extend %Varela;
+    }
+  }
+}
+.ant-menu-submenu {
+  .ant-menu-sub {
+    background: $black !important;
+  }
+  &-open {
+    color: $red;
+    border-bottom: 2px solid $red !important;
+  }
+
+  .ant-menu-submenu-title {
+    color: white;
+    @extend %Varela;
+    @include md {
+      padding: 2em 4em;
+    }
+    &:hover {
+      color: $red !important;
+    }
+  }
+  .ant-menu-item {
+    text-align: right;
+    @extend %Varela;
+    background: $black;
+    color: white;
+    &-active {
+      color: $red !important;
+    }
+  }
+}
+
+.ant-menu-submenu-popup {
+  background: $black !important;
+}

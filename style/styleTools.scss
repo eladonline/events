@@ -1,28 +1,11 @@
-@import url('//fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800');
+@import url('//fonts.googleapis.com/css?family=Secular+One|Varela+Round');
+@import './colors.scss';
 //App
 //////////////////////
 // general app declaration
 //////////////////////
-$agoraBlue: #093150;
-$agoraGray: #535353;
-$agoraBlack: #323232;
-$black-two: #222222;
-$white-two: #f6f6f6;
-$agorabb: #0b1930;
-$agoraHardBlack: #181818;
-$agoraGrayL: #545454;
-$placeholder: #909090;
-$fieldBorder: #c6c6c6;
-$cement: #a3a49e;
-$disabled: #9b9b9b;
-$event: #091d2c;
-$approved: #20dd86;
-$checkbox-native-border: rgba(156, 168, 182, 0.76);
-$devider: #cccccc;
-$coral: #ef534f;
-$notifications: #bf2222;
-$snow: #fafafa;
-$bluey-grey: #8d9eae;
+
+$gradient: linear-gradient(90deg, $red 15%, $purple 90%);
 
 /////////////////
 // Mixins
@@ -118,30 +101,15 @@ $bluey-grey: #8d9eae;
 // /////////
 // Fonts
 // /////////
-%Assistant {
-  font-family: Assistant, sans-serif;
+%Secular {
+  font-family: Secular One, sans-serif;
   font-weight: 400;
 }
-%Assistant-SemiBold {
-  font-family: Assistant, sans-serif;
-  font-weight: 600;
+%Varela {
+  font-family: Varela Round, sans-serif;
+  font-weight: 400;
 }
-%Assistant-Bold {
-  font-family: Assistant, sans-serif;
-  font-weight: 700;
-}
-%Assistant-ExtraBold {
-  font-family: Assistant, sans-serif;
-  font-weight: 800;
-}
-%Assistant-Light {
-  font-family: Assistant, sans-serif;
-  font-weight: 300;
-}
-%Assistant-ExtraLight {
-  font-family: Assistant, sans-serif;
-  font-weight: 200;
-}
+
 // ////////////////
 // selectors
 // /////////////
@@ -289,6 +257,7 @@ $bluey-grey: #8d9eae;
   }
   @include md {
     font-size: 60px;
+    line-height: 60px;
   }
 }
 %fs62 {
@@ -303,7 +272,7 @@ $bluey-grey: #8d9eae;
   }
 }
 %btnBase {
-  @extend %Assistant-Bold;
+  @extend %Varela;
   font-size: 16px;
   @include flex-row(center, center);
   border-radius: 6px;
@@ -314,10 +283,11 @@ $bluey-grey: #8d9eae;
 }
 %btnDark {
   @extend %btnBase;
-  background: $agoraBlue;
+  background: $gradient;
+  width: 150px;
   color: white;
   &:hover {
-    background: $event;
+    background: darken($red, 20%);
   }
   &:disabled {
     background: $disabled;
@@ -329,8 +299,8 @@ button:disabled {
 }
 %btnLight {
   @extend %btnBase;
-  border: 1px solid $agoraBlue;
-  color: $agoraBlue;
+  border: 1px solid green;
+  color: green;
   background: white;
   &:disabled {
     border: 1px solid $disabled;
@@ -338,133 +308,16 @@ button:disabled {
     background: white;
   }
   &:hover {
-    border: 1px solid $event;
-    color: $event;
+    border: 1px solid green;
+    color: green;
   }
 }
-// //////////////////
-// headers
-// //////////////////
-%header32reg {
-  @extend %fs32;
-  @extend %Assistant;
-  color: $agoraBlue;
-}
-%header40Bold {
-  @extend %fs40;
-  @extend %Assistant-Bold;
-  color: white;
-}
-%header47light {
-  @extend %fs47;
-  @extend %Assistant-Light;
-  color: $agoraBlue;
-}
-%header14semibold {
-  color: $agoraBlue;
-  @extend %Assistant-SemiBold;
-  @extend %fs14;
-}
-%header16semibold {
-  color: $agoraBlue;
-  @extend %Assistant-SemiBold;
-  @extend %fs16;
-}
-%header18semibold {
-  color: $agoraGray;
-  @extend %Assistant-SemiBold;
-  @extend %fs18;
-}
-%header20semibold {
-  @extend %fs20;
-  color: $agoraGray;
-  @extend %Assistant-SemiBold;
-}
-%header26extraLight {
-  @extend %fs26;
-  @extend %Assistant-ExtraLight;
-  color: $agoraGrayL;
-}
-%header24semibold {
-  @extend %fs24;
-  @extend %Assistant-SemiBold;
-  color: $agoraBlue;
-}
-%header24Light {
-  @extend %Assistant-Light;
-  @extend %fs24;
-}
-%header62semibold {
-  @extend %fs62;
-  @extend %Assistant-SemiBold;
-  color: $agoraBlue;
-}
-// //////////////////
-// TEXTS
-// //////////////////
-%textBase {
-  @extend %fs18;
-  @extend %Assistant;
-}
-%darkText {
-  color: $agoraGray;
-  @extend %textBase;
-}
-%lightText {
-  color: $agoraGray;
-  @extend %textBase;
-  @extend %Assistant-Light;
-}
-%text16bold {
-  @extend %Assistant-Bold;
-  @extend %fs16;
-}
-%text16reg {
-  @extend %Assistant;
-  @extend %fs16;
-}
-%text16light {
-  @extend %Assistant-Light;
-  @extend %fs16;
-}
-%text20extralight {
-  @extend %Assistant-ExtraLight;
-  @extend %fs20;
-}
-%text23reg {
-  @extend %Assistant-ExtraLight;
-  @extend %fs23;
-}
+
 %div-is-img {
   background-repeat: no-repeat;
   background-size: contain;
   max-width: 100%;
   background-position: center;
-}
-%placeholder {
-  @extend %Assistant;
-  @extend %fs16;
-  color: $placeholder;
-}
-// ////////////////
-// common classes
-// ///////////////
-.alertMessage {
-  color: $coral;
-  @extend %Assistant-Light;
-  @extend %fs16;
-}
-.mt-60 {
-  margin-top: 30px;
-  @include xl {
-    margin-top: 60px;
-  }
-}
-.mb-em {
-  margin-bottom: 1em;
-  @include xl {
-    margin-bottom: 2em;
-  }
 }
 .btnDark {
   @extend %btnDark;
@@ -472,37 +325,61 @@ button:disabled {
 .btnLight {
   @extend %btnLight;
 }
-.darkText {
-  @extend %darkText;
-}
-.lightText {
-  @extend %lightText;
-}
+
 // /////////////
 // ANTD
 // /////////////
-.ant-form-item-control {
-  &-wrapper {
-    width: 100%;
+.ant-form {
+  text-align: right;
+  @include grid(1em, initial, initial, auto, auto);
+  @include md {
+    @include grid(1em, initial, initial, auto auto, auto);
   }
-  .ant-calendar-picker {
-    width: 100%;
-  }
-  .ant-form-explain {
-    margin: .2em 0;
-  }
-  ul {
-    li {
-      &::before {
-        border-radius: 0;
-        display: none;
+  .ant-row {
+    width: 300px;
+    height: 70px;
+    @include md {
+      height: 100px;
+    }
+
+    margin-bottom: 24px;
+
+    .ant-form-item-label {
+      text-align: right;
+      label {
+        @extend %Varela;
+        color: white;
+        direction: rtl;
+      }
+    }
+    input,
+    textarea {
+      @extend %Varela;
+
+      direction: rtl;
+      background: $darkBlack;
+      border-color: $red;
+      color: white;
+      &:focus {
+        outline-color: $purple;
       }
     }
   }
-}
-.ant-select-dropdown-menu-item {
-  &::before {
-    display: none;
+  .textarea-container {
+    display: grid;
+    @include md {
+      grid-column: 1 / span 2;
+    }
+    .ant-row {
+      width: 100%;
+    }
+  }
+  button {
+    display: grid;
+    @include md {
+      grid-column: 1 / span 2;
+    }
+    margin: auto;
   }
 }
 // //////////////
@@ -519,7 +396,7 @@ button:disabled {
   }
 }
 .div-is-link {
-  color: $agoraBlue;
+  color: green;
   text-decoration: underline;
   cursor: pointer;
   &:hover {

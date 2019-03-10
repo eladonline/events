@@ -1,1 +1,35 @@
 @import './styleTools.scss';
+@import '~slick-carousel/slick/slick.css';
+@import './slick/slick-theme.scss';
+@import './components/hero.scss';
+@import './components/navbar.scss';
+@import './components/carousle.scss';
+@import './components/footer.scss';
+
+.home {
+  @extend %Secular;
+  background: $black;
+}
+
+header {
+  h1 {
+    color: white;
+    @extend %fs62;
+    @extend %Secular;
+  }
+  h2 {
+    color: white;
+    @extend %fs48;
+    @extend %Secular;
+  }
+  h4 {
+    color: white;
+    @extend %Secular;
+    @extend %fs30;
+  }
+}
+p {
+  color: white;
+  @extend %Varela;
+  @extend %fs18;
+}

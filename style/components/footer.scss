@@ -1,0 +1,8 @@
+.footer {
+  @include grid(2em, center, center, auto, auto);
+  text-align: center;
+  min-height: 300px;
+  background: $black;
+  color: white;
+  padding: 2em 1em;
+}

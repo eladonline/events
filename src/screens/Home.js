@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import Menu from 'src/components/menu/Menu';
+import Hero from 'src/components/hero/Hero';
+import Navbar from 'src/components/navbar/navbar';
+import Carousle from 'src/components/carousle/carousle';
+
 
 export default class Homepage extends Component {
   render() {
     return (
-      <div>
-        <Menu />
-        <div>
-          I render here from src/components/screens/Home, <br />
-          and my Component displayed in pages/index.js
-        </div>
+      <div className="home">
+        <Hero />
+        <Navbar />
+        <Carousle />
       </div>
     );
   }
