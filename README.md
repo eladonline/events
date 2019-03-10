@@ -1,4 +1,4 @@
-#events site
+# events site
 
 ## static_react_nextjs_sass_webpack
 ready template for nextJS including sass, webpack, babel, router, layout 
