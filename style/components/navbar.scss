@@ -1,10 +1,20 @@
+$menu-tabs-width: 130px;
+
+%tabs-common {
+  width: $menu-tabs-width;
+  padding: 2em 0em;
+  @include md {
+    padding: 2em 0em;
+  }
+  text-align: center;
+}
 .menu-navbar {
   position: sticky;
   top: 0;
   z-index: 15555;
   &[data-top='true'] {
     .ant-menu {
-      box-shadow: 0px -2px 2px 4px $red;
+      box-shadow: 0px -2px 8px 4px $darkBlack;
       .ant-menu-item {
         padding: 1em 2em;
       }
@@ -17,17 +27,27 @@
   }
 }
 .home .ant-menu {
+  position: relative;
   background: $black;
   @include flex-row(center);
+  // logo
+  .menu-navbar__ant-menu__logo,
+  .logo {
+    &[data-top='true'] {
+      transition: 0.3s;
+      height: 70px;
+      width: 70px;
+    }
+  }
+
   &.ant-menu-horizontal {
     border: 2px solid $black;
   }
   // the items
   .ant-menu-item {
+    @extend %tabs-common;
     background: $black;
-    @include md {
-      padding: 2em 4em;
-    }
+
     &-active {
       color: $red;
       border-bottom: 2px solid $red !important;
@@ -52,11 +72,9 @@
   }
 
   .ant-menu-submenu-title {
+    @extend %tabs-common;
     color: white;
     @extend %Varela;
-    @include md {
-      padding: 2em 4em;
-    }
     &:hover {
       color: $red !important;
     }

@@ -18,9 +18,14 @@ export default class MyDocument extends Document {
           <meta name="description" content="web designed" />
           <meta name="author" content="elad BA" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css"
+          />
+          <title>אירועי חברה הפקת אירועים אטרקציות לאירועים צלם מגנטים מעצב אירועים</title>
           <style>{`body { margin: 0 }`}</style>
         </Head>
-        <body >
+        <body>
           <Main />
           <NextScript />
         </body>

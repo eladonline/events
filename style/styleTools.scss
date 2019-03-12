@@ -297,21 +297,6 @@ $gradient: linear-gradient(90deg, $red 15%, $purple 90%);
 button:disabled {
   pointer-events: none;
 }
-%btnLight {
-  @extend %btnBase;
-  border: 1px solid green;
-  color: green;
-  background: white;
-  &:disabled {
-    border: 1px solid $disabled;
-    color: $disabled;
-    background: white;
-  }
-  &:hover {
-    border: 1px solid green;
-    color: green;
-  }
-}
 
 %div-is-img {
   background-repeat: no-repeat;
@@ -322,16 +307,13 @@ button:disabled {
 .btnDark {
   @extend %btnDark;
 }
-.btnLight {
-  @extend %btnLight;
-}
 
 // /////////////
 // ANTD
 // /////////////
 .ant-form {
   text-align: right;
-  @include grid(1em, initial, initial, auto, auto);
+  @include grid(1em, center, initial, auto, auto);
   @include md {
     @include grid(1em, initial, initial, auto auto, auto);
   }
@@ -403,12 +385,10 @@ button:disabled {
     text-decoration: none;
   }
 }
-.opacity-0 {
-  opacity: 0;
-}
-.opacity-1 {
-  opacity: 1;
-}
-.make-row {
-  @include grid(1em, initial, initial, auto auto, auto);
+
+// Logo
+.logo {
+  @include div-is-img('/static/image/logo.png');
+  width: 100px;
+  height: 100px;
 }

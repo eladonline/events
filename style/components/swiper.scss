@@ -1,0 +1,18 @@
+$slides-height: 400px;
+.swiper-container {
+  height: $slides-height;
+  width: 100%;
+  .swiper__item {
+    width: 100%;
+    height: $slides-height;
+    object-fit: cover;
+  }
+  .swiper-pagination-bullet {
+    background: white;
+    opacity: 0.5;
+    &-active {
+      opacity: 1;
+      background: $red;
+    }
+  }
+}

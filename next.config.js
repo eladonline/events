@@ -42,7 +42,11 @@ module.exports = compose([
     },
     publicRuntimeConfig: _envConfig,
     serverRuntimeConfig: _envConfig,
-    target: 'serverless',
+    exportPathMap: function() {
+      return {
+        '/': { page: '/' }
+      };
+    },
     webpack(config, options) {
       // config.plugins.push(extractVendorCSSPlugin)
       // config.plugins.push(extractAppCSSPlugin)

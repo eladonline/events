@@ -23,14 +23,11 @@ class Navbar extends PureComponent {
         <Menu selectedKeys={[current]} mode="horizontal">
           <Menu.Item key="app">
             <Link href="/">
-              <a>שני</a>
+              <a>שני ןכמה</a>
             </Link>
           </Menu.Item>
-          <Menu.Item key="alipay">
-            <Link href="/">
-              <a>שלישי</a>
-            </Link>
-          </Menu.Item>
+          <div data-top={top === 0} className="menu-navbar__ant-menu__logo logo" />
+
           <SubMenu title={'סוג האירוע'}>
             <Menu.Item key="setting:1">אירוע חברה</Menu.Item>
             <Menu.Item key="setting:2">חתונה</Menu.Item>

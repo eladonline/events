@@ -6,11 +6,14 @@
 @import './components/carousle.scss';
 @import './components/footer.scss';
 @import './components/about.scss';
+@import './components/swiper.scss';
+@import './components/gallery.scss';
 
 #__next,
 .home {
   @extend %Secular;
   background: $black;
+  // overflow-x: hidden;
 }
 
 header {
@@ -34,4 +37,20 @@ p {
   color: white;
   @extend %Varela;
   @extend %fs18;
+}
+
+
+.grid {
+  margin: 0 auto;
+  width: 95%;
+  @include sm {
+    padding: 0;
+    width: 720px;
+  }
+  @include md {
+    width: 960px;
+  }
+  @include lg {
+    width: 1140px;
+  }
 }
