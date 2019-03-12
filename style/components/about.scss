@@ -1,0 +1,12 @@
+.about {
+  padding: 1em;
+  @include grid(2em, center, initial, auto, auto);
+  @include md {
+    padding: 4em 2em;
+  }
+  text-align: center;
+  p {
+    max-width: 500px;
+    margin: auto;
+  }
+}

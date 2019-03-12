@@ -5,4 +5,13 @@
   background: $black;
   color: white;
   padding: 2em 1em;
+  &__contact-detailes {
+    color: white;
+    .tel {
+      @include grid(1em, space-between, initial, auto auto, auto);
+      text-align: right;
+      @extend %fs18;
+      @extend %Varela;
+    }
+  }
 }

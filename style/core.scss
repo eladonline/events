@@ -5,7 +5,9 @@
 @import './components/navbar.scss';
 @import './components/carousle.scss';
 @import './components/footer.scss';
+@import './components/about.scss';
 
+#__next,
 .home {
   @extend %Secular;
   background: $black;
