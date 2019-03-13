@@ -1,5 +1,5 @@
 import React from 'react';
-import { SwiperCube } from 'src/components/swiper/swiper';
+import { SwiperCoverFlow } from 'src/components/swiper/swiper';
 
 
 

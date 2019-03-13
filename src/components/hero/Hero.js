@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 const Hero = () => {
   return (
     <div className="hero">

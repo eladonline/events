@@ -7,35 +7,12 @@ const hero = '/static/image/gallery/hero2.jpg';
 const khaled = '/static/image/gallery/khaled.jpg';
 const teva = '/static/image/gallery/teva.jpg';
 
-export class SwiperCube extends React.Component {
+export class SwiperCoverFlow extends React.Component {
   render() {
-    // const params = {
-    //   effect: 'cube',
-    //   speed: 500,
-    //   grabCursor: true,
-    //   loop: true,
-    //   autoplay: {
-    //     delay: 2000,
-    //     disableOnInteraction: false
-    //   },
-    //   cubeEffect: {
-    //     shadow: true,
-    //     slideShadows: true,
-    //     shadowOffset: 20,
-    //     shadowScale: 0.94
-    //   },
-    //   pagination: {
-    //     el: '.swiper-pagination'
-    //   }
-    // };
     const params = {
       effect: 'coverflow',
       grabCursor: true,
       centeredSlides: true,
-      // autoplay: {
-      //   delay: 4000,
-      //   disableOnInteraction: false
-      // },
       loop: true,
       initialSlide: 1,
       slidesPerView: '2',
@@ -65,5 +42,35 @@ export class SwiperCube extends React.Component {
         <img src={teva} className="swiper__item" />
       </Swiper>
     );
+  }
+}
+
+export class SwiperCube extends React.Component {
+  parseSlides = list => {
+    return list.map(src => {
+      return <img src={src} className="swiper__item" />;
+    });
+  };
+  render() {
+    const params = {
+      effect: 'cube',
+      speed: 500,
+      grabCursor: true,
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false
+      },
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94
+      },
+      pagination: {
+        el: '.swiper-pagination'
+      }
+    };
+    return <Swiper {...params}>{this.parseSlides(this.props.list)}</Swiper>;
   }
 }

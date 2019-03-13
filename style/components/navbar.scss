@@ -12,6 +12,7 @@ $menu-tabs-width: 130px;
   position: sticky;
   top: 0;
   z-index: 15555;
+
   &[data-top='true'] {
     .ant-menu {
       box-shadow: 0px -2px 8px 4px $darkBlack;
@@ -26,9 +27,9 @@ $menu-tabs-width: 130px;
     }
   }
 }
-.home .ant-menu {
+.ant-menu {
   position: relative;
-  background: $black;
+  background: $black !important;
   @include flex-row(center);
   // logo
   .menu-navbar__ant-menu__logo,
@@ -57,7 +58,7 @@ $menu-tabs-width: 130px;
     }
     // the text inside
     a {
-      color: white;
+      color: white !important;
       @extend %Varela;
     }
   }
@@ -65,6 +66,9 @@ $menu-tabs-width: 130px;
 .ant-menu-submenu {
   .ant-menu-sub {
     background: $black !important;
+    &:not(.ant-menu-hidden){
+      @include flex-column();
+    }
   }
   &-open {
     color: $red;

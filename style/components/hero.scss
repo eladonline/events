@@ -13,7 +13,7 @@
     @include grid(1em, center, center, auto, auto);
     h1,
     h2 {
-      text-shadow: 1px 2px 5px black;
+      @extend .text-shadow
     }
   }
 }
