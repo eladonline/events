@@ -7,10 +7,7 @@
     @include grid(2em, initial, initial, auto, auto);
     text-align: center;
     video {
-      width: 80%;
-      @include md {
-        width: 100%;
-      }
+      width: 100%;
     }
     p {
       max-width: 500px;

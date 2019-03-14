@@ -48,7 +48,7 @@ export class SwiperCoverFlow extends React.Component {
 export class SwiperCube extends React.Component {
   parseSlides = list => {
     return list.map(src => {
-      return <img src={src} className="swiper__item" />;
+      return <img key={src} src={src} className="swiper__item" />;
     });
   };
   render() {
@@ -62,8 +62,8 @@ export class SwiperCube extends React.Component {
         disableOnInteraction: false
       },
       cubeEffect: {
-        shadow: true,
-        slideShadows: true,
+        shadow: false,
+        slideShadows: false,
         shadowOffset: 20,
         shadowScale: 0.94
       },

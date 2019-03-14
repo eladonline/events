@@ -1,66 +1,17 @@
 import React, { PureComponent } from 'react';
 import Slider from 'react-slick';
 
-const juggle = '/static/image/jugle.jpg';
-const magnets = '/static/image/magnets.jpg';
-const dj = '/static/image/dj.jpg';
-const decor = '/static/image/decor.jpg';
-const foodStand = '/static/image/food_stand.jpg';
-const videoPhotographer = '/static/image/video_photographer.jpg';
-const shofarot = '/static/image/shofarot.jpg';
-const videoAttraction = '/static/image/video_attraction.jpg';
-
-const slides = [
-  {
-    head: 'אמני במה',
-    text: '.סוחף ומלהיב את הקהל',
-    src: juggle
-  },
-  {
-    head: 'צלם מגנטים',
-    text: '.מזכרת מאירוע בלתי נשכח',
-    src: magnets
-  },
-  {
-    head: 'תקליטן',
-    text: '.מיקסים של השירים הכי חדשים',
-    src: dj
-  },
-  {
-    head: 'מעצב אירועים',
-    text: '.לעיצוב מקום האירוע',
-    src: decor
-  },
-  {
-    head: 'דוכני מזון',
-    text: '.כל סוגי הדוכנים גם משקאות',
-    src: foodStand
-  },
-  {
-    head: 'צלם אירועים',
-    text: 'צילום תמונות ווידאו מקצועי לכל אירוע',
-    src: videoPhotographer
-  },
-  {
-    head: 'מעגל מתופפים ושופרות',
-    text: '.מלווים עם תופים ושופרות גם בכותל',
-    src: shofarot
-  },
-  {
-    head: 'משחקי וידאו',
-    text: '...מכונות משחקי וידאו קוסולות ועוד',
-    src: videoAttraction
-  }
-];
-
 class Carousle extends PureComponent {
   parseSlidesList = list => {
+    const Slide = this.props.slide;
     return list.map((obj, i) => {
-      return <Slide key={`carousle_${i}`} {...obj} />;
+      const key = Object.keys(obj);
+      return <Slide key={`carousle_${i}_${obj[key[0]]}`} {...obj} />;
     });
   };
 
   render() {
+    const { slides } = this.props;
     const settings = {
       dots: false,
       infinite: true,
@@ -99,16 +50,3 @@ class Carousle extends PureComponent {
 }
 
 export default Carousle;
-
-const Slide = ({ head, text, src }) => {
-  return (
-    <div className="carousle__item" style={{ backgroundImage: `url(${src})` }}>
-      <div className="carousle__item__overlay">
-        <header>
-          <h4>{head}</h4>
-        </header>
-        <p>{text}</p>
-      </div>
-    </div>
-  );
-};

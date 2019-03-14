@@ -26,7 +26,9 @@ class Navbar extends PureComponent {
               <a>שני ןכמה</a>
             </Link>
           </Menu.Item>
-          <div data-top={top === 0} className="menu-navbar__ant-menu__logo logo" />
+          <Link href="/">
+            <div data-top={top === 0} className="menu-navbar__ant-menu__logo logo" />
+          </Link>
 
           <SubMenu title={'סוג האירוע'}>
             <Menu.Item key="setting:1">אירוע חברה</Menu.Item>

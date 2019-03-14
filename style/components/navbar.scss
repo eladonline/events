@@ -34,6 +34,7 @@ $menu-tabs-width: 130px;
   // logo
   .menu-navbar__ant-menu__logo,
   .logo {
+    cursor: pointer;
     &[data-top='true'] {
       transition: 0.3s;
       height: 70px;
@@ -66,7 +67,7 @@ $menu-tabs-width: 130px;
 .ant-menu-submenu {
   .ant-menu-sub {
     background: $black !important;
-    &:not(.ant-menu-hidden){
+    &:not(.ant-menu-hidden) {
       @include flex-column();
     }
   }

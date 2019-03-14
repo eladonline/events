@@ -10,7 +10,7 @@ const Gallery = () => {
         <header>
           <h4>הגלריה שלנו</h4>
         </header>
-        <SwiperCube />
+        <SwiperCoverFlow />
       </div>
     </div>
   );

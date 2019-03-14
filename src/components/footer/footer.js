@@ -1,7 +1,7 @@
 import Contact from './contactForm';
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer id='footer' className="footer">
       <section className='grid'>
         <div className='logo' />
         <header>

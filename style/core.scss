@@ -10,6 +10,7 @@
 @import './components/gallery.scss';
 @import './components/staticPage.scss';
 @import './screens/stagePerformer.scss';
+@import './components/cardAcardsList.scss';
 
 #__next,
 .home {
@@ -34,13 +35,17 @@ header {
     @extend %Secular;
     @extend %fs30;
   }
+  h5 {
+    @extend %fs24;
+    color: white;
+    @extend %Secular;
+  }
 }
 p {
   color: white;
   @extend %Varela;
   @extend %fs18;
 }
-
 
 .grid {
   margin: 0 auto;

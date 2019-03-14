@@ -18,8 +18,10 @@
     cursor: pointer;
     &:hover {
       transition: 0.4s linear;
-      background: $gradient;
-      opacity: 0.7;
+      @extend .gradient-background-faded;
+    }
+    p {
+      direction: rtl;
     }
     @include flex-column(flex-end, flex-end);
   }

@@ -1,0 +1,36 @@
+.cards-list {
+  @include grid(1em, initial, initial, repeat(2, 1fr), auto);
+
+  @include md {
+    @include grid(2em, initial, initial, repeat(4, 1fr), auto);
+  }
+}
+.service-card {
+  height: 400px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  &:hover {
+    img {
+      transition: 0.5s ease;
+      transform: scale(1.2);
+    }
+  }
+  img {
+    transition: 0.5s ease;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  &__overlay {
+    @extend .text-shadow;
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    @include flex-column(center, center);
+  }
+}
