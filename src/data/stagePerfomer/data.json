@@ -7,16 +7,16 @@
   "subHead": "מופעי במה תמיד היו מאוד פופלארים ואהודים בקרב הקהל",
   "gallery": [
     "/static/image/gallery/company_prom.jpg",
-    "/static/image/gallery/decoration.jpg",
-    "/static/image/gallery/hero2.jpg",
-    "/static/image/gallery/khaled.jpg",
-    "/static/image/gallery/teva.jpg"
+    "/static/image/gallery/company_prom.jpg",
+    "/static/image/gallery/company_prom.jpg",
+    "/static/image/gallery/company_prom.jpg",
+    "/static/image/gallery/company_prom.jpg"
   ],
   "serviceList": [
     {
       "title": "קוסם",
       "src": "/static/image/services/performers/magician.jpg",
-      "summary": "some summary"
+      "summary": "מופע קסמים מרהיב לכל אירוע כי כולנו אוהבים קסמים "
     },
     {
       "title": "ליצן",

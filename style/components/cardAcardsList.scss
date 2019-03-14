@@ -23,7 +23,14 @@
     height: 100%;
   }
   &__overlay {
-    @extend .text-shadow;
+    // @extend .text-shadow;
+    direction: rtl;
+    padding: 0.5em;
+    transition: 0.3s ease;
+    background: rgba(0, 0, 0, 0.3);
+    &:hover {
+      @extend .gradient-background-faded
+    }
     color: white;
     position: absolute;
     width: 100%;

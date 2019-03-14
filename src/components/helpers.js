@@ -20,3 +20,26 @@ export const distanceMeasure = (el, sides = 'top') => {
     throw Error('sides propery have to be: string/array');
   }
 };
+
+
+
+/**
+ * @function strLengthSlicer
+ * @argument {string} str the text
+ * @argument {number} maxLength number of max chars
+ * @argument {string, boolean} dots true = 3 dots || string of how many dots you want at the end of the line || false none
+ * @summary cut the string by specified length and add dots at the end
+ */
+export const strLengthSlicer = (str, maxLength, dots = true) => {
+  const strToLong = str.length > maxLength;
+  if (strToLong) {
+    str = str.slice(0, maxLength);
+  }
+  if (typeof dots === 'string' && strToLong) {
+    str = `${str}${dots}`;
+  }
+  if (dots === true && strToLong) {
+    str = `${str}...`;
+  }
+  return str;
+};

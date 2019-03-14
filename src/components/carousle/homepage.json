@@ -51,7 +51,7 @@
     {
       "head": "סדנאות לילדים",
       "text": "סדנאות אפיה, יצירה, שוקולד ועוד...",
-      "src": "/static/image/services/workshop/baking_kids.jpg",
+      "src": "/static/image/services/stands/baking_kids.jpg",
       "link": "/stands"
     },
     {
@@ -64,7 +64,7 @@
       "head": "דוכני יריד",
       "text": "דוכני צמות, ציורי גוף, איפור, חינה ועוד...",
       "src": "/static/image/carousel/face-painting.jpg",
-      "link": "/gadgets"
+      "link": "/stands"
     }
   ]
 }
