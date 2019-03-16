@@ -1,0 +1,19 @@
+.event-page {
+  &__container {
+    padding: 2em 0;
+    position: relative;
+    background: $black;
+    z-index: 5;
+    @include grid(1em, initial, initial, auto, auto);
+    text-align: center;
+    &__services {
+      padding: 3em 1em;
+      .grid {
+        @include grid(2em, initial, initial, repeat(2, 1fr), auto);
+        @include md {
+          @include grid(2em, initial, initial, repeat(4, 1fr), auto);
+        }
+      }
+    }
+  }
+}

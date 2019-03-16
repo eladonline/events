@@ -24,5 +24,8 @@
       direction: rtl;
     }
     @include flex-column(flex-end, flex-end);
+    &.flex-center {
+      @include flex-column(center, center);
+    }
   }
 }

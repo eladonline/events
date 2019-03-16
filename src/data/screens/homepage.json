@@ -1,0 +1,127 @@
+{
+  "serviceSlides": [
+    {
+      "head": "אמני במה",
+      "text": "סוחף ומלהיב את הקהל.",
+      "src": "/static/image/carousel/jugle.jpg",
+      "link": "/service/stage-performer"
+    },
+    {
+      "head": "צלם מגנטים",
+      "text": "מזכרת מאירוע בלתי נשכח.",
+      "src": "/static/image/carousel/magnets.jpg",
+      "link": "/service/photographers"
+    },
+    {
+      "head": "תקליטן",
+      "text": "מיקסים של השירים הכי חדשים.",
+      "src": "/static/image/carousel/dj.jpg",
+      "link": "/service/music"
+    },
+    {
+      "head": "מעצב אירועים",
+      "text": "לעיצוב מקום האירוע.",
+      "src": "/static/image/carousel/decor.jpg",
+      "link": "/service/decorator"
+    },
+    {
+      "head": "דוכני אוכל",
+      "text": "כל סוגי הדוכנים גם משקאות.",
+      "src": "/static/image/carousel/food_stand.jpg",
+      "link": "/service/food-stands"
+    },
+    {
+      "head": "צלם אירועים",
+      "text": "צלם תמונות, וידאו, ועוד...",
+      "src": "/static/image/carousel/video_photographer.jpg",
+      "link": "/service/photographers"
+    },
+    {
+      "head": "מלווים",
+      "text": "מלווים לכניסה בסטייל לבר מצווה, לחתונה, וכו...",
+      "src": "/static/image/carousel/shofarot.jpg",
+      "link": "/service/escorts"
+    },
+    {
+      "head": "משחקים",
+      "text": "משחקי וידאו, קונסולות, שולחנות משחק ועוד...",
+      "src": "/static/image/carousel/video_attraction.jpg",
+      "link": "/service/attractions"
+    },
+    {
+      "head": "סדנאות לילדים",
+      "text": "סדנאות אפיה, יצירה, שוקולד ועוד...",
+      "src": "/static/image/services/stands/baking_kids.jpg",
+      "link": "/service/stands"
+    },
+    {
+      "head": "גאדג'טים",
+      "text": "אביזרים לחלוקה ברחבת הריקודים.",
+      "src": "/static/image/carousel/glowing_sticks.jpg",
+      "link": "/service/gadgets"
+    },
+    {
+      "head": "דוכני יריד",
+      "text": "דוכני צמות, ציורי גוף, איפור, חינה ועוד...",
+      "src": "/static/image/carousel/face-painting.jpg",
+      "link": "/service/stands"
+    }
+  ],
+  "recommends": [
+    {
+      "head": "יוסי ושרית",
+      "text": "תודה רבה לאעד מסאגה אירועים היה מהם עשו לנו את האירוע והכל לטעמנו בודאי שנעזר בכם גם בבריתה בברכה יוסי.",
+      "src": "/static/image/carousel/jugle.jpg"
+    },
+    {
+      "head": "צלם מגנטים",
+      "text": "מזכרת מאירוע בלתי נשכח.",
+      "src": "/static/image/carousel/magnets.jpg"
+    },
+    {
+      "head": "תקליטן",
+      "text": "מיקסים של השירים הכי חדשים.",
+      "src": "/static/image/carousel/dj.jpg"
+    },
+    {
+      "head": "מעצב אירועים",
+      "text": "לעיצוב מקום האירוע.",
+      "src": "/static/image/carousel/decor.jpg"
+    },
+    {
+      "head": "דוכני אוכל",
+      "text": "כל סוגי הדוכנים גם משקאות.",
+      "src": "/static/image/carousel/food_stand.jpg"
+    },
+    {
+      "head": "צלם אירועים",
+      "text": "צלם תמונות, וידאו, ועוד...",
+      "src": "/static/image/carousel/video_photographer.jpg"
+    },
+    {
+      "head": "מלווים",
+      "text": "מלווים לכניסה בסטייל לבר מצווה, לחתונה, וכו...",
+      "src": "/static/image/carousel/shofarot.jpg"
+    },
+    {
+      "head": "משחקים",
+      "text": "משחקי וידאו, קונסולות, שולחנות משחק ועוד...",
+      "src": "/static/image/carousel/video_attraction.jpg"
+    },
+    {
+      "head": "סדנאות לילדים",
+      "text": "סדנאות אפיה, יצירה, שוקולד ועוד...",
+      "src": "/static/image/services/stands/baking_kids.jpg"
+    },
+    {
+      "head": "גאדג'טים",
+      "text": "אביזרים לחלוקה ברחבת הריקודים.",
+      "src": "/static/image/carousel/glowing_sticks.jpg"
+    },
+    {
+      "head": "דוכני יריד",
+      "text": "דוכני צמות, ציורי גוף, איפור, חינה ועוד...",
+      "src": "/static/image/carousel/face-painting.jpg"
+    }
+  ]
+}

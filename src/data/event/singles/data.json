@@ -1,0 +1,22 @@
+{
+  "hero": {
+    "src": "/static/image/staticPages/food_truck.jpg",
+    "head": "!מסיבת רווקים/רווקות"
+  },
+  "services": {
+    "base": [
+      { "service": "צלם אירועים תמונות ווידאו", "description": "צלם מקצועי לאירועי" },
+      { "service": "", "description": "" },
+      { "service": "", "description": "" },
+      { "service": "", "description": "" },
+      { "service": "", "description": "" },
+      { "service": "", "description": "" }
+    ],
+    "attraction": [
+      { "service": "צלם מגנטים", "description": "מגנטים באיכות גבוהה מחזיקים להרבה שנים" },
+      { "service": "", "description": "" },
+      { "service": "", "description": "" },
+      { "service": "", "description": "" }
+    ]
+  }
+}

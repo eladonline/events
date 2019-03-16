@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "src": "/static/image/staticPages/stage_show.jpg",
+    "head": "אמני במה"
+  },
+  "head": "מופעי במה מרהיבים",
+  "subHead": "מופעי במה תמיד היו מאוד פופלארים ואהודים בקרב הקהל",
+  "gallery": [
+    "/static/image/gallery/company_prom.jpg",
+    "/static/image/gallery/company_prom.jpg",
+    "/static/image/gallery/company_prom.jpg",
+    "/static/image/gallery/company_prom.jpg",
+    "/static/image/gallery/company_prom.jpg"
+  ],
+  "serviceList": [
+    {
+      "title": "קוסם",
+      "src": "/static/image/services/performers/magician.jpg",
+      "summary": "מופע קסמים מרהיב לכל אירוע כי כולנו אוהבים קסמים "
+    },
+    {
+      "title": "ליצן",
+      "src": "/static/image/services/performers/half_clown.jpg",
+      "summary": "some summary"
+    },
+    {
+      "title": "לוליין",
+      "src": "/static/image/services/performers/jugle.jpg",
+      "summary": "some summary"
+    },
+    {
+      "title": "סטנדאפיסט",
+      "src": "/static/image/services/performers/standup.jpg",
+      "summary": "some summary"
+    }
+  ]
+}

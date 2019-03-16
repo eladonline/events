@@ -1,5 +1,7 @@
 @import url('//fonts.googleapis.com/css?family=Secular+One|Varela+Round');
 @import './colors.scss';
+
+$button-font-size: 16px !default;
 //App
 //////////////////////
 // general app declaration
@@ -273,7 +275,18 @@ $gradient: linear-gradient(90deg, $red 15%, $purple 90%);
 }
 %btnBase {
   @extend %Varela;
-  font-size: 16px;
+  outline: none;
+  font-size: $button-font-size;
+  @include flex-row(center, center);
+  border-radius: 6px;
+  height: 43px;
+  padding: 0 23px;
+  border: none;
+  cursor: pointer;
+}
+%btnBase-noFontSize {
+  @extend %Varela;
+  outline: none;
   @include flex-row(center, center);
   border-radius: 6px;
   height: 43px;
@@ -397,12 +410,21 @@ button:disabled {
 }
 
 .gradient-background-faded {
-  background: rgba(67,31,121,0.67);
-  background: -moz-linear-gradient(left, rgba(67,31,121,0.67) 0%, rgba(218,59,53,0.62) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(67,31,121,0.67)), color-stop(100%, rgba(218,59,53,0.62)));
-  background: -webkit-linear-gradient(left, rgba(67,31,121,0.67) 0%, rgba(218,59,53,0.62) 100%);
-  background: -o-linear-gradient(left, rgba(67,31,121,0.67) 0%, rgba(218,59,53,0.62) 100%);
-  background: -ms-linear-gradient(left, rgba(67,31,121,0.67) 0%, rgba(218,59,53,0.62) 100%);
-  background: linear-gradient(to right, rgba(67,31,121,0.67) 0%, rgba(218,59,53,0.62) 100%);
+  background: rgba(67, 31, 121, 0.67);
+  background: -moz-linear-gradient(left, rgba(67, 31, 121, 0.67) 0%, rgba(218, 59, 53, 0.62) 100%);
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(67, 31, 121, 0.67)),
+    color-stop(100%, rgba(218, 59, 53, 0.62))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(67, 31, 121, 0.67) 0%,
+    rgba(218, 59, 53, 0.62) 100%
+  );
+  background: -o-linear-gradient(left, rgba(67, 31, 121, 0.67) 0%, rgba(218, 59, 53, 0.62) 100%);
+  background: -ms-linear-gradient(left, rgba(67, 31, 121, 0.67) 0%, rgba(218, 59, 53, 0.62) 100%);
+  background: linear-gradient(to right, rgba(67, 31, 121, 0.67) 0%, rgba(218, 59, 53, 0.62) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#431f79', endColorstr='#da3b35', GradientType=1 );
 }

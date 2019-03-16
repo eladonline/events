@@ -1,5 +1,7 @@
 .footer {
   text-align: center;
+  position: relative;
+  z-index: 1;
   min-height: 300px;
   background: $black;
   color: white;

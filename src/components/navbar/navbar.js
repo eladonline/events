@@ -2,6 +2,7 @@ import { Menu, Icon } from 'antd';
 import React, { PureComponent } from 'react';
 import Link from 'next/link';
 import { distanceMeasure } from 'src/components/helpers';
+import Router from 'next/router'
 
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
@@ -15,15 +16,19 @@ class Navbar extends PureComponent {
       this.setState({ top: distance });
     });
   };
+  handleClick = e => {
+    const {key} = e
+    Router.push(`/event/${key}`)
+  };
 
   render() {
     const { current, top } = this.state;
     return (
       <div className="menu-navbar" data-top={top === 0}>
-        <Menu selectedKeys={[current]} mode="horizontal">
+        <Menu onClick={this.handleClick} selectedKeys={[current]} mode="horizontal">
           <Menu.Item key="app">
             <Link href="/">
-              <a>שני ןכמה</a>
+              <a>מחירים</a>
             </Link>
           </Menu.Item>
           <Link href="/">
@@ -31,11 +36,12 @@ class Navbar extends PureComponent {
           </Link>
 
           <SubMenu title={'סוג האירוע'}>
-            <Menu.Item key="setting:1">אירוע חברה</Menu.Item>
-            <Menu.Item key="setting:2">חתונה</Menu.Item>
-            <Menu.Item key="setting:3">בר מצווה</Menu.Item>
-            <Menu.Item key="setting:4">ברית/ה</Menu.Item>
-            <Menu.Item key="setting:5">יום הולדת</Menu.Item>
+            <Menu.Item key="company">אירוע חברה</Menu.Item>
+            <Menu.Item key="wedding">חתונה</Menu.Item>
+            <Menu.Item key="bar-mitzva">בר מצווה</Menu.Item>
+            <Menu.Item key="brit">ברית/ה</Menu.Item>
+            {/* <Menu.Item key="birthday">יום הולדת</Menu.Item> */}
+            <Menu.Item key="singles">מסיבת רווקים/רווקות</Menu.Item>
           </SubMenu>
         </Menu>
       </div>
