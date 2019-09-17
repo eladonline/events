@@ -1,0 +1,22 @@
+.teaser {
+  position: relative;
+  padding: 3em 1em;
+  background: $black;
+  @include md {
+    padding: 8em 2em;
+  }
+  .grid {
+    @include grid(2em, initial, initial, auto, auto);
+    text-align: center;
+    iframe {
+      margin-top: 50px;
+      box-shadow: 0 0 40px 1px black;
+    }
+    p {
+      max-width: 500px;
+      margin: auto;
+    }
+  }
+}
+
+

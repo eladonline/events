@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "src": "/static/image/staticPages/valve_index.jpg",
+    "head": "Valve Index"
+  },
+  "services": {
+    "base": [
+      {
+        "service": "Valve index",
+        "background": "/static/image/services/valve/valve_index_min.jpg",
+        "description": {
+          "text": "המשקפיים הטובות ביותר בשוק כאשר מכלילים מחיר מול תמורה, זיהוי תנועות מעולה, חומרים איכותיים ומחיר סביר המומלצות ביותר כרגע, דרוש מחשב תומך"
+        }
+      }
+    ]
+  }
+}

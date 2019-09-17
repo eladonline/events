@@ -13,9 +13,8 @@ $menu-tabs-width: 130px;
   top: 0;
   z-index: 155;
 
-  &[data-top='true'] {
+  &[data-top="true"] {
     .ant-menu {
-      box-shadow: 0px -2px 8px 4px $darkBlack;
       .ant-menu-item {
         padding: 1em 2em;
       }
@@ -26,49 +25,49 @@ $menu-tabs-width: 130px;
       }
     }
   }
-}
-.ant-menu {
-  position: relative;
-  background: $black !important;
-  @include flex-row(center);
-  // logo
-  .menu-navbar__ant-menu__logo,
-  .logo {
-    cursor: pointer;
-    &[data-top='true'] {
-      transition: 0.3s;
-      height: 70px;
-      width: 70px;
-    }
-  }
-
-  &.ant-menu-horizontal {
-    border: 2px solid $black;
-  }
-  // the items
-  .ant-menu-item {
-    @extend %tabs-common;
-    background: $black;
-
-    &-active {
-      color: $red;
-      border-bottom: 2px solid $red !important;
-      > a {
-        color: $red !important;
+  .ant-menu {
+    position: relative;
+    background: $black !important;
+    @include flex-row(center);
+    // logo
+    .menu-navbar__ant-menu__logo,
+    .logo {
+      cursor: pointer;
+      &[data-top="true"] {
+        transition: 0.3s;
+        height: 70px;
+        width: 70px;
       }
     }
-    // the text inside
-    a {
-      color: white !important;
-      @extend %Varela;
+
+    &.ant-menu-horizontal {
+      border: 2px solid $black;
+    }
+    // the items
+    .ant-menu-item {
+      @extend %tabs-common;
+      background: $black;
+
+      &-active {
+        color: $red;
+        border-bottom: 2px solid $red !important;
+        > a {
+          color: $red !important;
+        }
+      }
+      // the text inside
+      a {
+        color: white !important;
+        @extend %Varela;
+      }
     }
   }
 }
 .ant-menu-submenu {
   .ant-menu-sub {
     background: $black !important;
-    box-shadow: 0px 0px 15px 2px $darkBlack;
-    padding: .5em !important;
+    padding: 0.5em !important;
+    box-shadow: 0px 0px 12px .3px rgba(white,.2);
     &:not(.ant-menu-hidden) {
       @include flex-column();
     }
@@ -86,18 +85,18 @@ $menu-tabs-width: 130px;
       color: $red !important;
     }
   }
-  .ant-menu-item {
-    width: 100%;
-
-    text-align: right;
-    @extend %Varela;
-    background: $black;
-    color: white;
-    &-active {
-      color: $red !important;
-    }
-  }
 }
+    .ant-menu-item {
+      width: 100%;
+  
+      text-align: right;
+      @extend %Varela;
+      background: $black;
+      color: white;
+      &-active {
+        color: $red !important;
+      }
+    }
 
 .ant-menu-submenu-popup {
   background: $black !important;

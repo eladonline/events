@@ -5,18 +5,18 @@ const Footer = () => {
       <section className='grid'>
         <div className='logo' />
         <header>
-          <h4>!צור איתנו קשר</h4>
+          <h4>צור איתנו קשר!</h4>
         </header>
         <Contact />
         <div className="footer__contact-detailes">
           <div className="tel">
             <div>טל: 050-6666666</div>
-            <div> eladonline@walla.com :אימייל</div>
+            <div> אימייל: eladonline@walla.com </div>
           </div>
         </div>
       </section>
 
-      <div className="footer__rights">© all right reserved to "Events"</div>
+      <div className="footer__rights">all right reserved to virtualRealityEra © </div>
     </footer>
   );
 };

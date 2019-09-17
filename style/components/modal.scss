@@ -15,6 +15,7 @@
   // the modals header container
   .ant-modal-header {
     background: transparent;
+    @include flex-row(flex-end);
     .ant-modal-title {
       color: white;
       @extend %Secular;
@@ -35,4 +36,6 @@
   color: white;
   @extend .text-shadow;
   @extend %fs20;
+  background-size:cover;
+  background-repeat:no-repeat;
 }

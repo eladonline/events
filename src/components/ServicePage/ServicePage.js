@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Navbar from 'src/components/navbar/Navbar.js';
+import Navbar from 'src/components/navbar/navbar.js';
 import Hero from './Hero';
 import { SwiperCube } from 'src/components/swiper/swiper';
 import CardsList from 'src/components/cardsList/CardsList';

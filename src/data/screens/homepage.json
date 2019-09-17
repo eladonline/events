@@ -1,70 +1,34 @@
 {
   "serviceSlides": [
     {
-      "head": "אמני במה",
-      "text": "סוחף ומלהיב את הקהל.",
-      "src": "/static/image/carousel/jugle.jpg",
-      "link": "/service/stage-performer"
+      "head": "Oculus",
+      "text": "משקפיים ברמה גבוהה לקהל הרחב.",
+      "src": "/static/image/carousel/oculus_mid.webp",
+      "link": "/oculus"
     },
     {
-      "head": "צלם מגנטים",
-      "text": "מזכרת מאירוע בלתי נשכח.",
-      "src": "/static/image/carousel/magnets.jpg",
-      "link": "/service/photographers"
+      "head": "Htc vive",
+      "text": "לאנשים שלא מתפשרים על עוצמה.",
+      "src": "/static/image/carousel/htc_vive.jpg",
+      "link": "/htc-vive"
     },
     {
-      "head": "תקליטן",
-      "text": "מיקסים של השירים הכי חדשים.",
-      "src": "/static/image/carousel/dj.jpg",
-      "link": "/service/music"
+      "head": "Valve Index",
+      "text": "מעוצבות, איכותיות, עוצמתיות ללא פשרות.",
+      "src": "/static/image/carousel/valve_index_carousle.jpg",
+      "link": "/valve-index"
     },
     {
-      "head": "מעצב אירועים",
-      "text": "לעיצוב מקום האירוע.",
-      "src": "/static/image/carousel/decor.jpg",
-      "link": "/service/decorator"
+      "head": "pimax 5/8K",
+      "text": "לאיכות תמונה גבוהה.",
+      "src": "/static/image/carousel/pimax_carousle.webp",
+      "link": "/pimax"
     },
     {
-      "head": "דוכני אוכל",
-      "text": "כל סוגי הדוכנים גם משקאות.",
+      "head": "מחשבים מוכני מציאות מדומה",
+      "text": "מחשבים עוצמתיים להרצת מציאות מדומה.",
       "src": "/static/image/carousel/food_stand.jpg",
-      "link": "/service/food-stands"
-    },
-    {
-      "head": "צלם אירועים",
-      "text": "צלם תמונות, וידאו, ועוד...",
-      "src": "/static/image/carousel/video_photographer.jpg",
-      "link": "/service/photographers"
-    },
-    {
-      "head": "מלווים",
-      "text": "מלווים לכניסה בסטייל לבר מצווה, לחתונה, וכו...",
-      "src": "/static/image/carousel/shofarot.jpg",
-      "link": "/service/escorts"
-    },
-    {
-      "head": "משחקים",
-      "text": "משחקי וידאו, קונסולות, שולחנות משחק ועוד...",
-      "src": "/static/image/carousel/video_attraction.jpg",
-      "link": "/service/attractions"
-    },
-    {
-      "head": "סדנאות לילדים",
-      "text": "סדנאות אפיה, יצירה, שוקולד ועוד...",
-      "src": "/static/image/services/stands/baking_kids.jpg",
-      "link": "/service/stands"
-    },
-    {
-      "head": "גאדג'טים",
-      "text": "אביזרים לחלוקה ברחבת הריקודים.",
-      "src": "/static/image/carousel/glowing_sticks.jpg",
-      "link": "/service/gadgets"
-    },
-    {
-      "head": "דוכני יריד",
-      "text": "דוכני צמות, ציורי גוף, איפור, חינה ועוד...",
-      "src": "/static/image/carousel/face-painting.jpg",
-      "link": "/service/stands"
+      "link": "/vr-computers"
     }
   ],
   "recommends": [
@@ -118,6 +82,13 @@
       "text": "אביזרים לחלוקה ברחבת הריקודים.",
       "src": "/static/image/carousel/glowing_sticks.jpg"
     },
+    {
+      "head": "דוכני יריד",
+      "text": "דוכני צמות, ציורי גוף, איפור, חינה ועוד...",
+      "src": "/static/image/carousel/face-painting.jpg"
+    }
+  ],
+  "gallery": [
     {
       "head": "דוכני יריד",
       "text": "דוכני צמות, ציורי גוף, איפור, חינה ועוד...",

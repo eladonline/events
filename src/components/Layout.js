@@ -1,13 +1,13 @@
-import React, { PureComponent, Fragment } from 'react';
+import React, { PureComponent } from 'react';
 import { withRouter } from 'next/router';
-import Footer from 'src/components/footer/Footer';
+import Footer from 'src/components/footer/footer';
 class Layout extends PureComponent {
   render() {
     return (
-      <Fragment>
+      <div className='layout'>
         {this.props.query.children}
         <Footer />
-      </Fragment>
+      </div>
     );
   }
 }

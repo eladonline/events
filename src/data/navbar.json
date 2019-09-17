@@ -1,0 +1,23 @@
+{
+    "menusWithSubMenus": [
+        {
+            "title": "מוצרים",
+            "subMenuItems": [
+                {
+                    "title": "משקפי מציאות מדומה",
+                    "link":"vr-glasss"
+                },
+                {
+                    "title": "מחשבים מוכנים למציאות מדומה",
+                    "link":"vr-computers"
+                }
+            ]
+        }
+    ],
+    "menuItem": [
+        {
+            "title":"עלינו",
+            "link": "about"
+        }
+    ]
+}

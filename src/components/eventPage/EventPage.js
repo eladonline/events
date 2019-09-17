@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import Hero from '../ServicePage/Hero';
-import Navbar from 'src/components/navbar/Navbar.js';
-import Modal from 'src/components/modal/ModalCard';
+import React, { useState, useEffect } from "react";
+import Hero from "../ServicePage/Hero";
+import Navbar from "src/components/navbar/navbar.js";
+import Modal from "src/components/modal/ModalCard";
 
 const EventPage = ({ hero, services }) => {
   useEffect(() => {
@@ -10,14 +10,13 @@ const EventPage = ({ hero, services }) => {
   return (
     <div className="event-page">
       <Hero {...hero} />
-      <div className="static-page__space-placeholder" />
-      <Navbar />
-      <HeadAlist header="!שירותים בסיסיים" list={services.base} />
-      <HeadAlist header="!אטרקציות" list={services.attraction} />
+      <div className="background-provider">
+        <Navbar />
+        <HeadAlist header="סוגי מוצרים!" list={services.base} />
+      </div>
     </div>
   );
 };
-
 
 export default EventPage;
 
@@ -27,8 +26,16 @@ const HeadAlist = ({ header, list }) => {
    * @param {array} list - of objects {service: 'צלם מגנטים', description: 'שנים'}
    */
   const parseList = list => {
-    return list.map(({ service, description }, i) => {
-      return <Modal key={`event_${i}_${service}`} title={service} text={description} />;
+    return list.map(({ service, description, background }, i) => {
+      return (
+        <Modal
+          key={`event_${i}_${service}`}
+          title={service}
+          text={description.text}
+          img={description.spec}
+          background={background}
+        />
+      );
     });
   };
   return (

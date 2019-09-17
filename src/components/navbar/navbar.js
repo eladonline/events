@@ -1,48 +1,56 @@
-import { Menu, Icon } from 'antd';
-import React, { PureComponent } from 'react';
-import Link from 'next/link';
-import { distanceMeasure } from 'src/components/helpers';
-import Router from 'next/router'
+import { Menu, Icon } from "antd";
+import React, { PureComponent } from "react";
+import Link from "next/link";
+import { distanceMeasure } from "src/components/helpers";
+import Router from "next/router";
+import data from "src/data/navbar.json";
 
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
 class Navbar extends PureComponent {
-  state = { current: '', top: false };
+  state = { current: "", top: false };
   componentDidMount = () => {
-    const navbar = document.querySelector('.menu-navbar');
-    document.addEventListener('scroll', () => {
-      const distance = distanceMeasure(navbar, 'top');
+    const navbar = document.querySelector(".menu-navbar");
+    document.addEventListener("scroll", () => {
+      const distance = distanceMeasure(navbar, "top");
       this.setState({ top: distance });
     });
   };
   handleClick = e => {
-    const {key} = e
-    Router.push(`/event/${key}`)
+    const { key } = e;
+    Router.push(`/${key}`);
   };
 
   render() {
     const { current, top } = this.state;
     return (
       <div className="menu-navbar" data-top={top === 0}>
-        <Menu onClick={this.handleClick} selectedKeys={[current]} mode="horizontal">
-          <Menu.Item key="app">
-            <Link href="/">
-              <a>מחירים</a>
-            </Link>
-          </Menu.Item>
+        <Menu
+          onClick={this.handleClick}
+          selectedKeys={[current]}
+          mode="horizontal"
+        >
+          {data.menusWithSubMenus.map(item => {
+            return (
+              <SubMenu title={item.title}>
+                {item.subMenuItems.map(subItem => {
+                  return <Menu.Item key={subItem.link}>{subItem.title}</Menu.Item>;
+                })}
+              </SubMenu>
+            );
+          })}
+
           <Link href="/">
-            <div data-top={top === 0} className="menu-navbar__ant-menu__logo logo" />
+            <div
+              data-top={top === 0}
+              className="menu-navbar__ant-menu__logo logo"
+            />
           </Link>
 
-          <SubMenu title={'סוג האירוע'}>
-            <Menu.Item key="company">אירוע חברה</Menu.Item>
-            <Menu.Item key="wedding">חתונה</Menu.Item>
-            <Menu.Item key="bar-mitzva">בר מצווה</Menu.Item>
-            <Menu.Item key="brit">ברית/ה</Menu.Item>
-            {/* <Menu.Item key="birthday">יום הולדת</Menu.Item> */}
-            <Menu.Item key="singles">מסיבת רווקים/רווקות</Menu.Item>
-          </SubMenu>
+          {data.menuItem.map(item => {
+            return <Menu.Item key={item.link}>{item.title}</Menu.Item>;
+          })}
         </Menu>
       </div>
     );

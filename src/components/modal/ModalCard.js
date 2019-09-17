@@ -21,11 +21,11 @@ export default class ModalCard extends React.Component {
   };
 
   render() {
-    const { title, text } = this.props;
+    const { title, text, img, background } = this.props;
     const { visible } = this.state;
     return (
       <div>
-        <button className="modal-button-card" type="primary" onClick={this.showModal}>
+        <button style={{backgroundImage: `url(${background})`}} className="modal-button-card" type="primary" onClick={this.showModal}>
           {title}
         </button>
         <Modal
@@ -37,6 +37,7 @@ export default class ModalCard extends React.Component {
           className="modal-card-container"
         >
           <p>{text}</p>
+          {img && <img src={img} alt='product'/>}
         </Modal>
       </div>
     );

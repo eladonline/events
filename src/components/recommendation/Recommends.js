@@ -1,4 +1,4 @@
-import Carousle from 'src/components/carousle/Carousle';
+import Carousle from 'src/components/carousle/carousle';
 import Slide from 'src/components/carousle/serviceSlide';
 
 const Recommendation = ({ data }) => {

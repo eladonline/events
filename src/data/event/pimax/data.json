@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "src": "/static/image/staticPages/pimax.jpg",
+    "head": "Pimax"
+  },
+  "services": {
+    "base": [
+      {
+        "service": "Pimax 5K",
+        "background": "/static/image/services/pimax/pimax_min.jpg",
+        "description": {
+          "text": "המשקפיים מצטיינות באיכות מסך גבוהה, ראיה רחבה ביותר, וקצב רענון מסך מומלצות לאנשים שאוהבים חדות, דרוש מחשב תומך"
+        }
+      }
+    ]
+  }
+}

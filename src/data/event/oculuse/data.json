@@ -1,0 +1,24 @@
+{
+  "hero": {
+    "src": "/static/image/staticPages/oculus.jpg",
+    "head": "Oculus"
+  },
+  "services": {
+    "base": [
+      {
+        "service": "Oculus risf s",
+        "background": "/static/image/services/oculus/oculus_rift_min.jpg",
+        "description": {
+          "text": "משקפיים באיכות מעולה במחיר שמתאים לכל כיס. אנו ממליצים לכל מי שרוצה ליהנות מהיכולות של מציאות מדומה במחיר סביר. דרוש מחשב תומך."
+        }
+      },
+      {
+        "service": "Oculus quest",
+        "background": "/static/image/services/oculus/oculus_quest_min.jpg",
+        "description": {
+          "text": "משקפיים עם מחשב מובנה, מומלץ לכל מי שאין לו מחשב מוכן VR. אין צורך במחשב תומך."
+        }
+      }
+    ]
+  }
+}

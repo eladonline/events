@@ -1,11 +1,13 @@
 import React from 'react';
 import Swiper from 'react-id-swiper';
 
-const company_prom = '/static/image/gallery/company_prom.jpg';
-const decoration = '/static/image/gallery/decoration.jpg';
-const hero = '/static/image/gallery/hero2.jpg';
-const khaled = '/static/image/gallery/khaled.jpg';
-const teva = '/static/image/gallery/teva.jpg';
+
+const parseSlides = list => {
+  if (list)
+    return list.map(({src}) => {
+      return <img key={src} src={src} className="swiper__item" />;
+    });
+};
 
 export class SwiperCoverFlow extends React.Component {
   render() {
@@ -35,22 +37,15 @@ export class SwiperCoverFlow extends React.Component {
     };
     return (
       <Swiper {...params}>
-        <img src={company_prom} className="swiper__item" />
-        <img src={decoration} className="swiper__item" />
-        <img src={hero} className="swiper__item" />
-        <img src={khaled} className="swiper__item" />
-        <img src={teva} className="swiper__item" />
+        {console.log(this.props)}
+        {parseSlides(this.props.list)}
       </Swiper>
     );
   }
 }
 
 export class SwiperCube extends React.Component {
-  parseSlides = list => {
-    return list.map(src => {
-      return <img key={src} src={src} className="swiper__item" />;
-    });
-  };
+
   render() {
     const params = {
       effect: 'cube',
@@ -71,6 +66,6 @@ export class SwiperCube extends React.Component {
         el: '.swiper-pagination'
       }
     };
-    return <Swiper {...params}>{this.parseSlides(this.props.list)}</Swiper>;
+    return <Swiper {...params}>{parseSlides(this.props.list)}</Swiper>;
   }
 }

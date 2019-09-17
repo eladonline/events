@@ -1,5 +1,6 @@
+$heroHeight: 500px;
 .static-hero {
-  height: 500px;
+  height: $heroHeight;
   background-size: cover;
   background-position: center;
   position: fixed;
@@ -12,7 +13,10 @@
     @extend .text-shadow;
   }
 }
+.hero-static_placeholder {
+  height: $heroHeight;
 
+}
 .static-page {
   &__space-placeholder {
     height: 500px;

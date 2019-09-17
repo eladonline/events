@@ -1,10 +1,11 @@
+$shardHeight:90vh;
 .hero {
+  position: fixed;
+  z-index: 0;
   width: 100vw;
-  height: 100vh;
-
-  @include div-is-img('/static/image/hero_3.jpg');
+  height: $shardHeight;
+  @include div-is-img('/static/image/fthr_dghtr_plays.jpg');
   background-size: cover;
-
   &__overlay {
     width: 100%;
     height: 100%;
@@ -16,4 +17,8 @@
       @extend .text-shadow
     }
   }
+}
+.hero-placeholder {
+  width: 90vw;
+  height: $shardHeight;
 }

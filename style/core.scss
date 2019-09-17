@@ -5,7 +5,7 @@
 @import './components/navbar.scss';
 @import './components/carousle.scss';
 @import './components/footer.scss';
-@import './components/about.scss';
+@import './components/teaser.scss';
 @import './components/swiper.scss';
 @import './components/gallery.scss';
 @import './components/ServicePage.scss';
@@ -14,9 +14,11 @@
 @import './components/eventPage.scss';
 @import './components/modal.scss';
 @import './components/recommendation.scss';
+@import './components/layout.scss';
 
 #__next,
 .home {
+  direction: rtl;
   @extend %Secular;
   background: $black;
   // overflow-x: hidden;
