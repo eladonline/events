@@ -1,0 +1,48 @@
+.product {
+  &__gallery {
+    background: rgba(black, 0.2);
+    border-bottom: 1px solid rgba(gray, 0.2);
+    padding: 5em 3em;
+    &__gallery {
+      @extend .notMobile;
+    }
+    &__cube {
+      @extend .mobileOnly;
+    }
+  }
+  .grid {
+    padding: 4em 0em;
+    .product__header {
+      color: white;
+      margin: 3em 0 0 0;
+      text-align: center;
+      @extend %fs48;
+    }
+    .product__prodacts-cards {
+      padding: 10em 0;
+      @include grid(1em, flex-start, flex-start, 1fr, auto);
+      @include sm {
+        @include grid(1em, flex-start, flex-start, 1fr 1fr, auto);
+      }
+      &__item {
+        height: 400px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: white;
+        @extend %fs32;
+        list-style: none;
+        @include flex-column(center, center);
+        cursor: pointer;
+        transition: 300ms ease-out;
+        border-radius: 7px;
+        &:hover {
+          @extend %fs40;
+          z-index: 1;
+          box-shadow: 0 0 8px $red;
+        }
+      }
+    }
+  }
+}

@@ -15,6 +15,8 @@ $menu-tabs-width: 130px;
 
   &[data-top="true"] {
     .ant-menu {
+      box-shadow: 0px -0px 10px 0px rgba(black, 0.8);
+
       .ant-menu-item {
         padding: 1em 2em;
       }
@@ -67,7 +69,7 @@ $menu-tabs-width: 130px;
   .ant-menu-sub {
     background: $black !important;
     padding: 0.5em !important;
-    box-shadow: 0px 0px 12px .3px rgba(white,.2);
+    box-shadow: 0px 0px 12px 0.3px rgba(white, 0.2);
     &:not(.ant-menu-hidden) {
       @include flex-column();
     }
@@ -86,17 +88,17 @@ $menu-tabs-width: 130px;
     }
   }
 }
-    .ant-menu-item {
-      width: 100%;
-  
-      text-align: right;
-      @extend %Varela;
-      background: $black;
-      color: white;
-      &-active {
-        color: $red !important;
-      }
-    }
+.ant-menu-item {
+  width: 100%;
+
+  text-align: right;
+  @extend %Varela;
+  background: $black;
+  color: white;
+  &-active {
+    color: $red !important;
+  }
+}
 
 .ant-menu-submenu-popup {
   background: $black !important;
