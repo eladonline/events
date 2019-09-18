@@ -17,10 +17,10 @@ class Navbar extends PureComponent {
       const distance = distanceMeasure(navbar, "top");
       this.setState({ top: distance });
     });
+    this.setState({ cartItems: getItemsFromStorage().length });
   };
   componentDidUpdate(prevProps) {
     if (prevProps.addCartTrigger !== this.props.addCartTrigger) {
-      console.log(getItemsFromStorage().length)
       this.setState({ cartItems: getItemsFromStorage().length });
     }
   }

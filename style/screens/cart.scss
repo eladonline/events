@@ -1,0 +1,10 @@
+.cart {
+  header {
+    padding: 5em 0 3em 0;
+    text-align: center;
+  }
+}
+
+.cart-item-card {
+    @include grid('0', flex-start,flex-start, 1fr 1fr 1fr,1fr)
+}
