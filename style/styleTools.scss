@@ -403,7 +403,7 @@ button:disabled {
 
 // Logo
 .logo {
-  @include div-is-img("/static/image/logo.png");
+  @include div-is-img("/static/image/logo.jpg");
   width: 100px;
   height: 100px;
 }

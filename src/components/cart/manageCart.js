@@ -16,7 +16,7 @@ export const saveInStorage = ({ background, description, id, service }) => {
 // get cart items from storage
 export const getItemsFromStorage = () => {
   let items = localStorage.getItem("cart");
-  return JSON.parse(items);
+  return items ? JSON.parse(items) : [];
 };
 // delete by index from storage
 export const deleteItemsFromStorage = index => {

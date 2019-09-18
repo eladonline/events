@@ -3,8 +3,35 @@
     padding: 5em 0 3em 0;
     text-align: center;
   }
+  section {
+    color: white;
+    @extend %fs18;
+    margin-bottom: 5em;
+  }
 }
 
 .cart-item-card {
-    @include grid('0', flex-start,flex-start, 1fr 1fr 1fr,1fr)
+  margin: 1em 0;
+
+  @include grid(0, flex-start, center, 1fr , 1fr);
+  @include sm {
+    @include grid(0, center, center, 1fr 1fr 1fr, 1fr);
+  }
+  @include md {
+    @include grid(0, flex-start, center, 1fr 1fr 1fr 1fr 1fr 1fr, auto);
+  }
+  border: 1px solid white;
+  li {
+    padding: 1em;
+    text-align: center;
+    @include flex-column(center, center);
+    height: 100%;
+    border: 1px solid white;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    min-width: 220px;
+    height: 180px;
+  }
 }

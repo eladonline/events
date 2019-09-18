@@ -1,7 +1,12 @@
 // the mask
 .modal-card-dialog {
   z-index: 15555;
+  // the modal card
+  .ant-modal {
+    margin-bottom: 3em;
+  }
 }
+
 // the container that wrap the title and content
 .modal-card-container {
   direction: rtl;
@@ -36,6 +41,6 @@
   color: white;
   @extend .text-shadow;
   @extend %fs20;
-  background-size:cover;
-  background-repeat:no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

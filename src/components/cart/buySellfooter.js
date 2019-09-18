@@ -3,6 +3,7 @@ import { saveInStorage } from "./manageCart";
 const handleAddToCart = (data, trigger) => {
   saveInStorage(data);
   trigger(true);
+  alert("נוסף לעגלה")
 };
 
 const BuySellFooter = ({ data, triggerAddCart }) => {

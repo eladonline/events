@@ -40,7 +40,6 @@ export class SwiperCoverFlow extends React.Component {
     };
     return (
       <Swiper {...params}>
-        {console.log(this.props)}
         {parseSlides(this.props.list)}
       </Swiper>
     );

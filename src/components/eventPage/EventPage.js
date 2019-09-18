@@ -41,6 +41,7 @@ const HeadAlist = ({ header, list, triggerAddCart }) => {
         <Modal
           key={`event_${i}_${props.service}`}
           {...props}
+          title={props.service}
           detailes={<CardDetailes {...props.description.detailes} />}
           triggerAddCart={triggerAddCart}
         />

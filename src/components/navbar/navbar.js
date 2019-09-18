@@ -1,10 +1,11 @@
-import { Menu, Icon } from "antd";
 import React, { PureComponent } from "react";
+import { Menu } from "antd";
 import Link from "next/link";
 import { distanceMeasure } from "src/components/helpers";
 import Router from "next/router";
 import data from "src/data/navbar.json";
 import { getItemsFromStorage } from "../cart/manageCart";
+import CartIcon from "./cartIcon";
 
 const SubMenu = Menu.SubMenu;
 
@@ -33,7 +34,7 @@ class Navbar extends PureComponent {
     const { current, top } = this.state;
     return (
       <div className="menu-navbar" data-top={top === 0}>
-        {this.state.cartItems}
+        <CartIcon nItems={this.state.cartItems} />
         <Menu
           onClick={this.handleClick}
           selectedKeys={[current]}

@@ -1,0 +1,19 @@
+.cart-icon {
+    cursor: pointer;
+    position: absolute;
+    color:white;
+    top:25px;
+    left:25px;
+    z-index: 3;
+    font-size:45px;
+    span {
+        position: absolute;
+        top:8px;
+        left:25px;
+        @extend %fs14;
+        line-height:0;
+        padding: 10px 5.5px;
+        border-radius:50%;
+        background: $red;
+    }
+}
