@@ -1,0 +1,48 @@
+{
+  "hero": {
+    "src": "/static/image/staticPages/oculus.jpg",
+    "head": "בקרים"
+  },
+  "services": {
+    "base": [
+      {
+        "service": "בקר htc",
+        "id": "2221AM-HV-controller",
+        "background": "/static/image/services/accessories/controllers/htc_min.jpg",
+        "description": {
+          "text": "בקר שליטה למשקפי מציאות מדומה מסוג htc.",
+          "detailes": {
+            "manufacture": "HTC vive",
+            "mfctrUrl": "https://www.vive.com/us/",
+            "supplyTime": 20,
+            "warranty": 1,
+            "price": 3788
+          }
+        },
+        "img": [{ "src": "/static/image/services/accessories/controllers/htc_min.jpg" }]
+      },
+      {
+        "service": "Oculus quest",
+        "id": "1112AM-OC",
+        "background": "/static/image/services/oculus/oculus_quest_min.jpg",
+        "description": {
+          "text": "משקפיים עם מחשב מובנה, מומלץ לכל מי שאין לו מחשב מוכן VR. אין צורך במחשב תומך.",
+          "detailes": {
+            "manufacture": "oculus",
+            "mfctrUrl": "https://www.oculus.com/",
+            "supplyTime": 7,
+            "warranty": 1,
+            "price": 3788
+          }
+        },
+        "img": [
+          { "src": "/static/image/services/oculus/plays_q.png" },
+          { "src": "/static/image/services/oculus/plays_q_2.png" },
+          { "src": "/static/image/services/oculus/plays_q_3.png" },
+          { "src": "/static/image/services/oculus/plays_q_4.png" },
+          { "src": "/static/image/services/oculus/plays_q_5.png" }
+        ]
+      }
+    ]
+  }
+}

@@ -1,4 +1,7 @@
-import { Modal } from 'antd';
+import { Modal } from "antd";
+import { SwiperCube } from "../swiper/swiper";
+import BuySellFooter from "../cart/buySellfooter";
+
 export default class ModalCard extends React.Component {
   state = { visible: false };
 
@@ -21,11 +24,23 @@ export default class ModalCard extends React.Component {
   };
 
   render() {
-    const { title, text, img, background } = this.props;
+    const {
+      title,
+      description,
+      img,
+      background,
+      detailes,
+      triggerAddCart
+    } = this.props;
     const { visible } = this.state;
     return (
       <div>
-        <button style={{backgroundImage: `url(${background})`}} className="modal-button-card" type="primary" onClick={this.showModal}>
+        <button
+          style={{ backgroundImage: `url(${background})` }}
+          className="modal-button-card"
+          type="primary"
+          onClick={this.showModal}
+        >
           {title}
         </button>
         <Modal
@@ -36,8 +51,10 @@ export default class ModalCard extends React.Component {
           wrapClassName="modal-card-dialog"
           className="modal-card-container"
         >
-          <p>{text}</p>
-          {img && <img src={img} alt='product'/>}
+          <p>{description.text}</p>
+          <div className="m-t-b-2">{img && <SwiperCube list={img} />}</div>
+          {detailes}
+          <BuySellFooter triggerAddCart={triggerAddCart} data={this.props} />
         </Modal>
       </div>
     );

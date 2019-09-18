@@ -17,15 +17,15 @@ $menu-tabs-width: 130px;
     .ant-menu {
       box-shadow: 0px -0px 10px 0px rgba(black, 0.8);
 
-      .ant-menu-item {
-        padding: 1em 2em;
-      }
+      // .ant-menu-item {
+      //   padding: 1em 2em;
+      // }
     }
-    .ant-menu-submenu {
-      .ant-menu-submenu-title {
-        padding: 1em 2em;
-      }
-    }
+    // .ant-menu-submenu {
+    //   .ant-menu-submenu-title {
+    //     padding: 1em 2em;
+    //   }
+    // }
   }
   .ant-menu {
     position: relative;
@@ -37,8 +37,8 @@ $menu-tabs-width: 130px;
       cursor: pointer;
       &[data-top="true"] {
         transition: 0.3s;
-        height: 70px;
-        width: 70px;
+        // height: 70px;
+        // width: 70px;
       }
     }
 

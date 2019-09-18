@@ -7,10 +7,24 @@
     "base": [
       {
         "service": "Pimax 5K",
+        "id": "1111AM-PX",
         "background": "/static/image/services/pimax/pimax_min.jpg",
         "description": {
-          "text": "המשקפיים מצטיינות באיכות מסך גבוהה, ראיה רחבה ביותר, וקצב רענון מסך מומלצות לאנשים שאוהבים חדות, דרוש מחשב תומך"
-        }
+          "text": "המשקפיים מצטיינות באיכות מסך גבוהה, ראיה רחבה ביותר, וקצב רענון מסך מומלצות לאנשים שאוהבים חדות, דרוש מחשב תומך",
+          "detailes": {
+            "manufacture": "Pimax",
+            "mfctrUrl": "https://pimaxvr.com/",
+            "supplyTime": 7,
+            "warranty": 1,
+            "price": 3788
+          }
+        },
+        "img": [
+          { "src": "/static/image/services/pimax/plays.jpg" },
+          { "src": "/static/image/services/pimax/plays_2.jpg" },
+          { "src": "/static/image/services/pimax/plays_3.jpg" },
+          { "src": "/static/image/services/pimax/plays_4.jpg" }
+        ]
       }
     ]
   }

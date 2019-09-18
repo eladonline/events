@@ -7,17 +7,45 @@
     "base": [
       {
         "service": "Oculus risf s",
+        "id": "1111AM-OC",
         "background": "/static/image/services/oculus/oculus_rift_min.jpg",
         "description": {
-          "text": "משקפיים באיכות מעולה במחיר שמתאים לכל כיס. אנו ממליצים לכל מי שרוצה ליהנות מהיכולות של מציאות מדומה במחיר סביר. דרוש מחשב תומך."
-        }
+          "text": "משקפיים באיכות מעולה במחיר שמתאים לכל כיס. אנו ממליצים לכל מי שרוצה ליהנות מהיכולות של מציאות מדומה במחיר סביר. דרוש מחשב תומך.",
+          "detailes": {
+            "manufacture": "oculus",
+            "mfctrUrl": "https://www.oculus.com/",
+            "supplyTime": 7,
+            "warranty": 1,
+            "price": 3788
+          }
+        },
+        "img": [
+          { "src": "/static/image/services/oculus/plays_r.jpg" },
+          { "src": "/static/image/services/oculus/plays_r_2.png" },
+          { "src": "/static/image/services/oculus/plays_r_3.png" }
+        ]
       },
       {
         "service": "Oculus quest",
+        "id": "1112AM-OC",
         "background": "/static/image/services/oculus/oculus_quest_min.jpg",
         "description": {
-          "text": "משקפיים עם מחשב מובנה, מומלץ לכל מי שאין לו מחשב מוכן VR. אין צורך במחשב תומך."
-        }
+          "text": "משקפיים עם מחשב מובנה, מומלץ לכל מי שאין לו מחשב מוכן VR. אין צורך במחשב תומך.",
+          "detailes": {
+            "manufacture": "oculus",
+            "mfctrUrl": "https://www.oculus.com/",
+            "supplyTime": 7,
+            "warranty": 1,
+            "price": 3788
+          }
+        },
+        "img": [
+          { "src": "/static/image/services/oculus/plays_q.png" },
+          { "src": "/static/image/services/oculus/plays_q_2.png" },
+          { "src": "/static/image/services/oculus/plays_q_3.png" },
+          { "src": "/static/image/services/oculus/plays_q_4.png" },
+          { "src": "/static/image/services/oculus/plays_q_5.png" }
+        ]
       }
     ]
   }

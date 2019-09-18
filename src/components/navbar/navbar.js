@@ -4,12 +4,13 @@ import Link from "next/link";
 import { distanceMeasure } from "src/components/helpers";
 import Router from "next/router";
 import data from "src/data/navbar.json";
+import { getItemsFromStorage } from "../cart/manageCart";
 
 const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
 
 class Navbar extends PureComponent {
-  state = { current: "", top: false };
+  state = { current: "", top: false, cartItems: 0 };
+
   componentDidMount = () => {
     const navbar = document.querySelector(".menu-navbar");
     document.addEventListener("scroll", () => {
@@ -17,6 +18,12 @@ class Navbar extends PureComponent {
       this.setState({ top: distance });
     });
   };
+  componentDidUpdate(prevProps) {
+    if (prevProps.addCartTrigger !== this.props.addCartTrigger) {
+      console.log(getItemsFromStorage().length)
+      this.setState({ cartItems: getItemsFromStorage().length });
+    }
+  }
   handleClick = e => {
     const { key } = e;
     Router.push(`/${key}`);
@@ -26,6 +33,7 @@ class Navbar extends PureComponent {
     const { current, top } = this.state;
     return (
       <div className="menu-navbar" data-top={top === 0}>
+        {this.state.cartItems}
         <Menu
           onClick={this.handleClick}
           selectedKeys={[current]}
@@ -33,9 +41,11 @@ class Navbar extends PureComponent {
         >
           {data.menusWithSubMenus.map(item => {
             return (
-              <SubMenu title={item.title}>
+              <SubMenu key={item.title} title={item.title}>
                 {item.subMenuItems.map(subItem => {
-                  return <Menu.Item key={subItem.link}>{subItem.title}</Menu.Item>;
+                  return (
+                    <Menu.Item key={subItem.link}>{subItem.title}</Menu.Item>
+                  );
                 })}
               </SubMenu>
             );

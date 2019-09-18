@@ -1,0 +1,10 @@
+.buy-sell-footer {
+    width: 100%;
+    @include flex-row(space-around);
+    margin-top:3em;
+    div {
+        @extend %btnDark;
+        background: $gradient-reverse;
+        box-shadow:0px 0px 5px  $black;
+    }
+}

@@ -7,10 +7,25 @@
     "base": [
       {
         "service": "Htc vive pro",
+        "id": "1111AM-HV",
         "background": "/static/image/services/htc/htc_vive_min.jpg",
         "description": {
-          "text": "משקפיים עוצמתיות עם זיהוי תנועה חיצוני ע''י שימוש במצלמות עם חיישני תנועה אנו ממליצים לכל מי שאוהב עוצמה ואיכות ומוכן להשקיע לשם כך. למשקפיים אלו זיהוי התנועה הטוב ביותר בשוק כרגע. דרוש מחשב תומך."
-        }
+          "text": "משקפיים עוצמתיות עם זיהוי תנועה ע''י שימוש במצלמות עם חיישני תנועה אנו ממליצים לכל מי שאוהב עוצמה ואיכות ומוכן להשקיע לשם כך. למשקפיים אלו זיהוי התנועה הטוב ביותר בשוק כרגע. דרוש מחשב תומך.",
+          "detailes": {
+            "manufacture": "HTC, Valve",
+            "mfctrUrl": "https://www.vive.com/us/",
+            "supplyTime": 7,
+            "warranty": 1,
+            "price": 3788
+          }
+        },
+        "img": [
+          { "src": "/static/image/services/htc/plays.png" },
+          { "src": "/static/image/services/htc/plays_2.jpg" },
+          { "src": "/static/image/services/htc/plays_3.jpg" },
+          { "src": "/static/image/services/htc/plays_4.jpg" },
+          { "src": "/static/image/services/htc/plays_5.jpg" }
+        ]
       }
     ]
   }

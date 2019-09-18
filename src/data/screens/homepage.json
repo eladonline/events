@@ -23,13 +23,8 @@
       "text": "לאיכות תמונה גבוהה.",
       "src": "/static/image/carousel/pimax_carousle.webp",
       "link": "/pimax"
-    },
-    {
-      "head": "מחשבים מוכני מציאות מדומה",
-      "text": "מחשבים עוצמתיים להרצת מציאות מדומה.",
-      "src": "/static/image/carousel/vr_computer_carousle.jpg",
-      "link": "/vr-computers"
     }
+ 
   ],
   "recommends": [
     {

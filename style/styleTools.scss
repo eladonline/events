@@ -1,5 +1,5 @@
-@import url('//fonts.googleapis.com/css?family=Secular+One|Varela+Round');
-@import './colors.scss';
+@import url("//fonts.googleapis.com/css?family=Secular+One|Varela+Round");
+@import "./colors.scss";
 
 $button-font-size: 16px !default;
 //App
@@ -8,6 +8,7 @@ $button-font-size: 16px !default;
 //////////////////////
 
 $gradient: linear-gradient(90deg, $red 15%, $purple 90%);
+$gradient-reverse: linear-gradient(90deg, $purple 15%, $red 90%);
 
 /////////////////
 // Mixins
@@ -298,6 +299,7 @@ $gradient: linear-gradient(90deg, $red 15%, $purple 90%);
   @extend %btnBase;
   background: $gradient;
   width: 150px;
+  transition:250ms linear;
   color: white;
   &:hover {
     background: darken($red, 20%);
@@ -401,19 +403,23 @@ button:disabled {
 
 // Logo
 .logo {
-  @include div-is-img('/static/image/logo.png');
+  @include div-is-img("/static/image/logo.png");
   width: 100px;
   height: 100px;
 }
 .text-shadow {
   text-shadow: 1px 2px 5px black;
 }
-$rightColorOpacity:0.18;
-$leftColorOpacity:0.37;
+$rightColorOpacity: 0.18;
+$leftColorOpacity: 0.37;
 
 .gradient-background-faded {
   background: rgba(67, 31, 121, $leftColorOpacity);
-  background: -moz-linear-gradient(left, rgba(67, 31, 121, $leftColorOpacity) 0%, rgba(218, 59, 53, $rightColorOpacity) 100%);
+  background: -moz-linear-gradient(
+    left,
+    rgba(67, 31, 121, $leftColorOpacity) 0%,
+    rgba(218, 59, 53, $rightColorOpacity) 100%
+  );
   background: -webkit-gradient(
     left top,
     right top,
@@ -425,14 +431,29 @@ $leftColorOpacity:0.37;
     rgba(67, 31, 121, $leftColorOpacity) 0%,
     rgba(218, 59, 53, $rightColorOpacity) 100%
   );
-  background: -o-linear-gradient(left, rgba(67, 31, 121, $leftColorOpacity) 0%, rgba(218, 59, 53, $rightColorOpacity) 100%);
-  background: -ms-linear-gradient(left, rgba(67, 31, 121, $leftColorOpacity) 0%, rgba(218, 59, 53, $rightColorOpacity) 100%);
-  background: linear-gradient(to right, rgba(67, 31, 121, $leftColorOpacity) 0%, rgba(218, 59, 53, $rightColorOpacity) 100%);
+  background: -o-linear-gradient(
+    left,
+    rgba(67, 31, 121, $leftColorOpacity) 0%,
+    rgba(218, 59, 53, $rightColorOpacity) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(67, 31, 121, $leftColorOpacity) 0%,
+    rgba(218, 59, 53, $rightColorOpacity) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(67, 31, 121, $leftColorOpacity) 0%,
+    rgba(218, 59, 53, $rightColorOpacity) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#431f79', endColorstr='#da3b35', GradientType=1 );
 }
-
 
 .background-provider {
   position: relative;
   background: $black;
+}
+
+.m-t-b-2 {
+  margin: 2em 0;
 }

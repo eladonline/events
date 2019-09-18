@@ -4,11 +4,11 @@
  * @param {String, Array} side top/right/bottom/left
  * @return {Object, Number} the distance of the element from the side
  */
-export const distanceMeasure = (el, sides = 'top') => {
-  if (el === null) throw Error('the element is null');
+export const distanceMeasure = (el, sides = "top") => {
+  if (el === null) throw Error("the element is null");
 
   const viewportOffset = el.getBoundingClientRect();
-  if (typeof sides === 'string') {
+  if (typeof sides === "string") {
     return viewportOffset[sides];
   } else if (Array.isArray(sides)) {
     const oSidesDistance = {};
@@ -17,11 +17,9 @@ export const distanceMeasure = (el, sides = 'top') => {
     });
     return oSidesDistance;
   } else {
-    throw Error('sides propery have to be: string/array');
+    throw Error("sides propery have to be: string/array");
   }
 };
-
-
 
 /**
  * @function strLengthSlicer
@@ -35,7 +33,7 @@ export const strLengthSlicer = (str, maxLength, dots = true) => {
   if (strToLong) {
     str = str.slice(0, maxLength);
   }
-  if (typeof dots === 'string' && strToLong) {
+  if (typeof dots === "string" && strToLong) {
     str = `${str}${dots}`;
   }
   if (dots === true && strToLong) {
@@ -43,3 +41,6 @@ export const strLengthSlicer = (str, maxLength, dots = true) => {
   }
   return str;
 };
+
+export const priceFormatter = number =>
+  new Intl.NumberFormat("en-IN", {}).format(number);

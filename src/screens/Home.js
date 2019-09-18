@@ -18,9 +18,18 @@ export default class Homepage extends Component {
           <Carousle slide={Slide} slides={carousleData.serviceSlides} />
           <Teaser />
           {/* <Recommendation data={carousleData} /> */}
-          <Gallery list={carousleData.gallery} />
+          {/* <Gallery list={carousleData.gallery} /> */}
         </div>
       </div>
     );
   }
 }
+
+
+// data for computer
+   // {
+    //   "head": "מחשבים מוכני מציאות מדומה",
+    //   "text": "מחשבים עוצמתיים להרצת מציאות מדומה.",
+    //   "src": "/static/image/carousel/vr_computer_carousle.jpg",
+    //   "link": "/vr-computers"
+    // }

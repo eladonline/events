@@ -16,6 +16,8 @@
 @import './components/modal.scss';
 @import './components/recommendation.scss';
 @import './components/layout.scss';
+@import './components/templates/cardDetailes.scss';
+@import './components/BuySellFooter.scss';
 
 #__next,
 .home {
@@ -24,7 +26,9 @@
   background: $black;
   // overflow-x: hidden;
 }
-
+li {
+  list-style: none;
+}
 header {
   h1 {
     color: white;

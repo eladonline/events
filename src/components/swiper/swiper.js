@@ -1,10 +1,9 @@
-import React from 'react';
-import Swiper from 'react-id-swiper';
-
+import React from "react";
+import Swiper from "react-id-swiper";
 
 const parseSlides = list => {
   if (list)
-    return list.map(({src}) => {
+    return list.map(({ src }) => {
       return <img key={src} src={src} className="swiper__item" />;
     });
 };
@@ -12,12 +11,16 @@ const parseSlides = list => {
 export class SwiperCoverFlow extends React.Component {
   render() {
     const params = {
-      effect: 'coverflow',
+      effect: "coverflow",
       grabCursor: true,
       centeredSlides: true,
       loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false
+      },
       initialSlide: 1,
-      slidesPerView: '2',
+      slidesPerView: "2",
       coverflowEffect: {
         rotate: 50,
         stretch: 0,
@@ -26,7 +29,7 @@ export class SwiperCoverFlow extends React.Component {
         slideShadows: true
       },
       pagination: {
-        el: '.swiper-pagination'
+        el: ".swiper-pagination"
       },
       breakpoints: {
         // when window width is <= 640px
@@ -45,13 +48,12 @@ export class SwiperCoverFlow extends React.Component {
 }
 
 export class SwiperCube extends React.Component {
-
   render() {
     const params = {
-      effect: 'cube',
-      speed: 500,
+      effect: "cube",
+      speed: 800,
       grabCursor: true,
-      loop: true,
+      loop: this.props.list.length > 1,
       autoplay: {
         delay: 2000,
         disableOnInteraction: false
@@ -63,7 +65,7 @@ export class SwiperCube extends React.Component {
         shadowScale: 0.94
       },
       pagination: {
-        el: '.swiper-pagination'
+        el: ".swiper-pagination"
       }
     };
     return <Swiper {...params}>{parseSlides(this.props.list)}</Swiper>;

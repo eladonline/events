@@ -1,0 +1,28 @@
+{
+  "hero": "עזרים למציאות מדומה",
+  "cube": [
+    { "src": "/static/image/accessories/controllers.jpg" },
+    { "src": "/static/image/accessories/controllers_oculus.jpeg" },
+    { "src": "/static/image/accessories/stand_controllers.jpg" },
+    { "src": "/static/image/accessories/controllers_grip.webp" },
+    { "src": "/static/image/accessories/vr_stand_2.jpg" },
+    { "src": "/static/image/accessories/stand_vr.jpg" }
+  ],
+  "products": [
+    {
+      "url": "accessories/controllers",
+      "img": "/static/image/accessories/controllers_oculus.jpeg",
+      "name": "בקרים"
+    },
+    {
+      "url": "accessories/stands",
+      "img": "/static/image/accessories/vr_stand_2.jpg",
+      "name": "מעמדים"
+    },
+    {
+      "url": "accessories/general-accessories",
+      "img": "/static/image/accessories/controllers_grip.webp",
+      "name": "אביזרים כלליים"
+    }
+  ]
+}

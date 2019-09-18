@@ -2,17 +2,31 @@ import React, { useState, useEffect } from "react";
 import Hero from "../ServicePage/Hero";
 import Navbar from "src/components/navbar/navbar.js";
 import Modal from "src/components/modal/ModalCard";
+import CardDetailes from "../templates/cardDetailes";
 
 const EventPage = ({ hero, services }) => {
+  const [addToCart, setAddToCart] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  }, []);
+
+  useEffect(() => {
+    if (addToCart)
+      setTimeout(() => {
+        setAddToCart(false);
+      }, 500);
+  }, [addToCart]);
+
   return (
     <div className="event-page">
       <Hero {...hero} />
       <div className="background-provider">
-        <Navbar />
-        <HeadAlist header="סוגי מוצרים!" list={services.base} />
+        <Navbar addCartTrigger={addToCart} />
+        <HeadAlist
+          triggerAddCart={setAddToCart}
+          header="סוגי מוצרים!"
+          list={services.base}
+        />
       </div>
     </div>
   );
@@ -20,20 +34,15 @@ const EventPage = ({ hero, services }) => {
 
 export default EventPage;
 
-const HeadAlist = ({ header, list }) => {
-  /**
-   *
-   * @param {array} list - of objects {service: 'צלם מגנטים', description: 'שנים'}
-   */
+const HeadAlist = ({ header, list, triggerAddCart }) => {
   const parseList = list => {
-    return list.map(({ service, description, background }, i) => {
+    return list.map((props, i) => {
       return (
         <Modal
-          key={`event_${i}_${service}`}
-          title={service}
-          text={description.text}
-          img={description.spec}
-          background={background}
+          key={`event_${i}_${props.service}`}
+          {...props}
+          detailes={<CardDetailes {...props.description.detailes} />}
+          triggerAddCart={triggerAddCart}
         />
       );
     });
