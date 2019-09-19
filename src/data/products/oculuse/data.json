@@ -6,6 +6,7 @@
   "services": {
     "base": [
       {
+        "page":"oculus",
         "service": "Oculus risf s",
         "id": "1111AM-OC",
         "background": "/static/image/services/oculus/oculus_rift_min.jpg",
@@ -26,6 +27,7 @@
         ]
       },
       {
+        "page":"oculus",
         "service": "Oculus quest",
         "id": "1112AM-OC",
         "background": "/static/image/services/oculus/oculus_quest_min.jpg",

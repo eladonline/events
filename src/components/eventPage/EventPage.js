@@ -7,7 +7,9 @@ import CardDetailes from "../templates/cardDetailes";
 const EventPage = ({ hero, services }) => {
   const [addToCart, setAddToCart] = useState(false);
   useEffect(() => {
-    window.scrollTo(0, 0);
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 300);
   }, []);
 
   useEffect(() => {

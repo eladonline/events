@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Navbar from "../../components/navbar/navbar";
 import { SwiperCoverFlow, SwiperCube } from "../../components/swiper/swiper";
 import Link from "next/link";
 const ProductPage = ({ data }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="product">
       <Navbar />
@@ -30,14 +33,14 @@ const ProductCards = ({ list }) => {
   return list.map((item, i) => {
     return (
       <React.Fragment key={`ProductCards${i}`}>
-      <Link  href={item.url}>
-        <li
-          className="product__prodacts-cards__item"
-          style={{ backgroundImage: `url(${item.img})` }}
-        >
-          {item.name}
-        </li>
-      </Link>
+        <Link href={item.url}>
+          <li
+            className="product__prodacts-cards__item"
+            style={{ backgroundImage: `url(${item.img})` }}
+          >
+            {item.name}
+          </li>
+        </Link>
       </React.Fragment>
     );
   });

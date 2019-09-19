@@ -16,7 +16,9 @@ class Navbar extends PureComponent {
     const navbar = document.querySelector(".menu-navbar");
     document.addEventListener("scroll", () => {
       const distance = distanceMeasure(navbar, "top");
-      this.setState({ top: distance });
+
+      if (distance === 0 && !this.state.top) this.setState({ top: true });
+      else if (distance > 0 && this.state.top) this.setState({ top: false });
     });
     this.setState({ cartItems: getItemsFromStorage().length });
   };
@@ -33,7 +35,7 @@ class Navbar extends PureComponent {
   render() {
     const { current, top } = this.state;
     return (
-      <div className="menu-navbar" data-top={top === 0}>
+      <div className="menu-navbar" data-top={top}>
         <CartIcon nItems={this.state.cartItems} />
         <Menu
           onClick={this.handleClick}
@@ -54,7 +56,7 @@ class Navbar extends PureComponent {
 
           <Link href="/">
             <div
-              data-top={top === 0}
+              data-top={top }
               className="menu-navbar__ant-menu__logo logo"
             />
           </Link>

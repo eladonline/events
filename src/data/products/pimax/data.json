@@ -6,6 +6,7 @@
   "services": {
     "base": [
       {
+        "page":"pimax",
         "service": "Pimax 5K",
         "id": "1111AM-PX",
         "background": "/static/image/services/pimax/pimax_min.jpg",

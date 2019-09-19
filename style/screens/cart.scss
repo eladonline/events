@@ -1,19 +1,37 @@
+//Cart\\
 .cart {
   header {
     padding: 5em 0 3em 0;
-    text-align: center;
+    // text-align: center;
   }
   section {
     color: white;
     @extend %fs18;
     margin-bottom: 5em;
   }
-}
+  // Empty cart \\
+  .cart-is-empty {
+    @extend %fs24;
+  }
+  .cart-footer {
+    padding-top: 3em;
+    @include flex-row(space-around);
+    div {
+      @extend %btnDark;
 
+      &:last-child() {
+        &:hover {
+          background: darken($approved, 20%);
+        }
+      }
+    }
+  }
+}
+// CartItemCard \\
 .cart-item-card {
   margin: 1em 0;
 
-  @include grid(0, flex-start, center, 1fr , 1fr);
+  @include grid(0, flex-start, center, 1fr, 1fr);
   @include sm {
     @include grid(0, center, center, 1fr 1fr 1fr, 1fr);
   }
@@ -33,5 +51,26 @@
     width: 100%;
     min-width: 220px;
     height: 180px;
+  }
+}
+// QuantityEl \\
+
+.quantity-el {
+  height: 100%;
+  @include flex-column(center, center);
+  li {
+    border: none;
+    height: unset;
+  }
+  footer {
+    @include flex-row(center, center);
+    i {
+      padding: 0.1em 0.5em;
+      cursor: pointer;
+      margin: 0 1em;
+      &:hover {
+        color: $red;
+      }
+    }
   }
 }

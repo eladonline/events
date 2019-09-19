@@ -1,6 +1,6 @@
 import { Modal } from "antd";
 import { SwiperCube } from "../swiper/swiper";
-import BuySellFooter from "../cart/buySellfooter";
+import BuySellFooter from './buySellfooter';
 
 export default class ModalCard extends React.Component {
   state = { visible: false };

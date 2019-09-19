@@ -6,6 +6,7 @@
   "services": {
     "base": [
       {
+        "page":"valve-index",
         "service": "Valve index",
         "id":"1111AM-VI",
         "background": "/static/image/services/valve/valve_index_min.jpg",

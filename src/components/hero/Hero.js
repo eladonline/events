@@ -4,8 +4,8 @@ const Hero = () => {
     <div className="hero">
       <div className="hero__overlay">
         <header>
-          <h1>חנות וירטואלית למציאות מדומה</h1>
-          <h2>הראשונה בישראל</h2>
+          <h1>VR-Era</h1>
+          <h2>חנות למציאות מדומה</h2>
         </header>
       </div>
     </div>

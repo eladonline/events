@@ -8,7 +8,7 @@ const CardDetailesTemplate = ({
 }) => (
   <div className="card-detailes">
     <li>
-      יצרן:{" "}
+       יצרן ומידע נוסף:{" "}
       <a href={mfctrUrl} target="_blank">
         {manufacture}
       </a>{" "}

@@ -1,4 +1,4 @@
-import { saveInStorage } from "./manageCart";
+import { saveInStorage } from "../cart/manageCart";
 
 const handleAddToCart = (data, trigger) => {
   saveInStorage(data);

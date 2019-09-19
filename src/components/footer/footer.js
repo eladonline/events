@@ -1,9 +1,15 @@
-import Contact from './contactForm';
+import Contact from "./contactForm";
+import Link from "next/link";
+
 const Footer = () => {
   return (
-    <footer id='footer' className="footer">
-      <section className='grid'>
-        <div className='logo' />
+    <footer id="footer" className="footer">
+      <section className="grid">
+        <Link href="/">
+          <a>
+            <div className="logo" />
+          </a>
+        </Link>
         <header>
           <h4>צור איתנו קשר!</h4>
         </header>
@@ -16,7 +22,9 @@ const Footer = () => {
         </div>
       </section>
 
-      <div className="footer__rights">all right reserved to virtualRealityEra © </div>
+      <div className="footer__rights">
+        all right reserved to virtualRealityEra ©{" "}
+      </div>
     </footer>
   );
 };

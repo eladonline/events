@@ -1,7 +1,7 @@
 import CartItemCard from "./cartItemCard";
-import getQuantity from "./quantity";
+import getQuantity from "./quantityCount";
 
-const parseItemsFromCart = items => {
+const parseItemsFromCart = (items, setCartChange) => {
   const withQuantity = getQuantity(items);
   return withQuantity.map((item, i) => {
     return (
@@ -9,7 +9,7 @@ const parseItemsFromCart = items => {
         key={item.item.id}
         data={item.item}
         quantity={item.quantity}
-        index={i}
+        setCartChange={setCartChange}
       />
     );
   });
