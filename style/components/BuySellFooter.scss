@@ -1,6 +1,9 @@
 .buy-sell-footer {
   width: 100%;
-  @include flex-row(space-around);
+  @include flex-row(space-between);
+  @include sm {
+    @include flex-row(space-around);
+  }
   margin-top: 3em;
   div {
     @extend %btnDark;

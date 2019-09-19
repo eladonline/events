@@ -33,7 +33,7 @@ const ProductCards = ({ list }) => {
   return list.map((item, i) => {
     return (
       <React.Fragment key={`ProductCards${i}`}>
-        <Link href={item.url}>
+        <Link href={`/${item.url}`}>
           <li
             className="product__prodacts-cards__item"
             style={{ backgroundImage: `url(${item.img})` }}

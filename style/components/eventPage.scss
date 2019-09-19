@@ -9,7 +9,10 @@
     &__services {
       padding: 3em 1em;
       .grid {
-        @include grid(2em, initial, initial, repeat(2, 1fr), auto);
+        @include grid(2em, initial, initial, repeat(1, 1fr), auto);
+        @include sm {
+          @include grid(2em, initial, initial, repeat(2, 1fr), auto);
+        }
         @include md {
           @include grid(2em, initial, initial, repeat(4, 1fr), auto);
         }

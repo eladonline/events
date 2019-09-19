@@ -159,17 +159,13 @@ $gradient-reverse: linear-gradient(90deg, $purple 15%, $red 90%);
   font-size: 14px;
 }
 %fs16 {
-  font-size: 16px;
+  font-size: 12px;
   line-height: 18px;
   @include md {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 14px;
   }
   @include lg {
-    font-size: 14px;
-    line-height: 16px;
-  }
-  @include xl {
     font-size: 16px;
     line-height: 18px;
   }
@@ -277,7 +273,7 @@ $gradient-reverse: linear-gradient(90deg, $purple 15%, $red 90%);
 %btnBase {
   @extend %Varela;
   outline: none;
-  font-size: $button-font-size;
+  @extend %fs16;
   @include flex-row(center, center);
   border-radius: 6px;
   height: 43px;
@@ -298,8 +294,11 @@ $gradient-reverse: linear-gradient(90deg, $purple 15%, $red 90%);
 %btnDark {
   @extend %btnBase;
   background: $gradient;
-  width: 150px;
-  transition:250ms linear;
+  width: 120px;
+  @include sm {
+    width: 150px;
+  }
+  transition: 250ms linear;
   color: white;
   &:hover {
     background: darken($red, 20%);
@@ -327,12 +326,14 @@ button:disabled {
 // ANTD
 // /////////////
 .ant-form {
+  max-width: 100%;
   text-align: right;
   @include grid(1em, center, initial, auto, auto);
   @include md {
     @include grid(1em, initial, initial, auto auto, auto);
   }
   .ant-row {
+    max-width: 100%;
     width: 300px;
     height: 70px;
     @include md {
