@@ -57,7 +57,6 @@ module.exports = compose([
         }
       };
     },
-    target: 'serverless',
     webpack(config, options) {
       if (ANALYZE) {
         config.plugins.push(
