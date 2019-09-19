@@ -328,9 +328,9 @@ button:disabled {
 .ant-form {
   max-width: 100%;
   text-align: right;
-  @include grid(1em, center, initial, auto, auto);
-  @include md {
-    @include grid(1em, initial, initial, auto auto, auto);
+  @include grid(1em, center, initial, 1fr, auto);
+  @include sm {
+    @include grid(1em, initial, initial, 1fr 1fr, auto);
   }
   .ant-row {
     max-width: 500px;
@@ -365,7 +365,7 @@ button:disabled {
   }
   .textarea-container {
     display: grid;
-    @include md {
+    @include sm {
       grid-column: 1 / span 2;
     }
     .ant-row {
@@ -374,10 +374,10 @@ button:disabled {
   }
   button {
     display: grid;
-    @include md {
+    @include sm {
       grid-column: 1 / span 2;
     }
-    margin: auto;
+    margin: 30px auto ;
   }
 }
 // //////////////

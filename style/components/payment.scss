@@ -11,6 +11,11 @@
       @include grid(15px, flex-start, flex-start, 1fr 1fr 1fr, auto);
     }
     .btnDark.hover-green {
+        display: grid;
+        grid-column: 1 / span 2;
+        @include md {
+          grid-column: 1 / span 3;
+        }
     }
   }
 }
