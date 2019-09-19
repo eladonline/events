@@ -16,6 +16,7 @@ const DeliverForm = ({ form }) => {
   };
 
   return (
+      
     <Form id="delivery-form" onSubmit={handleSubmit}>
       <Form.Item colon={false} label="שם">
         {getFieldDecorator("name", {

@@ -6,6 +6,11 @@
     color: $approved;
   }
   #delivery-form {
-      @include grid(0px, flex-start,flex-start, 1fr 1fr 1fr, auto)
+    @include grid(0 15px, flex-start, flex-start, 1fr 1fr, auto);
+    @include sm {
+      @include grid(15px, flex-start, flex-start, 1fr 1fr 1fr, auto);
+    }
+    .btnDark.hover-green {
+    }
   }
 }
