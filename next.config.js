@@ -44,7 +44,18 @@ module.exports = compose([
     serverRuntimeConfig: _envConfig,
     exportPathMap: function() {
       return {
-        '/': { page: '/' }
+        '/': { page: '/' },
+        '/about': { page: '/about' },
+        '/pimax': { page: '/pimax' },
+        '/valve-index': { page: '/valve-index' },
+        '/oculus': { page: '/oculus' },
+        '/htc-vive': { page: '/htc-vive' },
+        '/cart': { page: '/cart' },
+        '/vr-glasss': { page: '/vr-glasss' },
+        '/vr-accessories': { page: '/vr-accessories' },
+        '/accessories/stands': { page: '/accessories/stands' },
+        '/accessories/controllers': { page: '/accessories/controllers' },
+        '/accessories/general-accessories': { page: '/accessories/general-accessories' },
       };
     },
     webpack(config, options) {

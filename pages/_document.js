@@ -2,7 +2,7 @@
 // Event handlers like onClick can't be added to this file
 
 // ./pages/_document.js
-import Document, { Head, Main, NextScript } from 'next/document';
+import Document, { Head, Main, NextScript } from "next/document";
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -17,12 +17,15 @@ export default class MyDocument extends Document {
           <meta charSet="utf-8" />
           <meta name="description" content="web designed" />
           <meta name="author" content="elad BA" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <Title />
           <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css"
           />
-          <title>אירועי חברה הפקת אירועים אטרקציות לאירועים צלם מגנטים מעצב אירועים</title>
           <style>{`body { margin: 0 }`}</style>
         </Head>
         <body>
@@ -33,3 +36,9 @@ export default class MyDocument extends Document {
     );
   }
 }
+
+const Title = () => (
+  <title>
+    חנות מציאות מדומה משקפי vr משקפי מציאות מדומה
+  </title>
+);
