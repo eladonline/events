@@ -9,9 +9,6 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 // const extractVendorCSSPlugin = new ExtractTextPlugin('static/vendor.css')
 const extractAppCSSPlugin = new ExtractTextPlugin("static/app.css");
 
-const _env = process.env.CONFIG_ENV || process.env.NODE_ENV || "development";
-const _envConfig = require("./src/logic/envConfig/web")(_env);
-
 module.exports = compose([
   [
     withLess,
@@ -60,6 +57,7 @@ module.exports = compose([
         }
       };
     },
+    target: 'serverless',
     webpack(config, options) {
       if (ANALYZE) {
         config.plugins.push(

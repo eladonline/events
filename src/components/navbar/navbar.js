@@ -55,10 +55,7 @@ class Navbar extends PureComponent {
           })}
 
           <Link href="/">
-            <div
-              data-top={top }
-              className="menu-navbar__ant-menu__logo logo"
-            />
+            <div data-top={top} className="menu-navbar__ant-menu__logo logo" />
           </Link>
 
           {data.menuItem.map(item => {
