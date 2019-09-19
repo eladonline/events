@@ -7,7 +7,7 @@ const ProductPage = ({ data }) => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="product">
+    <div className="product vr-glasss">
       <Navbar />
       <div className="product__gallery">
         <div className="product__gallery__gallery">

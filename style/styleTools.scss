@@ -458,3 +458,9 @@ $leftColorOpacity: 0.37;
 .m-t-b-2 {
   margin: 2em 0;
 }
+
+.hover-green {
+  &:hover {
+    background: darken($approved, 20%) !important;
+  }
+}

@@ -1,6 +1,6 @@
 import { quickeSaveToStorage } from "./manageCart";
 
-const CartFooter = ({setcartChange}) => {
+const CartFooter = ({ setcartChange, setIsPaymentState, paymentState }) => {
   const handelCleanCart = () => {
     setcartChange(true);
     quickeSaveToStorage([]);
@@ -8,7 +8,12 @@ const CartFooter = ({setcartChange}) => {
   return (
     <footer className="cart-footer">
       <div onClick={() => handelCleanCart()}>רוקן עגלה</div>
-      <div>המשך לקנייה</div>
+      <a href="#payment">
+        <div onClick={() => setIsPaymentState(!paymentState)}>
+          {" "}
+          {paymentState ? "סגור תשלום" : "המשך לתשלום"}
+        </div>
+      </a>
     </footer>
   );
 };

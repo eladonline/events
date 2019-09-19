@@ -1,6 +1,6 @@
 .event-page {
   &__container {
-    padding: 2em 0;
+    padding: 2em 0 0 0;
     position: relative;
     background: $black;
     z-index: 5;
@@ -8,6 +8,7 @@
     text-align: center;
     &__services {
       padding: 3em 1em;
+      background: $black-opacity;
       .grid {
         @include grid(2em, initial, initial, repeat(1, 1fr), auto);
         @include sm {

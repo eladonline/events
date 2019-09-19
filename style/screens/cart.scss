@@ -1,13 +1,17 @@
 //Cart\\
 .cart {
-  header {
+  > .grid > header {
     padding: 5em 0 3em 0;
     // text-align: center;
   }
-  section {
+  > .grid > section {
     color: white;
     @extend %fs18;
     margin-bottom: 5em;
+    .cart__total-pay {
+      text-align: end;
+      @extend %fs24;
+    }
   }
   // Empty cart \\
   .cart-is-empty {

@@ -9,8 +9,6 @@
     @extend %btnDark;
     background: $gradient-reverse;
     box-shadow: 0px 0px 5px $black;
-    &:hover {
-      background: darken($approved, 20%);
-    }
+ 
   }
 }

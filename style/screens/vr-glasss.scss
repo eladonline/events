@@ -3,6 +3,12 @@
     background: rgba(black, 0.2);
     border-bottom: 1px solid rgba(gray, 0.2);
     padding: 5em 3em;
+    .swiper-container {
+      height: 300px;
+      .swiper__item {
+        height: 300px;
+      }
+    }
     &__gallery {
       @extend .notMobile;
     }
@@ -14,12 +20,12 @@
     padding: 4em 0em;
     .product__header {
       color: white;
-      margin: 3em 0 0 0;
+      margin: 20px 0 0 0;
       text-align: center;
       @extend %fs48;
     }
     .product__prodacts-cards {
-      padding: 10em 0;
+      padding: 100px 0;
       @include grid(1em, flex-start, flex-start, 1fr, auto);
       @include sm {
         @include grid(1em, flex-start, flex-start, 1fr 1fr, auto);

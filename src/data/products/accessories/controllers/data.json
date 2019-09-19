@@ -6,6 +6,7 @@
   "services": {
     "base": [
       {
+        "page":"accessories/controllers",
         "service": "בקר htc",
         "id": "2221AM-HV-controller",
         "background": "/static/image/services/accessories/controllers/htc_min.jpg",
@@ -19,7 +20,11 @@
             "price": 3788
           }
         },
-        "img": [{ "src": "/static/image/services/accessories/controllers/htc_min.jpg" }]
+        "img": [
+          {
+            "src": "/static/image/services/accessories/controllers/htc_min.jpg"
+          }
+        ]
       },
       {
         "service": "Oculus quest",

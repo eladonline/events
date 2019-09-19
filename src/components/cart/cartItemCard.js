@@ -4,7 +4,6 @@ import { priceFormatter } from "../helpers";
 import QuantityEL from "./quantityEl";
 
 const CartItemCard = ({ data, quantity, setCartChange }) => {
-  console.log(data)
   return (
     <div className="cart-item-card">
       <Link href={`/${data.page}`}>
@@ -24,7 +23,7 @@ const CartItemCard = ({ data, quantity, setCartChange }) => {
       />
 
       <li>
-        זמן אספקה: <br /> {data.description.detailes.supplyTime}
+        זמן אספקה: <br /> {data.description.detailes.supplyTime} ימי עסקים
       </li>
 
       <li>

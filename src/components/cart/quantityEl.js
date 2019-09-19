@@ -38,7 +38,6 @@ const handleQuantityChange = (oItemData, bAction, setChange) => {
 };
 
 const sort = (a, b) => {
-  console.log(a, b, "a,b");
   const id1 = a.id;
   const id2 = b.id;
   if (id1 > id2) {

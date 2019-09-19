@@ -1,0 +1,11 @@
+.payment {
+  background: $black-opacity;
+  border-radius: 4px;
+  padding: 30px 40px;
+  header h2 {
+    color: $approved;
+  }
+  #delivery-form {
+      @include grid(0px, flex-start,flex-start, 1fr 1fr 1fr, auto)
+  }
+}

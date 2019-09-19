@@ -8,28 +8,27 @@ import carousleData from "src/data/screens/homepage";
 import Slide from "src/components/carousle/serviceSlide";
 // import Recommendation from "src/components/recommendation/Recommends.js";
 
-export default class Homepage extends Component {
-  render() {
-    return (
-      <div className="home">
-        <Hero />
-        <div className='background-provider'>
-          <Navbar />
-          <Carousle slide={Slide} slides={carousleData.serviceSlides} />
-          <Teaser />
-          {/* <Recommendation data={carousleData} /> */}
-          {/* <Gallery list={carousleData.gallery} /> */}
-        </div>
+const Homepage = (props) => {
+  return (
+    <div className="home">
+      <Hero />
+      <div className="background-provider">
+        <Navbar />
+        <Carousle slide={Slide} slides={carousleData.serviceSlides} />
+        <Teaser />
+        {/* <Recommendation data={carousleData} /> */}
+        {/* <Gallery list={carousleData.gallery} /> */}
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
+export default Homepage;
 
 // data for computer
-   // {
-    //   "head": "מחשבים מוכני מציאות מדומה",
-    //   "text": "מחשבים עוצמתיים להרצת מציאות מדומה.",
-    //   "src": "/static/image/carousel/vr_computer_carousle.jpg",
-    //   "link": "/vr-computers"
-    // }
+// {
+//   "head": "מחשבים מוכני מציאות מדומה",
+//   "text": "מחשבים עוצמתיים להרצת מציאות מדומה.",
+//   "src": "/static/image/carousel/vr_computer_carousle.jpg",
+//   "link": "/vr-computers"
+// }
