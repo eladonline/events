@@ -16,6 +16,10 @@
     ],
     "menuItem": [
         {
+            "title":"בית",
+            "link": "/"
+        },
+        {
             "title":"עלינו",
             "link": "about"
         }

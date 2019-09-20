@@ -1,12 +1,26 @@
-$shardHeight:90vh;
+$shardHeight: 90vh;
 .hero {
   position: fixed;
   z-index: 0;
   width: 100vw;
   height: $shardHeight;
-  @include div-is-img('/static/image/fthr_dghtr_plays.jpg');
   background-size: cover;
+  .swiper-container {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    &,
+    .swiper__item {
+      height: $shardHeight;
+    }
+  }
   &__overlay {
+    position: absolute;
+    top: 0;
+    z-index: 1;
     width: 100%;
     height: 100%;
     color: transparent;
@@ -14,7 +28,7 @@ $shardHeight:90vh;
     @include grid(1em, center, center, auto, auto);
     h1,
     h2 {
-      @extend .text-shadow
+      @extend .text-shadow;
     }
   }
 }

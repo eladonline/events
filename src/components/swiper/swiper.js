@@ -38,11 +38,7 @@ export class SwiperCoverFlow extends React.Component {
         }
       }
     };
-    return (
-      <Swiper {...params}>
-        {parseSlides(this.props.list)}
-      </Swiper>
-    );
+    return <Swiper {...params}>{parseSlides(this.props.list)}</Swiper>;
   }
 }
 
@@ -66,6 +62,24 @@ export class SwiperCube extends React.Component {
       pagination: {
         el: ".swiper-pagination"
       }
+    };
+    return <Swiper {...params}>{parseSlides(this.props.list)}</Swiper>;
+  }
+}
+
+export class SlideSwipe extends React.Component {
+  render() {
+    const params = {
+      spaceBetween: 0,
+      centeredSlides: false,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: true
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+
     };
     return <Swiper {...params}>{parseSlides(this.props.list)}</Swiper>;
   }

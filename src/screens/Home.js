@@ -4,20 +4,20 @@ import Navbar from "src/components/navbar/navbar";
 import Carousle from "src/components/carousle/carousle";
 import Teaser from "src/components/teaser/teaser";
 import Gallery from "src/components/gallery/Gallery";
-import carousleData from "src/data/screens/homepage";
+import data from "src/data/screens/homepage";
 import Slide from "src/components/carousle/serviceSlide";
 // import Recommendation from "src/components/recommendation/Recommends.js";
 
 const Homepage = props => {
   return (
     <div className="home">
-        <Hero />
+        <Hero data={data.hero}/>
       <div className="background-provider">
         <Navbar />
-        <Carousle slide={Slide} slides={carousleData.serviceSlides} />
+        <Carousle slide={Slide} slides={data.serviceSlides} />
         <Teaser />
-        {/* <Recommendation data={carousleData} /> */}
-        {/* <Gallery list={carousleData.gallery} /> */}
+        {/* <Recommendation data={data} /> */}
+        {/* <Gallery list={data.gallery} /> */}
       </div>
     </div>
   );

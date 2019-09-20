@@ -1,99 +1,50 @@
-/* eslint global-require:0, no-nested-ternary:0 */
-import { Menu, ActivityIndicator, NavBar } from 'antd-mobile';
+import { slide as Menu } from "react-burger-menu";
+import CartIcon from "./cartIcon";
+import Link from "next/link";
+import data from "src/data/navbar.json";
 
-const data = [
-  {
-    value: '1',
-    label: 'Food',
-  }, {
-    value: '2',
-    label: 'Supermarket',
-  },
-  {
-    value: '3',
-    label: 'Extra',
-    isLeaf: true,
-  },
-];
-
-class NavMobile extends React.Component {
-  constructor(...args) {
-    super(...args);
-    this.state = {
-      initData: '',
-      show: false,
-    };
-  }
-  onChange = (value) => {
-    let label = '';
-    data.forEach((dataItem) => {
-      if (dataItem.value === value[0]) {
-        label = dataItem.label;
-        if (dataItem.children && value[1]) {
-          dataItem.children.forEach((cItem) => {
-            if (cItem.value === value[1]) {
-              label += ` ${cItem.label}`;
-            }
-          });
-        }
-      }
-    });
-    console.log(label);
-  }
-  handleClick = (e) => {
-    e.preventDefault(); // Fix event propagation on Android
-    this.setState({
-      show: !this.state.show,
-    });
-    // mock for async data loading
-    if (!this.state.initData) {
-      setTimeout(() => {7
-        this.setState({
-          initData: data,
-        });
-      }, 500);
-    }
-  }
-
-  onMaskClick = () => {
-    this.setState({
-      show: false,
-    });
-  }
-
-  render() {
-    const { initData, show } = this.state;
-    const menuEl = (
-      <Menu
-        className="single-foo-menu"
-        data={initData}
-        value={['1']}
-        level={1}
-        onChange={this.onChange}
-      />
-    );
-    const loadingEl = (
-      <div style={{ position: 'absolute', width: '100%',  display: 'flex', justifyContent: 'center' }}>
-        <ActivityIndicator size="large" />
-      </div>
-    );
+const parseMenuItems = () => {
+  return data.menuItem.map(item => {
     return (
-      <div className={show ? 'single-menu-active' : ''}>
-        <div>
-          <NavBar
-            leftContent="Menu"
-            mode="light"
-            onLeftClick={this.handleClick}
-            className="single-top-nav-bar"
-          >
-            OneLevel menu
-          </NavBar>
-        </div>
-        {show ? initData ? menuEl : loadingEl : null}
-        {show ? <div className="menu-mask" onClick={this.onMaskClick} /> : null}
-      </div>
+      <Link key={item.title} href={item.link}>
+        {item.title}
+      </Link>
     );
-  }
-}
+  });
+};
+const parseSubMenuItems = () => {
+  return data.menusWithSubMenus.map(({ subMenuItems }) => {
+    return subMenuItems.map(item => {
+      return (
+        <Link key={item.title} href={item.link}>
+          {item.title}
+        </Link>
+      );
+    });
+  });
+};
 
-export default NavMobile
+const NavbarMobile = ({ cartItems }) => {
+  const showSettings = event => {
+    event.preventDefault();
+  };
+
+  // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
+  return (
+    <div className="mobileOnly">
+      <Menu right>
+        <Link href="/">
+          <div className="menu-navbar__ant-menu__logo logo" />
+        </Link>
+        <div className="bm-items-custom">
+          {parseMenuItems()}
+          {parseSubMenuItems()}
+
+          <CartIcon nItems={cartItems} />
+        </div>
+      </Menu>
+    </div>
+  );
+};
+
+export default NavbarMobile;
