@@ -1,19 +1,29 @@
 .cart-icon {
-    cursor: pointer;
+  cursor: pointer;
+  position: absolute;
+  color: white;
+  z-index: 3;
+  bottom: 0;
+  left: 5px;
+  font-size: 35px;
+  @include sm {
+    bottom: 8px;
+    left: 25px;
+    font-size: 45px;
+  }
+  span {
     position: absolute;
-    color:white;
-    top:25px;
-    left:25px;
-    z-index: 3;
-    font-size:45px;
-    span {
-        position: absolute;
-        top:8px;
-        left:25px;
-        @extend %fs14;
-        line-height:0;
+    line-height: 0;
+    @extend %fs12;
+    top: 4px;
+    left: 10px;
+    padding: 8px 5.5px;
+    @include sm {
         padding: 10px 5.5px;
-        border-radius:50%;
-        background: $red;
+        top: 8px;
+        left: 25px;
     }
+    border-radius: 50%;
+    background: $red;
+  }
 }

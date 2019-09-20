@@ -12,7 +12,8 @@
     margin: auto;
   }
   section {
-    @include grid(2em, center, center, auto, auto);
+    @include grid(2em, center, center, 1fr, auto);
+    max-width: 700px;
   }
   // CONTACT
   &__contact-detailes {

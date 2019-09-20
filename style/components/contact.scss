@@ -1,0 +1,34 @@
+.contact-form {
+  margin: auto;
+  max-width: 800px;
+  @include grid(105px 15px, flex-start, flex-start, 1fr 1fr, 1fr);
+  div {
+    label {
+      @extend %fs16;
+      display: flex;
+      justify-items: flex-end;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    input,
+    textarea {
+      &:focus {
+        outline: none;
+      }
+      color: white;
+      background: black;
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid $red;
+      border-radius: 4px;
+      @extend %fs16;
+    }
+  }
+  .textarea-container {
+    grid-column: 1 / span 2;
+  }
+  button {
+    grid-column: 1 / span 2;
+    margin: auto;
+  }
+}

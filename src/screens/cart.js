@@ -53,7 +53,7 @@ const Cart = () => {
             <CartIsEmpty />
           )}
         </section>
-        {isPaymentState && <Payment />}
+        {isPaymentState && cartItems.length ? <Payment /> : null}
       </div>
     </div>
   );

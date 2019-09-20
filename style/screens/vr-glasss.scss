@@ -1,12 +1,23 @@
+$gallery-swiper-size: 250px;
+$gallery-swiper-size-mobile: 150px;
 .product {
   &__gallery {
     background: rgba(black, 0.2);
     border-bottom: 1px solid rgba(gray, 0.2);
-    padding: 5em 3em;
+    padding: 3em 1em;
+    @include sm {
+      padding: 3em 2em;
+    }
     .swiper-container {
-      height: 300px;
+      height: $gallery-swiper-size-mobile;
+      @include sm {
+        height: $gallery-swiper-size;
+      }
       .swiper__item {
-        height: 300px;
+        height: $gallery-swiper-size-mobile;
+        @include sm {
+          height: $gallery-swiper-size;
+        }
       }
     }
     &__gallery {
@@ -17,7 +28,10 @@
     }
   }
   .grid {
-    padding: 4em 0em;
+    padding: 2em 0em;
+    @include sm {
+      padding: 4em 0em;
+    }
     .product__header {
       color: white;
       margin: 20px 0 0 0;
@@ -25,9 +39,10 @@
       @extend %fs48;
     }
     .product__prodacts-cards {
-      padding: 100px 0;
       @include grid(1em, flex-start, flex-start, 1fr, auto);
+      padding: 50px 0;
       @include sm {
+        padding: 100px 0;
         @include grid(1em, flex-start, flex-start, 1fr 1fr, auto);
       }
       &__item {

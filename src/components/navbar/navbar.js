@@ -17,8 +17,8 @@ class Navbar extends PureComponent {
     document.addEventListener("scroll", () => {
       const distance = distanceMeasure(navbar, "top");
 
-      if (distance === 0 && !this.state.top) this.setState({ top: true });
-      else if (distance > 0 && this.state.top) this.setState({ top: false });
+      if (distance < 10 && !this.state.top) this.setState({ top: true });
+      else if (distance > 10 && this.state.top) this.setState({ top: false });
     });
     this.setState({ cartItems: getItemsFromStorage().length });
   };

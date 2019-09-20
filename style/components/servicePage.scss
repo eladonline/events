@@ -1,6 +1,11 @@
 $heroHeight: 350px;
+$heroHeight-mobile: 250px;
 .static-hero {
-  height: $heroHeight;
+  height: $heroHeight-mobile;
+  @include sm {
+    height: $heroHeight;
+
+  }
   background-size: cover;
   background-position: center;
   position: fixed;
@@ -14,7 +19,10 @@ $heroHeight: 350px;
   }
 }
 .hero-static_placeholder {
-  height: $heroHeight;
+  height: $heroHeight-mobile;
+  @include sm {
+    height: $heroHeight;
+  }
 
 }
 .static-page {

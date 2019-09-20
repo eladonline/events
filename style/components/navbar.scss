@@ -1,11 +1,13 @@
 $menu-tabs-width: 130px;
+$menu-tabs-width-mobile: 100px;
 
 %tabs-common {
-  width: $menu-tabs-width;
-  padding: 2em 0em;
-  @include md {
+  width: $menu-tabs-width-mobile;
+  @include sm {
+    width: $menu-tabs-width;
     padding: 2em 0em;
   }
+
   text-align: center;
 }
 .menu-navbar {
@@ -16,29 +18,39 @@ $menu-tabs-width: 130px;
   &[data-top="true"] {
     .ant-menu {
       box-shadow: 0px -0px 10px 0px rgba(black, 0.8);
-
-      // .ant-menu-item {
-      //   padding: 1em 2em;
-      // }
+      @include sm {
+        .ant-menu-item {
+          padding: 1em 2em;
+        }
+        .ant-menu-submenu {
+          .ant-menu-submenu-title {
+            padding: 1em 2em;
+          }
+        }
+      }
     }
-    // .ant-menu-submenu {
-    //   .ant-menu-submenu-title {
-    //     padding: 1em 2em;
-    //   }
-    // }
   }
   .ant-menu {
     position: relative;
     background: $black !important;
-    @include flex-row(center);
+    @include flex-row(center, center);
     // logo
     .menu-navbar__ant-menu__logo,
     .logo {
       cursor: pointer;
+      height: 60px;
+      width: 60px;
+      @include sm {
+        height: 100px;
+        width: 100px;
+      }
       &[data-top="true"] {
-        transition: 0.3s;
-        // height: 70px;
-        // width: 70px;
+        @include sm {
+          transition: 0.3s;
+          height: 80px;
+          width: 80px;
+          margin: auto 0;
+        }
       }
     }
 
@@ -69,14 +81,14 @@ $menu-tabs-width: 130px;
   .ant-menu-sub {
     background: $black !important;
     padding: 0.5em !important;
-    box-shadow: 0px 0px 12px 0.3px rgba(white, 0.2);
+    box-shadow: 0px 0px 5px 0px black;
     &:not(.ant-menu-hidden) {
       @include flex-column();
     }
   }
   &-open {
     color: $red;
-    border-bottom: 2px solid $red !important;
+    border-color: $red !important;
   }
 
   .ant-menu-submenu-title {

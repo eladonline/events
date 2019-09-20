@@ -1,61 +1,62 @@
-import React, { useState } from 'react';
-import { Form, Input } from 'antd';
+import React, { useState, useEffect } from "react";
 
-const { TextArea } = Input;
-
-const Contact = ({ form }) => {
-  const { getFieldDecorator } = form;
-  const handleSubmit = e => {
-    e.preventDefault();
-    form.validateFieldsAndScroll((err, values) => {
-      if (!err) {
-        console.log('Received values of form: ', values);
-      }
-    });
+const Contact = () => {
+  const [formdata, setFromData] = useState({});
+  const [buttonDisabled, setButtonDisabledd] = useState(true);
+  const handleChange = ({ target }) => {
+    const newData = { ...formdata };
+    newData[target.name] = target.value;
+    setFromData({ ...newData });
   };
+  useEffect(() => {
+    if (formdata.my_name && formdata.my_email && formdata.description)
+      setButtonDisabledd(false);
+    else setButtonDisabledd(true);
+  }, [formdata.my_name, formdata.email, formdata.description]);
   return (
-    <Form id="contact-from" onSubmit={handleSubmit}>
-      <Form.Item colon={false} label="מייל">
-        {getFieldDecorator('email', {
-          rules: [
-            {
-              type: 'email',
-              message: '!האימייל אינו תקין'
-            },
-            {
-              required: true,
-              message: 'בבקשה הכנס כתובת אימייל!'
-            }
-          ]
-        })(<Input />)}
-      </Form.Item>
-      <Form.Item colon={false} label="שם">
-        {getFieldDecorator('name', {
-          rules: [
-            {
-              required: true,
-              message: '!הקש את שמך בבקשה'
-            }
-          ]
-        })(<Input />)}
-      </Form.Item>
-      <div className="textarea-container">
-        <Form.Item id="test" colon={false} label="במה אתה מעוניין">
-          {getFieldDecorator('intrested', {
-            rules: [
-              {
-                required: true,
-                message: 'תן לנו רמז במה אתה מתעניין'
-              }
-            ]
-          })(<TextArea />)}
-        </Form.Item>
-      </div>
-      <button className="btnDark" type="submit">
-        שלח
-      </button>
-    </Form>
+    <div className="grid">
+      <form
+        id="contact-from"
+        action="https://formspree.io/eladonline@walla.com"
+        method="POST"
+        className="contact-form "
+      >
+        <div>
+          <label>שם</label>
+          <input
+            onChange={handleChange}
+            className="contact-row "
+            type="text"
+            name="my_name"
+            value={formdata.my_name}
+          />
+        </div>
+        <div>
+          <label>דואר אלקטרוני</label>
+          <input
+            onChange={handleChange}
+            className="contact-row "
+            type="email"
+            name="my_email"
+            value={formdata.my_email}
+          />
+        </div>
+        <div className="textarea-container">
+          <label>ספר לנו במה אתה מתעניין</label>
+          <textarea
+            onChange={handleChange}
+            className="contact-row "
+            type="text"
+            name="description"
+            value={formdata.description}
+          />
+        </div>
+
+        <button disabled={buttonDisabled} className="btnDark" type="submit">
+          שלח
+        </button>
+      </form>
+    </div>
   );
 };
-const WrappedRegistrationForm = Form.create({ name: 'contact' })(Contact);
-export default WrappedRegistrationForm;
+export default Contact;

@@ -45,6 +45,7 @@
   border: 1px solid white;
   li {
     padding: 1em;
+
     text-align: center;
     @include flex-column(center, center);
     height: 100%;
@@ -60,6 +61,7 @@
 // QuantityEl \\
 
 .quantity-el {
+  padding-bottom: 1em;
   height: 100%;
   @include flex-column(center, center);
   li {
