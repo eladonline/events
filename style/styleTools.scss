@@ -345,6 +345,7 @@ button:disabled {
         @extend %Varela;
         color: white;
         direction: rtl;
+        @extend %fs16;
       }
     }
     input,
@@ -373,7 +374,7 @@ button:disabled {
     @include sm {
       grid-column: 1 / span 2;
     }
-    margin: 30px auto;
+    margin: 70px auto 20px auto;
   }
 }
 // //////////////

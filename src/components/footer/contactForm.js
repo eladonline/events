@@ -22,7 +22,7 @@ const Contact = () => {
         className="contact-form "
       >
         <div>
-          <label>שם</label>
+          <label> שם </label>
           <input
             onChange={handleChange}
             className="contact-row "
@@ -32,7 +32,7 @@ const Contact = () => {
           />
         </div>
         <div>
-          <label>דואר אלקטרוני</label>
+          <label> דואר אלקטרוני </label>
           <input
             onChange={handleChange}
             className="contact-row "

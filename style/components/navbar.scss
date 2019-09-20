@@ -18,6 +18,8 @@ $menu-tabs-width-mobile: 100px;
   &[data-top="true"] {
     .ant-menu {
       box-shadow: 0px -0px 10px 0px rgba(black, 0.8);
+    }
+    &.ant-menu-sub {
       @include sm {
         .ant-menu-item {
           padding: 1em 2em;
@@ -31,6 +33,10 @@ $menu-tabs-width-mobile: 100px;
     }
   }
   .ant-menu {
+    font-size: 14px;
+    @include sm {
+      font-size: 16px;
+    }
     position: relative;
     background: $black !important;
     @include flex-row(center, center);
@@ -84,6 +90,12 @@ $menu-tabs-width-mobile: 100px;
     box-shadow: 0px 0px 5px 0px black;
     &:not(.ant-menu-hidden) {
       @include flex-column();
+    }
+    .ant-menu-item {
+      font-size: 14px;
+      @include sm {
+        font-size: 16px !important;
+      }
     }
   }
   &-open {

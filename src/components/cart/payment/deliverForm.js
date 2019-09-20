@@ -16,7 +16,6 @@ const DeliverForm = ({ form }) => {
   };
 
   return (
-      
     <Form id="delivery-form" onSubmit={handleSubmit}>
       <Form.Item colon={false} label="שם">
         {getFieldDecorator("name", {
@@ -112,7 +111,7 @@ const DeliverForm = ({ form }) => {
         </Form.Item>
       </div>
 
-      <button className="btnDark hover-green" type="submit">
+      <button className="btnDark hover-green " type="submit">
         שלח
       </button>
     </Form>

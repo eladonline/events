@@ -12,9 +12,7 @@ import { Parallax  } from "react-scroll-parallax";
 const Homepage = props => {
   return (
     <div className="home">
-      <Parallax   y={[-60, 50]} >
         <Hero />
-      </Parallax >
       <div className="background-provider">
         <Navbar />
         <Carousle slide={Slide} slides={carousleData.serviceSlides} />

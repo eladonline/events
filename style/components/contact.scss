@@ -4,6 +4,10 @@
   @include grid(105px 15px, flex-start, flex-start, 1fr 1fr, 1fr);
   div {
     label {
+      &::before {
+        content: "*";
+        color:red;
+      }
       @extend %fs16;
       display: flex;
       justify-items: flex-end;
