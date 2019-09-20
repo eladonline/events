@@ -28,7 +28,7 @@
       },
       {
         "page":"oculus",
-        "service": "Oculus quest",
+        "service": "Oculus quest 64GB",
         "id": "1112AM-OC",
         "background": "/static/image/services/oculus/oculus_quest_min.jpg",
         "description": {
@@ -39,6 +39,29 @@
             "supplyTime": 7,
             "warranty": 1,
             "price": 3199
+          }
+        },
+        "img": [
+          { "src": "/static/image/services/oculus/plays_q.png" },
+          { "src": "/static/image/services/oculus/plays_q_2.png" },
+          { "src": "/static/image/services/oculus/plays_q_3.png" },
+          { "src": "/static/image/services/oculus/plays_q_4.png" },
+          { "src": "/static/image/services/oculus/plays_q_5.png" }
+        ]
+      },
+      {
+        "page":"oculus",
+        "service": "Oculus quest 128GB",
+        "id": "1113AM-OC",
+        "background": "/static/image/services/oculus/oculus_quest_min.jpg",
+        "description": {
+          "text": "משקפיים עם מחשב מובנה, הגרפיקה אומנם לא כמו ה Rift S אבל היא עדיין טובה ומהנה, מומלץ לכל מי שאין לו מחשב מוכן VR. אין צורך במחשב תומך.",
+          "detailes": {
+            "manufacture": "oculus",
+            "mfctrUrl": "https://www.oculus.com/quest",
+            "supplyTime": 7,
+            "warranty": 1,
+            "price": 3499
           }
         },
         "img": [

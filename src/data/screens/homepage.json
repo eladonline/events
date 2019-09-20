@@ -3,28 +3,31 @@
     {
       "head": "Oculus",
       "text": "משקפיים ברמה גבוהה לקהל הרחב.",
-      "src": "/static/image/carousel/oculus_mid.webp",
+      "src": "/static/image/carousel/oculus_carousle.jpg",
+      "srcMobile": "/static/image/carousel/oculus_carousle_x1.jpg",
       "link": "/oculus"
-    },
-    {
-      "head": "Htc vive",
-      "text": "לאנשים שלא מתפשרים על עוצמה.",
-      "src": "/static/image/carousel/htc_vive.jpg",
-      "link": "/htc-vive"
     },
     {
       "head": "Valve Index",
       "text": "מעוצבות, איכותיות, עוצמתיות ללא פשרות.",
       "src": "/static/image/carousel/valve_index_carousle.jpg",
+      "srcMobile": "/static/image/carousel/valve_index_carousle_x1.jpg",
       "link": "/valve-index"
     },
     {
-      "head": "pimax 5/8K",
+      "head": "Htc vive",
+      "text": "לאנשים שלא מתפשרים על עוצמה.",
+      "src": "/static/image/carousel/htc_vive_carousle.jpg",
+      "srcMobile": "/static/image/carousel/htc_vive_carousle_x1.jpg",
+      "link": "/htc-vive"
+    },
+    {
+      "head": "Pimax 5K/8K",
       "text": "לאיכות תמונה גבוהה.",
-      "src": "/static/image/carousel/pimax_carousle.webp",
+      "src": "/static/image/carousel/pimax_carousle.jpg",
+      "srcMobile": "/static/image/carousel/pimax_carousle_x1.jpg",
       "link": "/pimax"
     }
- 
   ],
   "recommends": [
     {

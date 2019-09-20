@@ -1,23 +1,23 @@
 {
   "hero": {
     "src": "/static/image/staticPages/htc_vive.jpg",
-    "head": "HTC VIVE"
+    "head": "Vive"
   },
   "services": {
     "base": [
       {
-        "page":"htc-vive",
-        "service": "Htc vive pro",
+        "page": "htc-vive",
+        "service": "Htc vive pro Starter kit",
         "id": "1111AM-HV",
         "background": "/static/image/services/htc/htc_vive_min.jpg",
         "description": {
-          "text": "משקפיים עוצמתיות עם זיהוי תנועה ע''י שימוש במצלמות עם חיישני תנועה אנו ממליצים לכל מי שאוהב עוצמה ואיכות ומוכן להשקיע לשם כך. למשקפיים אלו זיהוי התנועה הטוב ביותר בשוק כרגע. דרוש מחשב תומך.",
+          "text": "משקפיים עוצמתיות עם זיהוי תנועה ע''י שימוש במצלמות עם חיישני תנועה אנו ממליצים לכל מי שאוהב עוצמה ואיכות ומוכן להשקיע לשם כך. למשקפיים אלו זיהוי התנועה הטוב ביותר בשוק כרגע. מגיעות עם אוזניות רמקול מובנה שני ג'וייסטיקים ושני מצלמות תנועה, מניסיון שלי הן מדהימות דרוש מחשב תומך.",
           "detailes": {
             "manufacture": "HTC, Valve",
-            "mfctrUrl": "https://www.vive.com/us/",
+            "mfctrUrl": "https://www.vive.com/us/product/vive-pro-starter-kit/",
             "supplyTime": 7,
             "warranty": 1,
-            "price": 3788
+            "price": 4999
           }
         },
         "img": [
@@ -26,6 +26,27 @@
           { "src": "/static/image/services/htc/plays_3.jpg" },
           { "src": "/static/image/services/htc/plays_4.jpg" },
           { "src": "/static/image/services/htc/plays_5.jpg" }
+        ]
+      },
+      {
+        "page": "htc-vive",
+        "service": "Vive Cosmos",
+        "id": "1112AM-HV",
+        "background": "/static/image/services/htc/htc_cosmos_min.jpg",
+        "description": {
+          "text": "משקפיים עוצמתיות עם זיהוי תנועה ע''י שימוש במצלמות מובנות על משקף המכשיר בטכולוגית בפנים-כלפי-חוץ. אלו המשקפיים הכי חדשות כרגע של החברה והן נראות פגז, דרוש מחשב תומך.",
+          "detailes": {
+            "manufacture": "HTC, Valve",
+            "mfctrUrl": "https://www.vive.com/us/product/cosmos/",
+            "supplyTime": 10,
+            "warranty": 1,
+            "price": 3999
+          }
+        },
+        "img": [
+          { "src": "/static/image/services/htc/plays_cosmos.jpg" },
+          { "src": "/static/image/services/htc/plays_cosmos_2.jpg" },
+          { "src": "/static/image/services/htc/plays_cosmos_3.jpg" }
         ]
       }
     ]

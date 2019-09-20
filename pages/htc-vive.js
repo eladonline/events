@@ -1,3 +1,11 @@
-import HTC from 'src/screens/htc-vive.js';
+import HTC from "src/screens/htc-vive.js";
+import React, { useEffect } from "react";
+import ReactGA from "react-ga";
 
-export default () => <HTC />;
+export default () => {
+  useEffect(() => {
+    ReactGA.initialize("UA-148411020-1");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+  return <HTC />;
+};

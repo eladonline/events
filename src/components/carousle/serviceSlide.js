@@ -1,19 +1,28 @@
-import Router from 'next/router';
+import Router from "next/router";
+import React, { useEffect } from "react";
 
-const Slide = ({ head, text, src, link, flexCenter = false }) => {
+const Slide = ({ head, text, src, srcMobile, link, flexCenter = false }) => {
+  let mobile = true;
+  useEffect(() => {
+    mobile = window.screen.width < 768;
+  }, []);
   return (
-    <div
-      onClickCapture={() => link && Router.replace(link)}
-      className="carousle__item"
-      style={{ backgroundImage: `url(${src})` }}
-    >
-      <div className={`carousle__item__overlay ${flexCenter && 'flex-center'}`}>
-        <header>
-          <h4>{head}</h4>
-        </header>
-        <p>{text}</p>
+    mobile ? (
+      <div
+        onClickCapture={() => link && Router.replace(link)}
+        className="carousle__item"
+        style={{ backgroundImage: `url(${mobile ? srcMobile : src})` }}
+      >
+        <div
+          className={`carousle__item__overlay ${flexCenter && "flex-center"}`}
+        >
+          <header>
+            <h4>{head}</h4>
+          </header>
+          <p>{text}</p>
+        </div>
       </div>
-    </div>
+    ): (<div>sad</div>)
   );
 };
 

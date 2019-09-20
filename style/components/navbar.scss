@@ -92,7 +92,9 @@ $menu-tabs-width-mobile: 100px;
       @include flex-column();
     }
     .ant-menu-item {
+      padding: 30px 30px;
       font-size: 14px;
+      @include flex-column(center);
       @include sm {
         font-size: 16px !important;
       }

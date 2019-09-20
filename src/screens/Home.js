@@ -6,7 +6,6 @@ import Teaser from "src/components/teaser/teaser";
 import Gallery from "src/components/gallery/Gallery";
 import carousleData from "src/data/screens/homepage";
 import Slide from "src/components/carousle/serviceSlide";
-import { Parallax  } from "react-scroll-parallax";
 // import Recommendation from "src/components/recommendation/Recommends.js";
 
 const Homepage = props => {
