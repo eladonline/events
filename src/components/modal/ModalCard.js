@@ -42,6 +42,7 @@ export default class ModalCard extends React.Component {
           onClick={this.showModal}
         >
           {title}
+          <span>לחץ לפרטים</span>
         </button>
         <Modal
           title={title}

@@ -14,10 +14,10 @@
           "text": "משקפיים באיכות מעולה במחיר שמתאים לכל כיס. אנו ממליצים לכל מי שרוצה ליהנות מהיכולות של מציאות מדומה במחיר סביר. דרוש מחשב תומך.",
           "detailes": {
             "manufacture": "oculus",
-            "mfctrUrl": "https://www.oculus.com/",
+            "mfctrUrl": "https://www.oculus.com/rift-s/",
             "supplyTime": 7,
             "warranty": 1,
-            "price": 3788
+            "price": 3099
           }
         },
         "img": [
@@ -32,13 +32,13 @@
         "id": "1112AM-OC",
         "background": "/static/image/services/oculus/oculus_quest_min.jpg",
         "description": {
-          "text": "משקפיים עם מחשב מובנה, מומלץ לכל מי שאין לו מחשב מוכן VR. אין צורך במחשב תומך.",
+          "text": "משקפיים עם מחשב מובנה, הגרפיקה אומנם לא כמו ה Rift S אבל היא עדיין טובה ומהנה, מומלץ לכל מי שאין לו מחשב מוכן VR. אין צורך במחשב תומך.",
           "detailes": {
             "manufacture": "oculus",
-            "mfctrUrl": "https://www.oculus.com/",
+            "mfctrUrl": "https://www.oculus.com/quest",
             "supplyTime": 7,
             "warranty": 1,
-            "price": 3788
+            "price": 3199
           }
         },
         "img": [

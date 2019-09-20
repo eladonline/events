@@ -42,13 +42,20 @@
 }
 // the modal button
 .modal-button-card {
+  position: relative;
   @extend %btnBase-noFontSize;
   width: 100%;
-  height: 200px;
+  height: 300px;
   color: white;
   @extend .text-shadow;
-  @extend %fs20;
+  @extend %fs26;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  span {
+    text-shadow:1px 1px 2px black;
+    position: absolute;
+    bottom: 15px;
+    
+  }
 }
