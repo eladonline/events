@@ -1,0 +1,35 @@
+.contact-us {
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background: $darkBlack;
+    color: white;
+    border-top: 1px solid $darkBlack;
+    @include grid(1em, initial, initial, auto, auto);
+    .logo {
+      margin: auto;
+    }
+    section {
+      @include grid(2em, center, center, 1fr, auto);
+      max-width: 700px;
+    }
+    // CONTACT
+    &__contact-detailes {
+      color: white;
+      .tel {
+        @include grid(1em, initial, initial, auto, auto);
+        @include md {
+          @include grid(1em, space-between, initial, auto auto, auto);
+        }
+        text-align: right;
+        @extend %fs18;
+        @extend %Varela;
+      }
+    }
+    &__rights {
+      background: $darkBlack;
+      padding: 1em;
+    }
+  }
+  

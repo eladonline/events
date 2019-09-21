@@ -7,6 +7,8 @@ import Gallery from "src/components/gallery/Gallery";
 import data from "src/data/screens/homepage";
 import Slide from "src/components/carousle/serviceSlide";
 import About from "./About";
+import ContactUs from "../components/contactUs/contactUs";
+
 // import Recommendation from "src/components/recommendation/Recommends.js";
 
 const Homepage = props => {
@@ -18,6 +20,7 @@ const Homepage = props => {
         <Carousle slide={Slide} slides={data.serviceSlides} />
         <Teaser />
         <About />
+        <ContactUs />
         {/* <Recommendation data={data} /> */}
         {/* <Gallery list={data.gallery} /> */}
       </div>
