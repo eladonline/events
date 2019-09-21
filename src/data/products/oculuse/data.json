@@ -11,7 +11,7 @@
         "id": "1111AM-OC",
         "background": "/static/image/services/oculus/oculus_rift_min.jpg",
         "description": {
-          "text": "משקפיים שמתחברים לחשב ומכניסים אתם לעולם מלא בחוויה ומשחקים, בזכות העובדה שהם מתחברים למחשב הם מציגים לכם את המשחק בגרפיקה הכי גבוהה שאפשר. דרוש מחשב תומך!",
+          "text": "משקפיים שמתחברים לחשב ומכניסים אתם לעולם מלא בחוויה ומשחקים, בזכות העובדה שהם מתחברים למחשב הם מציגים לכם את המשחק בגרפיקה הכי גבוהה שאפשר.",
           "detailes": {
             "manufacture": "oculus",
             "mfctrUrl": "https://www.oculus.com/rift-s/",
@@ -24,7 +24,8 @@
           { "src": "/static/image/services/oculus/plays_r.jpg" },
           { "src": "/static/image/services/oculus/plays_r_2.png" },
           { "src": "/static/image/services/oculus/plays_r_3.png" }
-        ]
+        ],
+        "warrning": "דרוש מחשב תומך"
       },
       {
         "page": "oculus",

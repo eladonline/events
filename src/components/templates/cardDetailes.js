@@ -9,7 +9,7 @@ const CardDetailesTemplate = ({
 }) => (
   <div className="card-detailes">
     {warrning && (
-      <div className="card-detailes__warrning">אזהרה! {warrning}</div>
+      <div className="card-detailes__warrning">חשוב! {warrning}</div>
     )}
     <li>
       יצרן ומידע נוסף:{" "}
