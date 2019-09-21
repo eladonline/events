@@ -6,7 +6,7 @@
   "services": {
     "base": [
       {
-        "page":"accessories/controllers",
+        "page": "accessories/controllers",
         "service": "בקר htc",
         "id": "2221AM-HV-controller",
         "background": "/static/image/services/accessories/controllers/htc_min.jpg",
@@ -25,29 +25,24 @@
             "src": "/static/image/services/accessories/controllers/htc_min.jpg"
           }
         ]
-      },
-      {
-        "service": "Oculus quest",
-        "id": "1112AM-OC",
-        "background": "/static/image/services/oculus/oculus_quest_min.jpg",
-        "description": {
-          "text": "משקפיים עם מחשב מובנה, מומלץ לכל מי שאין לו מחשב מוכן VR. אין צורך במחשב תומך.",
-          "detailes": {
-            "manufacture": "oculus",
-            "mfctrUrl": "https://www.oculus.com/",
-            "supplyTime": 7,
-            "warranty": 1,
-            "price": 3788
-          }
-        },
-        "img": [
-          { "src": "/static/image/services/oculus/plays_q.png" },
-          { "src": "/static/image/services/oculus/plays_q_2.png" },
-          { "src": "/static/image/services/oculus/plays_q_3.png" },
-          { "src": "/static/image/services/oculus/plays_q_4.png" },
-          { "src": "/static/image/services/oculus/plays_q_5.png" }
-        ]
       }
     ]
-  }
+  },
+  "manufactureData": [
+    {
+      "text": "אוקולוס היא חברת סטארט אפ בתחום המציאות מדומה שנרכשה ע''י חברת פייסבוק."
+    },
+    {
+      "text": "החברה משתמשת בטכנולוגית 'בפנים כלפי חוץ' זה אומר שהמצלמות נמצאות על המכשיר, וצופות כלפי חוץ על הסביבה ותנועות הידיים."
+    },
+    {
+      "text": "תצוגת המסך של המכשיר מפוצלת – כלומר, המסך מציג תמונה אחת מול כל עין. התמונות שונות במקצת, על-מנת ליצור ראיית תלת-ממד. כדי ליצור תחושת נפח ומרחב אצל המשתמש, ניתן לנווט בעולם הווירטואלי המוצג במשקפיים ב-360 מעלות בהנעת הראש. המכשיר מצויד בחיישני תנועה כדי לעקוב אחר תנועות הראש ולהתאים את נקודת המבט (פרספקטיבה) של המשתמש בעולם הווירטואלי המוצג לפיה."
+    },
+    {
+      "text": "לאוקולוס ספריית המשחקים הרחבה ביותר כיום מכל שאר משקפי המציאות המדומה."
+    },
+    {
+      "text": "אוקולוס היא הבחירה הטובה ביותר עבור אלו שרוצים להיות בעולם המציאות וירטואלית במחיר סביר."
+    }
+  ]
 }
