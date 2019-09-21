@@ -13,7 +13,7 @@ const ContactUs = () => (
         <h4>צור איתנו קשר!</h4>
       </header>
       <Contact />
-      <div className="footer__contact-detailes">
+      <div className="contact-us__contact-detailes">
         <div className="tel">
           <div>טל: 050-6666666</div>
           <div> אימייל: eladonline@walla.com </div>
