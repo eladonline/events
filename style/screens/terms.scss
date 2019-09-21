@@ -1,0 +1,11 @@
+.terms {
+  min-height: 90vh;
+  color: white;
+  section {
+    p {
+      @extend %fs14;
+    }
+    padding: 30px 0;
+    @include grid(60px, flex-start, flex-start, auto, auto);
+  }
+}
