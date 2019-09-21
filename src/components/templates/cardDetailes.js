@@ -4,11 +4,15 @@ const CardDetailesTemplate = ({
   mfctrUrl,
   supplyTime,
   warranty,
-  price
+  price,
+  warrning
 }) => (
   <div className="card-detailes">
+    {warrning && (
+      <div className="card-detailes__warrning">אזהרה! {warrning}</div>
+    )}
     <li>
-       יצרן ומידע נוסף:{" "}
+      יצרן ומידע נוסף:{" "}
       <a href={mfctrUrl} target="_blank">
         {manufacture}
       </a>{" "}

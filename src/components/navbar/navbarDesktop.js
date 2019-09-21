@@ -13,13 +13,16 @@ const handleClick = e => {
 };
 
 const NavbarDesktop = ({ top, cartItems }) => {
-  const [current, setCurrent] = useState("");
   return (
     <div className="notMobile">
       <CartIcon nItems={cartItems} />
-      <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal">
+      <Menu onClick={handleClick} current={"[]"} mode="horizontal">
         {data.menuItem.map(item => {
-          return <Menu.Item key={item.link}>{item.title}</Menu.Item>;
+          return (
+            <Menu.Item key={item.link}>
+              <Link href={item.link}>{item.title}</Link>
+            </Menu.Item>
+          );
         })}
 
         <Link href="/">
@@ -37,6 +40,7 @@ const NavbarDesktop = ({ top, cartItems }) => {
             </SubMenu>
           );
         })}
+        <Menu.Item key={"#footer"}>צור קשר</Menu.Item>
       </Menu>
     </div>
   );

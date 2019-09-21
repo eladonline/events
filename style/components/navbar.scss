@@ -14,7 +14,7 @@ $menu-tabs-width-mobile: 100px;
   position: sticky;
   top: 0;
   z-index: 155;
-  background: $black;
+  background: $darkBlack;
   &[data-top="true"] {
     .ant-menu {
       box-shadow: 0px -0px 10px 0px rgba(black, 0.8);
@@ -26,7 +26,7 @@ $menu-tabs-width-mobile: 100px;
       font-size: 16px;
     }
     position: relative;
-    background: $black !important;
+    background: $darkBlack !important;
     @include flex-row(center, center);
     // logo
     .menu-navbar__ant-menu__logo,
@@ -46,7 +46,7 @@ $menu-tabs-width-mobile: 100px;
     // the items
     .ant-menu-item {
       @extend %tabs-common;
-      background: $black;
+      background: $darkBlack;
 
       &-active {
         color: $red;
@@ -55,6 +55,7 @@ $menu-tabs-width-mobile: 100px;
           color: $red !important;
         }
       }
+
       // the text inside
       a {
         color: white !important;
@@ -65,7 +66,7 @@ $menu-tabs-width-mobile: 100px;
 }
 .ant-menu-submenu {
   .ant-menu-sub {
-    background: $black !important;
+    background: $darkBlack !important;
     padding: 0.5em !important;
     box-shadow: 0px 0px 5px 0px black;
     &:not(.ant-menu-hidden) {
@@ -79,6 +80,10 @@ $menu-tabs-width-mobile: 100px;
         font-size: 16px !important;
       }
     }
+  }
+  &.ant-menu-submenu-selected {
+    color: $red;
+    border-bottom: 2px solid $red !important;
   }
   &-open {
     color: $red;
@@ -102,7 +107,13 @@ $menu-tabs-width-mobile: 100px;
   background: $black;
   color: white;
   &-active {
+    background: transparent !important;
     color: $red !important;
+  }
+  &.ant-menu-item-selected {
+    background: transparent !important;
+    color: $red !important;
+    border-bottom: 2px solid $red !important;
   }
 }
 

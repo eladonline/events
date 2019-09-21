@@ -1,27 +1,27 @@
 {
-    "menusWithSubMenus": [
+  "menusWithSubMenus": [
+    {
+      "title": "מוצרים",
+      "subMenuItems": [
         {
-            "title": "מוצרים",
-            "subMenuItems": [
-                {
-                    "title": "משקפי מציאות מדומה",
-                    "link":"vr-glasss"
-                },
-                {
-                    "title": "אביזרים למציאות מדומה",
-                    "link":"vr-accessories"
-                }
-            ]
-        }
-    ],
-    "menuItem": [
-        {
-            "title":"בית",
-            "link": "/"
+          "title": "משקפי מציאות מדומה",
+          "link": "vr-glasss"
         },
         {
-            "title":"עלינו",
-            "link": "about"
+          "title": "אביזרים למציאות מדומה",
+          "link": "vr-accessories"
         }
-    ]
+      ]
+    }
+  ],
+  "menuItem": [
+    {
+      "title": "בית",
+      "link": "/"
+    },
+    {
+      "title": "עלינו",
+      "link": "about"
+    }
+  ]
 }

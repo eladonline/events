@@ -2,21 +2,20 @@
   &__container {
     padding: 2em 0 0 0;
     position: relative;
-    background: $black;
+    background: $darkBlack;
     z-index: 5;
     @include grid(1em, initial, initial, auto, auto);
-    text-align: center;
+
     &__services {
-      padding: 3em 1em;
+      padding: 50px 1em;
       background: $black-opacity;
-      .grid {
-        @include grid(2em, initial, initial, repeat(1, 1fr), auto);
-        @include sm {
-          @include grid(2em, initial, initial, repeat(2, 1fr), auto);
-        }
-        @include md {
-          @include grid(2em, initial, initial, repeat(4, 1fr), auto);
-        }
+      border-radius: 4px;
+      @include grid(2em, initial, initial, repeat(1, 1fr), auto);
+      @include sm {
+        @include grid(2em, initial, initial, repeat(2, 1fr), auto);
+      }
+      @include md {
+        @include grid(15px, initial, initial, repeat(4, 1fr), auto);
       }
     }
   }

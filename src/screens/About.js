@@ -1,11 +1,23 @@
 import React, { PureComponent } from "react";
-import Navbar from "../components/navbar/navbar";
+import { Parallax } from "react-scroll-parallax";
 
 export default class About extends PureComponent {
+  state = { load: false };
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ load: true });
+    }, 400);
+  }
+
   render() {
     return (
       <div className="about">
-        <Navbar />
+        <div className="about-overlay"></div>
+        {this.state.load && (
+          <Parallax className="parallaxy" y={[-80, 20]} tagOuter="figure">
+            <div></div>
+          </Parallax>
+        )}
         <section className="grid">
           <header>
             <h1>עלינו</h1>
@@ -32,6 +44,33 @@ export default class About extends PureComponent {
           <p>
             השאיפה שלנו היא להכיר לכמה שיותר אנשים את עולם המציאות מדומה וליצור
             קהילה אוהדת סביב הנושא, בוא ותהיה חלק מהקהילה.
+          </p>
+        </section>
+        <section className="grid">
+          <header>
+            <h1>למה כדאי לרכוש מאיתנו</h1>
+          </header>
+          <p>
+            <u> שירות:</u> מלכתחילה הקמנו את החנות כדי לתת שירות לאלו בארץ
+            שרוצים לרכוש ואינם יכולים כי אין כמעט חנויות בארץ.
+            <br />
+            לכן שירות, זה בראש סדר העדיפויות שלנו אם תתקשרו אלינו תקבלו יעוץ
+            מקצועי ועזרה ברכישה והכל בשמחה.
+          </p>
+          <p>
+            <u> מחירי המוצרים:</u> אנו דואגים לעדכן את המחירים כדי להביא לכם את
+            המוצרים במחירים הכי זולים במידה ומצאתם חנות אחרת שאותו מוצר באותו
+            מפרט ואותם תנאים זול יותר מאצלנו, דברו איתנו ובמידת האפשר ניתן לכם
+            מחיר זול יותר.
+          </p>
+          <p>
+            <u> משלוח:</u> אנחנו לא מחזיקים חנות וזה מה שמאפשר לנו לתת לכם
+            מחירים זולים, לכן אנחנו נותנים לכם משלוח בדואר רשום על חשבונינו.
+          </p>
+          <p>
+            <u> מקצועיות:</u> אנחנו לא רק מוכרים, אנחנו בעצמנו משתמשים במוצר
+            אנחנו מכירים את היכולות שלו את היתרונות והחסרונות, לכן אתה יכול
+            להיות בטוח שאנחנו נמליץ על המוצר שיתאים לדרישות שלך כמו כפפה ליד.
           </p>
         </section>
       </div>
