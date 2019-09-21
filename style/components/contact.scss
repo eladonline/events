@@ -1,7 +1,11 @@
 .contact-form {
   margin: auto;
   max-width: 800px;
-  @include grid(40px 15px, flex-start, flex-start, 1fr 1fr, 1fr);
+  @include grid(20px 15px, flex-start, flex-start, 1fr 1fr, 1fr);
+  @include sm{
+
+    @include grid(40px 15px, flex-start, flex-start, 1fr 1fr, 1fr);
+  }
   div {
     label {
       &::before {
