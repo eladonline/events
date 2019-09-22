@@ -5,7 +5,7 @@ import CartFooter from "../components/cart/cartFooter";
 import ParseItemsFromCart from "../components/cart/parseItemsFromCart";
 import { priceFormatter } from "../components/helpers";
 import Payment from "../components/cart/payment/payment";
-import Link from "next/Link";
+import Link from "next/link";
 
 const Cart = () => {
   // trigger the change in the cart so it will update
