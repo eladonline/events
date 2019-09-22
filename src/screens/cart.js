@@ -6,6 +6,7 @@ import ParseItemsFromCart from "../components/cart/parseItemsFromCart";
 import { priceFormatter } from "../components/helpers";
 import Payment from "../components/cart/payment/payment";
 import Link from "next/Link";
+
 const Cart = () => {
   // trigger the change in the cart so it will update
   const [cartChange, setcartChange] = useState(false);
