@@ -6,64 +6,51 @@
   "services": {
     "base": [
       {
-        "service": "Oculus risf s",
-        "id": "1111AM-OC",
-        "background": "/static/image/services/oculus/oculus_rift_min.jpg",
+        "service": "מעמד לאוקולוס",
+        "id": "1121AM-OC-stand",
+        "background": "/static/image/services/accessories/stands/oculus_stand_min.jpg",
         "description": {
-          "text": "משקפיים באיכות מעולה במחיר שמתאים לכל כיס. אנו ממליצים לכל מי שרוצה ליהנות מהיכולות של מציאות מדומה במחיר סביר. דרוש מחשב תומך.",
+          "text": "מעמד שולחני למשקפי מציאות מדומה.",
           "detailes": {
-            "manufacture": "oculus",
-            "mfctrUrl": "https://www.oculus.com/",
+            "manufacture": "לא צויין",
+            "mfctrUrl": "",
             "supplyTime": 7,
             "warranty": 1,
-            "price": 3788
+            "price": 249
           }
         },
         "img": [
-          { "src": "/static/image/services/oculus/plays_r.jpg" },
-          { "src": "/static/image/services/oculus/plays_r_2.png" },
-          { "src": "/static/image/services/oculus/plays_r_3.png" }
+          {
+            "src": "/static/image/services/accessories/stands/oculus_stand_2.jpg"
+          },
+          {
+            "src": "/static/image/services/accessories/stands/oculus_stand_min.jpg"
+          }
         ]
       },
       {
-        "service": "Oculus quest",
-        "id": "1112AM-OC",
-        "background": "/static/image/services/oculus/oculus_quest_min.jpg",
+        "service": "מעמד גלובאלי",
+        "id": "1122AM-GB-stand",
+        "background": "/static/image/services/accessories/stands/global_stand.jpg",
         "description": {
-          "text": "משקפיים עם מחשב מובנה, מומלץ לכל מי שאין לו מחשב מוכן VR. אין צורך במחשב תומך.",
+          "text": "מעמד שולחני למשקפי מציאות מדומה.",
           "detailes": {
-            "manufacture": "oculus",
-            "mfctrUrl": "https://www.oculus.com/",
+            "manufacture": "לא צויין",
+            "mfctrUrl": "",
             "supplyTime": 7,
             "warranty": 1,
-            "price": 3788
+            "price": 249
           }
         },
         "img": [
-          { "src": "/static/image/services/oculus/plays_q.png" },
-          { "src": "/static/image/services/oculus/plays_q_2.png" },
-          { "src": "/static/image/services/oculus/plays_q_3.png" },
-          { "src": "/static/image/services/oculus/plays_q_4.png" },
-          { "src": "/static/image/services/oculus/plays_q_5.png" }
+          {
+            "src": "/static/image/services/accessories/stands/global_stand_2.jpg"
+          },
+          {
+            "src": "/static/image/services/accessories/stands/global_stand.jpg"
+          }
         ]
       }
     ]
-  },
-  "manufactureData": [
-    {
-      "text": "אוקולוס היא חברת סטארט אפ בתחום המציאות מדומה שנרכשה ע''י חברת פייסבוק."
-    },
-    {
-      "text": "החברה משתמשת בטכנולוגית 'בפנים כלפי חוץ' זה אומר שהמצלמות נמצאות על המכשיר, וצופות כלפי חוץ על הסביבה ותנועות הידיים."
-    },
-    {
-      "text": "תצוגת המסך של המכשיר מפוצלת – כלומר, המסך מציג תמונה אחת מול כל עין. התמונות שונות במקצת, על-מנת ליצור ראיית תלת-ממד. כדי ליצור תחושת נפח ומרחב אצל המשתמש, ניתן לנווט בעולם הווירטואלי המוצג במשקפיים ב-360 מעלות בהנעת הראש. המכשיר מצויד בחיישני תנועה כדי לעקוב אחר תנועות הראש ולהתאים את נקודת המבט (פרספקטיבה) של המשתמש בעולם הווירטואלי המוצג לפיה."
-    },
-    {
-      "text": "לאוקולוס ספריית המשחקים הרחבה ביותר כיום מכל שאר משקפי המציאות המדומה."
-    },
-    {
-      "text": "אוקולוס היא הבחירה הטובה ביותר עבור אלו שרוצים להיות בעולם המציאות וירטואלית במחיר סביר."
-    }
-  ]
+  }
 }

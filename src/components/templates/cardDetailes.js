@@ -17,7 +17,7 @@ const CardDetailesTemplate = ({
         {manufacture}
       </a>{" "}
     </li>
-    <li>זמן אספקה: {supplyTime} ימי עסקים </li>
+    <li>זמן אספקה: עד {supplyTime} ימי עסקים </li>
     <li>שנות אחריות: {warranty}</li>
     <li> מחיר כולל מע''מ: {priceFormatter(price)}</li>
   </div>

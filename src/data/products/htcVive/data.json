@@ -15,7 +15,7 @@
           "detailes": {
             "manufacture": "HTC, Valve",
             "mfctrUrl": "https://www.vive.com/us/product/vive-pro-starter-kit/",
-            "supplyTime": 7,
+            "supplyTime": 14,
             "warranty": 1,
             "price": 4999
           }
@@ -39,7 +39,7 @@
           "detailes": {
             "manufacture": "HTC, Valve",
             "mfctrUrl": "https://www.vive.com/us/product/cosmos/",
-            "supplyTime": 10,
+            "supplyTime": 14,
             "warranty": 1,
             "price": 3999
           }

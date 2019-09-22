@@ -56,13 +56,15 @@ const HeadAlist = ({ list, triggerAddCart, manufactureData }) => {
   return (
     <div className="event-page__container">
       <section>
-        <div className="grid">
-          <header>
-            <h4>מידע על היצרן</h4>
-          </header>
-          {/** data of manufacture */}
-          {parseInfo(manufactureData)}
-        </div>
+        {/** data of manufacture */}
+        {manufactureData && (
+          <div className="grid">
+            <header>
+              <h4>מידע על היצרן</h4>
+            </header>
+            parseInfo(manufactureData)
+          </div>
+        )}
       </section>
       <div className="grid">
         <header>
