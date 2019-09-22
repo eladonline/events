@@ -5,7 +5,7 @@ import CartFooter from "../components/cart/cartFooter";
 import ParseItemsFromCart from "../components/cart/parseItemsFromCart";
 import { priceFormatter } from "../components/helpers";
 import Payment from "../components/cart/payment/payment";
-
+import Link from "next/Link";
 const Cart = () => {
   const [cartChange, setcartChange] = useState(false);
   const [cartItems, setCartItems] = useState([]);
@@ -48,6 +48,10 @@ const Cart = () => {
                 setIsPaymentState={setIsPaymentState}
                 setcartChange={setcartChange}
               />
+              <div className='cart__order-terms'> 
+                *בקנייה באתר אתה מסכים <Link href="/terms">לתנאי השימוש</Link>{" "}
+                שלנו.
+              </div>
             </>
           ) : (
             <CartIsEmpty />

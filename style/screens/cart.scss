@@ -1,5 +1,6 @@
 //Cart\\
 .cart {
+  min-height: 90vh;
   > .grid > header {
     padding: 5em 0 3em 0;
     // text-align: center;
@@ -16,6 +17,10 @@
   // Empty cart \\
   .cart-is-empty {
     @extend %fs24;
+  }
+  &__order-terms {
+    margin: 70px 0 0 0;
+    @extend %fs14;
   }
   .cart-footer {
     padding-top: 3em;

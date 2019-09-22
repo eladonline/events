@@ -20,7 +20,7 @@ const NavbarDesktop = ({ top, cartItems }) => {
         {data.menuItem.map(item => {
           return (
             <Menu.Item key={item.link}>
-              <Link href={item.link}>{item.title}</Link>
+              {item.title}
             </Menu.Item>
           );
         })}
