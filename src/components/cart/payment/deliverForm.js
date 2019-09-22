@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 import { Form, Input } from "antd";
+import billingAdapt from "../../payment/billingAdapt";
+import router from 'next/router'
 
 const { TextArea } = Input;
 
-const DeliverForm = ({ form }) => {
+const DeliverForm = ({ form, items,sum }) => {
   const { getFieldDecorator } = form;
 
   const handleSubmit = e => {
     e.preventDefault();
     form.validateFieldsAndScroll((err, values) => {
       if (!err) {
-        console.log("Received values of form: ", values);
+        const query = billingAdapt(values, items, sum);
+        location.replace(`https://app.icount.co.il/m/da23f/c63992p1u5d8777f44f?${query}`)
       }
     });
   };
@@ -84,7 +87,7 @@ const DeliverForm = ({ form }) => {
       </Form.Item>
 
       <Form.Item colon={false} label="מס' בית">
-        {getFieldDecorator("street", {
+        {getFieldDecorator("houseNum", {
           rules: [
             {
               required: true,
@@ -105,11 +108,11 @@ const DeliverForm = ({ form }) => {
         })(<Input />)}
       </Form.Item>
 
-      <div className="textarea-container">
+      {/* <div className="textarea-container">
         <Form.Item id="test" colon={false} label="הערות להזמנה">
-          {getFieldDecorator("intrested", { rules: [] })(<TextArea />)}
+          {getFieldDecorator("suggestion", { rules: [] })(<TextArea />)}
         </Form.Item>
-      </div>
+      </div> */}
 
       <button className="btnDark hover-green " type="submit">
         שלח

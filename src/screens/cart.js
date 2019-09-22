@@ -53,7 +53,7 @@ const Cart = () => {
                 setIsPaymentState={setIsPaymentState}
                 setcartChange={setcartChange}
               />
-              <div className='cart__order-terms'> 
+              <div className="cart__order-terms">
                 *בקנייה באתר אתה מסכים <Link href="/terms">לתנאי השימוש</Link>{" "}
                 שלנו.
               </div>
@@ -62,7 +62,9 @@ const Cart = () => {
             <CartIsEmpty />
           )}
         </section>
-        {isPaymentState && cartItems.length ? <Payment /> : null}
+        {isPaymentState && cartItems.length ? (
+          <Payment items={cartItems} sum={totalSum} />
+        ) : null}
       </div>
     </div>
   );

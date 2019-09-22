@@ -1,13 +1,15 @@
-import DeliverForm from './deliverForm'
+import DeliverForm from "./deliverForm";
+import getQuantity from "../quantityCount";
 
-const Payment = props => {
+const Payment = ({ items, sum }) => {
+  const dataWithQuantity = getQuantity(items);
   return (
     <div id="payment" className="payment">
       <header>
-        <h2>מערכת תשלום והזמנת מוצר</h2>
+        <h2>מערכת הזנת פרטים לפני רכישה</h2>
       </header>
       <section>
-          <DeliverForm />
+        <DeliverForm sum={sum} items={dataWithQuantity} />
       </section>
     </div>
   );
