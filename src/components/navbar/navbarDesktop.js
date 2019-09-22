@@ -17,17 +17,7 @@ const NavbarDesktop = ({ top, cartItems }) => {
     <div className="notMobile">
       <CartIcon nItems={cartItems} />
       <Menu onClick={handleClick} current={"[]"} mode="horizontal">
-        {data.menuItem.map(item => {
-          return (
-            <Menu.Item key={item.link}>
-              {item.title}
-            </Menu.Item>
-          );
-        })}
-
-        <Link href="/">
-          <div data-top={top} className="menu-navbar__ant-menu__logo logo" />
-        </Link>
+        <Menu.Item key={" "}>בית</Menu.Item>
 
         {data.menusWithSubMenus.map(item => {
           return (
@@ -40,7 +30,13 @@ const NavbarDesktop = ({ top, cartItems }) => {
             </SubMenu>
           );
         })}
-        <Menu.Item key={"#footer"}>צור קשר</Menu.Item>
+        <Link href="/">
+          <div data-top={top} className="menu-navbar__ant-menu__logo logo" />
+        </Link>
+
+        {data.menuItem.map(item => {
+          return <Menu.Item key={item.link}>{item.title}</Menu.Item>;
+        })}
       </Menu>
     </div>
   );

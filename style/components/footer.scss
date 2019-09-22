@@ -1,9 +1,29 @@
 .footer {
   color: white;
-  border-top:2px solid $black;
+  border-top: 2px solid $black;
   section {
     padding: 20px 0;
-    background: #333333;
+    background: #292929;
+    .grid {
+      @include flex-column(flex-start, flex-start);
+      @include sm {
+        @include flex-row(space-between, flex-end);
+      }
+      .footer-items {
+        .footer-items__links {
+          @include grid(3px, flex-start, flex-start, 1fr 1fr, auto);
+
+          i {
+            font-size: 35px;
+            color: white;
+          }
+        }
+        .footer-items__innerlink{
+          text-decoration: underline;
+          margin-top: 5px;
+        }
+      }
+    }
   }
   &__rights {
     padding: 15px;

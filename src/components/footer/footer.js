@@ -1,13 +1,13 @@
-import Link from 'next/link'
+import FooterItems from "./footerItems";
+import WorkingTime from "./workingTime";
 
 const Footer = () => {
   return (
     <footer id="footer" className="footer">
       <section>
         <div className="grid">
-          <Link href="/terms">
-            <div>תנאי שימוש</div>
-          </Link>
+          <WorkingTime />
+          <FooterItems />
         </div>
       </section>
       <div className="footer__rights">

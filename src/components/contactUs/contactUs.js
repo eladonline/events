@@ -16,7 +16,13 @@ const ContactUs = () => (
       <div className="contact-us__contact-detailes">
         <div className="tel">
           <div>טל: 050-6666666</div>
-          <div> אימייל: eladonline@walla.com </div>
+          <div>
+            {" "}
+            Email:{" "}
+            <a href="mailto:vr.era.store@gmail.com">
+              vr.era.store@gmail.com
+            </a>{" "}
+          </div>
         </div>
       </div>
     </section>

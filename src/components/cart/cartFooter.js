@@ -9,9 +9,9 @@ const CartFooter = ({ setcartChange, setIsPaymentState, paymentState }) => {
     <footer className="cart-footer">
       <div onClick={() => handelCleanCart()}>רוקן עגלה</div>
       <a href="#payment">
-        <div onClick={() => setIsPaymentState(!paymentState)}>
+        <div onClick={() => setIsPaymentState(true)}>
           {" "}
-          {paymentState ? "סגור תשלום" : "המשך לתשלום"}
+          {"המשך לתשלום"}
         </div>
       </a>
     </footer>

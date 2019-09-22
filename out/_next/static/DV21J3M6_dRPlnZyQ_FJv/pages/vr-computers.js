@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[17],{IQtE:function(n,t,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/vr-computers",function(){return o("n5Ra")}])},n5Ra:function(n,t,o){"use strict";o.r(t);var e=o("q1tI"),u=o.n(e),c=o("s5oe"),i=o.n(c),r=u.a.createElement;t.default=function(){return r(i.a,null)}},s5oe:function(n,t){}},[["IQtE",1,0]]]);

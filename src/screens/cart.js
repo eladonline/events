@@ -7,10 +7,14 @@ import { priceFormatter } from "../components/helpers";
 import Payment from "../components/cart/payment/payment";
 import Link from "next/Link";
 const Cart = () => {
+  // trigger the change in the cart so it will update
   const [cartChange, setcartChange] = useState(false);
+  // the items in the cart
   const [cartItems, setCartItems] = useState([]);
+  // this is the total sum
   const [totalSum, setTotalSum] = useState(0);
-  const [isPaymentState, setIsPaymentState] = useState(true);
+  // this opens he payment section
+  const [isPaymentState, setIsPaymentState] = useState(false);
 
   useEffect(() => {
     if (cartChange)

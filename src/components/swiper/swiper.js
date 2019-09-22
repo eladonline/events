@@ -72,14 +72,11 @@ export class SlideSwipe extends React.Component {
     const params = {
       spaceBetween: 0,
       centeredSlides: false,
+      loop: true,
+      speed: 800,
       autoplay: {
-        delay: 2500,
-        disableOnInteraction: true
-      },
-      pagination: {
-        el: ".swiper-pagination",
-      },
-
+        delay: 2500
+      }
     };
     return <Swiper {...params}>{parseSlides(this.props.list)}</Swiper>;
   }

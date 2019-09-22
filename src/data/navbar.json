@@ -15,13 +15,14 @@
     }
   ],
   "menuItem": [
-    {
-      "title": "בית",
-      "link": " "
-    },
+  
     {
       "title": "עלינו",
       "link": "about"
+    },
+    {
+      "title": "צור קשר",
+      "link": "#footer"
     }
   ]
 }
