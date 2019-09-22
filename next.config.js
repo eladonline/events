@@ -52,6 +52,7 @@ module.exports = compose([
         "/htc-vive": { page: "/htc-vive" },
         "/cart": { page: "/cart" },
         "/vr-glasss": { page: "/vr-glasss" },
+        "/order-recieved": { page: "/order-recieved" },
         "/vr-accessories": { page: "/vr-accessories" },
         "/accessories/stands": { page: "/accessories/stands" },
         "/accessories/controllers": { page: "/accessories/controllers" },
