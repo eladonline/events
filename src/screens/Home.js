@@ -8,12 +8,14 @@ import data from "src/data/screens/homepage";
 import Slide from "src/components/carousle/serviceSlide";
 import About from "./About";
 import ContactUs from "../components/contactUs/contactUs";
+import SeoHack from "../components/seo/seoHack";
 
 // import Recommendation from "src/components/recommendation/Recommends.js";
 
 const Homepage = props => {
   return (
     <div className="home">
+      <SeoHack />
       <Hero data={data.hero} />
       <div className="background-provider">
         <Navbar />
@@ -21,6 +23,7 @@ const Homepage = props => {
         <Teaser />
         <About />
         <ContactUs />
+
         {/* <Recommendation data={data} /> */}
         {/* <Gallery list={data.gallery} /> */}
       </div>

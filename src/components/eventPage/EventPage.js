@@ -62,7 +62,7 @@ const HeadAlist = ({ list, triggerAddCart, manufactureData }) => {
             <header>
               <h4>מידע על היצרן</h4>
             </header>
-            parseInfo(manufactureData)
+            {parseInfo(manufactureData)}
           </div>
         )}
       </section>
