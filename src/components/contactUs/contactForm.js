@@ -17,7 +17,7 @@ const Contact = () => {
     <div className="grid">
       <form
         id="contact-from"
-        action="https://formspree.io/eladonline@walla.com"
+        action="https://formspree.io/vr.era.store@gmail.com"
         method="POST"
         className="contact-form "
       >

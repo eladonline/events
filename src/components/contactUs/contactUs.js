@@ -20,7 +20,7 @@ const ContactUs = () => (
             {" "}
             צ'אט פייסבוק:{" "}
             <a href="https://m.me/108400477228002">
-              Messanger
+              פתח צ'אט
             </a>{" "}
           </div>
         </div>
