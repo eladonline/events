@@ -1,6 +1,11 @@
 import Navbar from "../components/navbar/navbar";
+import React, { useEffect } from "react";
+import {quickeSaveToStorage} from '../components/cart/manageCart';
 
 const OrderRecived = () => {
+  useEffect(()=>{
+    quickeSaveToStorage([])
+  })
   return (
     <div className="order-recieved">
       <Navbar />
@@ -10,7 +15,6 @@ const OrderRecived = () => {
           <h5>ברגעים אלו נשלחת אליך קבלה על הרכישה.</h5>
           <h4>אנחנו נטפל בהזמנה ונודיע ל ברגע שתישלח אליך.</h4>
         </header>
-        
       </div>
     </div>
   );

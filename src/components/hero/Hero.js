@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { SlideSwipe } from "../swiper/swiper";
 
 const Hero = ({ data }) => {
-  const [isMobile, setisMobile] = useState(true);
+  const [isMobile, setisMobile] = useState(false);
   useEffect(() => {
     setisMobile(innerWidth < 768);
   }, []);
