@@ -2,10 +2,10 @@ const billingAdapt = (data, cartItems, sum) => {
   const { name, family, phone, email, city, street, houseNum, zipCode } = data;
   // תיאור המוצר
   const cd = `cd=${cartItems
-    .map(({ item, quantity }) => `${item.service}: ${quantity},`)
+    .map(({ item, quantity }) => ` מוצר: ${item.service} כמות: ${quantity}, `)
     .join("")}`;
   const cs = `cs=${sum}`;
-  const full_name = `full_name=${name}${family}`;
+  const full_name = `full_name=${name} ${family}`;
   const ccfname = `ccfname=${name}`;
   const cclname = `cclname=${family}`;
   const contact_phone = `contact_phone=${phone}`;
