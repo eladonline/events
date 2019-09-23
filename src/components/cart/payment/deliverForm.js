@@ -59,6 +59,10 @@ const DeliverForm = ({ form, items,sum }) => {
             {
               type: "email",
               message: "!האימייל אינו תקין"
+            },
+            {
+              required: true,
+              message: "הזן דואר אלקטרוני בבקשה!"
             }
           ]
         })(<Input />)}
