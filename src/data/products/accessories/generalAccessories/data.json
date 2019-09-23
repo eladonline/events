@@ -1,70 +1,97 @@
 {
-    "hero": {
-      "src": "/static/image/staticPages/oculus.jpg",
-      "head": "Oculus"
-    },
-    "services": {
-      "base": [
-        {
-          "service": "Oculus risf s",
-          "id": "1111AM-OC",
-          "background": "/static/image/services/oculus/oculus_rift_min.jpg",
-          "description": {
-            "text": "משקפיים באיכות מעולה במחיר שמתאים לכל כיס. אנו ממליצים לכל מי שרוצה ליהנות מהיכולות של מציאות מדומה במחיר סביר. דרוש מחשב תומך.",
-            "detailes": {
-              "manufacture": "oculus",
-              "mfctrUrl": "https://www.oculus.com/",
-              "supplyTime": 7,
-              "warranty": 1,
-              "price": 3788
-            }
-          },
-          "img": [
-            { "src": "/static/image/services/oculus/plays_r.jpg" },
-            { "src": "/static/image/services/oculus/plays_r_2.png" },
-            { "src": "/static/image/services/oculus/plays_r_3.png" }
-          ]
+  "hero": {
+    "src": "/static/image/staticPages/vr_accessories.jpg",
+    "head": "אביזרים למציאות מדומה"
+  },
+  "services": {
+    "base": [
+      {
+        "service": "מאחזי סיליקון ל htc vive",
+        "id": "1111AM-HV-grip",
+        "background": "/static/image/accessories/htc_silicon_grip.jpg",
+        "description": {
+          "text": "כיסוי סיליקון לאחיזה טובה יותר והגנה על השלטים.",
+          "detailes": {
+            "manufacture": "לא צויין",
+            "mfctrUrl": "#לא צויין",
+            "supplyTime": 10,
+            "warranty": 1,
+            "price": 249
+          }
         },
-        {
-          "service": "Oculus quest",
-          "id": "1112AM-OC",
-          "background": "/static/image/services/oculus/oculus_quest_min.jpg",
-          "description": {
-            "text": "משקפיים עם מחשב מובנה, מומלץ לכל מי שאין לו מחשב מוכן VR. אין צורך במחשב תומך.",
-            "detailes": {
-              "manufacture": "oculus",
-              "mfctrUrl": "https://www.oculus.com/",
-              "supplyTime": 7,
-              "warranty": 1,
-              "price": 3788
-            }
+        "img": [
+          { "src": "/static/image/accessories/htc_silicon_grip.jpg" },
+          { "src": "/static/image/accessories/htc_silicon_grip_2.jpg" }
+        ]
+      },
+      {
+        "service": "מאחזי סיליקון לאוקולוס",
+        "id": "1111AM-OC-grip",
+        "background": "/static/image/accessories/oucluse_controller_grip.jpg",
+        "description": {
+          "text": "כיסוי סיליקון לאחיזה טובה יותר והגנה על השלטים.",
+          "detailes": {
+            "manufacture": "לא צויין",
+            "mfctrUrl": "#לא צויין",
+            "supplyTime": 7,
+            "warranty": 1,
+            "price": 249
+          }
+        },
+        "img": [
+          { "src": "/static/image/accessories/oucluse_controller_grip.jpg" },
+          { "src": "/static/image/accessories/oucluse_controller_grip_2.jpg" },
+          { "src": "/static/image/accessories/oucluse_controller_grip_3.jpg" }
+        ]
+      },
+      {
+        "service": "ספוג פנים היגייני oculus rift s",
+        "id": "1111AM-OC-face-sponge",
+        "background": "/static/image/accessories/face_higheen_rift_s.jpg",
+        "description": {
+          "text": "כיסוי ספוג לפנים לשמירה על היגיינה.",
+          "detailes": {
+            "manufacture": "לא צויין",
+            "mfctrUrl": "#לא צויין",
+            "supplyTime": 7,
+            "warranty": 1,
+            "price": 95
+          }
+        },
+        "img": [
+          { "src": "/static/image/accessories/face_higheen_rift_s.jpg" },
+          { "src": "/static/image/accessories/face_higheen_rift_s_2.jpg" }
+        ]
+      },
+      {
+        "service": "מעמד לחיישני בסיס",
+        "id": "2224AM-HV-stand",
+        "background": "/static/image/services/accessories/controllers/sensor_stand_min.jpg",
+        "description": {
+          "text": "מעמד לחיישני תנועה למי שרוצה להשתמש בחיישנים ללא קיבוע לקיר גובהה 2 מטר יחידה.",
+          "detailes": {
+            "manufacture": "לא צויין",
+            "mfctrUrl": "#לא צויין",
+            "supplyTime": 14,
+            "warranty": 1,
+            "price": 789
+          }
+        },
+        "img": [
+          {
+            "src": "/static/image/services/accessories/controllers/sensor_stand_min.jpg"
           },
-          "img": [
-            { "src": "/static/image/services/oculus/plays_q.png" },
-            { "src": "/static/image/services/oculus/plays_q_2.png" },
-            { "src": "/static/image/services/oculus/plays_q_3.png" },
-            { "src": "/static/image/services/oculus/plays_q_4.png" },
-            { "src": "/static/image/services/oculus/plays_q_5.png" }
-          ]
-        }
-      ]
-    },
-    "manufactureData": [
-      {
-        "text": "אוקולוס היא חברת סטארט אפ בתחום המציאות מדומה שנרכשה ע''י חברת פייסבוק."
-      },
-      {
-        "text": "החברה משתמשת בטכנולוגית 'בפנים כלפי חוץ' זה אומר שהמצלמות נמצאות על המכשיר, וצופות כלפי חוץ על הסביבה ותנועות הידיים."
-      },
-      {
-        "text": "תצוגת המסך של המכשיר מפוצלת – כלומר, המסך מציג תמונה אחת מול כל עין. התמונות שונות במקצת, על-מנת ליצור ראיית תלת-ממד. כדי ליצור תחושת נפח ומרחב אצל המשתמש, ניתן לנווט בעולם הווירטואלי המוצג במשקפיים ב-360 מעלות בהנעת הראש. המכשיר מצויד בחיישני תנועה כדי לעקוב אחר תנועות הראש ולהתאים את נקודת המבט (פרספקטיבה) של המשתמש בעולם הווירטואלי המוצג לפיה."
-      },
-      {
-        "text": "לאוקולוס ספריית המשחקים הרחבה ביותר כיום מכל שאר משקפי המציאות המדומה."
-      },
-      {
-        "text": "אוקולוס היא הבחירה הטובה ביותר עבור אלו שרוצים להיות בעולם המציאות וירטואלית במחיר סביר."
+          {
+            "src": "/static/image/services/accessories/controllers/sensor_stand_3_min.jpg"
+          },
+          {
+            "src": "/static/image/services/accessories/controllers/sensor_stand_2_min.jpg"
+          },
+          {
+            "src": "/static/image/services/accessories/controllers/sensor_stand_min_4.jpg"
+          }
+        ]
       }
     ]
   }
-  
+}

@@ -1,6 +1,6 @@
 {
   "hero": {
-    "src": "/static/image/staticPages/oculus.jpg",
+    "src": "/static/image/staticPages/vr_accessories.jpg",
     "head": "בקרים"
   },
   "services": {
@@ -95,39 +95,10 @@
           }
         ]
       },
+
       {
         "page": "accessories/controllers",
-        "service": "מעמד לחיישני בסיס",
-        "id": "2224AM-HV-stand",
-        "background": "/static/image/services/accessories/controllers/sensor_stand_min.jpg",
-        "description": {
-          "text": "מעמד לחיישני תנועה למי שרוצה להשתמש בחיישנים ללא קיבוע לקיר גובהה 2 מטר יחידה.",
-          "detailes": {
-            "manufacture": "HTC vive",
-            "mfctrUrl": "https://www.vive.com/us/",
-            "supplyTime": 14,
-            "warranty": 1,
-            "price": 789
-          }
-        },
-        "img": [
-          {
-            "src": "/static/image/services/accessories/controllers/sensor_stand_min.jpg"
-          },
-          {
-            "src": "/static/image/services/accessories/controllers/sensor_stand_3_min.jpg"
-          },
-          {
-            "src": "/static/image/services/accessories/controllers/sensor_stand_2_min.jpg"
-          },
-          {
-            "src": "/static/image/services/accessories/controllers/sensor_stand_min_4.jpg"
-          }
-        ]
-      },
-      {
-        "page": "accessories/controllers",
-        "service": "חיישני בסיס htc-vive",
+        "service": "חיישני בסיס htc-vive 1.0",
         "id": "2225AM-HV-sensors",
         "background": "/static/image/services/accessories/controllers/base_station_htc_min.jpg",
         "description": {
@@ -146,6 +117,27 @@
           },
           {
             "src": "/static/image/services/accessories/controllers/base_station_htc_2_min.jpg"
+          }
+        ]
+      },
+      {
+        "page": "accessories/controllers",
+        "service": "חיישני בסיס SteamVR 2.0",
+        "id": "2226AM-SVR-sensors",
+        "background": "/static/image/services/accessories/controllers/steam_vr_bs.jpg",
+        "description": {
+          "text": "חיישני בסיס ל SteamVR יחידה אחת.",
+          "detailes": {
+            "manufacture": "SteamVR",
+            "mfctrUrl": "https://store.steampowered.com/valveindex",
+            "supplyTime": 14,
+            "warranty": 1,
+            "price": 1899
+          }
+        },
+        "img": [
+          {
+            "src": "/static/image/services/accessories/controllers/steam_vr_bs.jpg"
           }
         ]
       }

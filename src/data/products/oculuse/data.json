@@ -7,7 +7,7 @@
     "base": [
       {
         "page": "oculus",
-        "service": "Oculus risf s",
+        "service": "Oculus rift s",
         "id": "1111AM-OC",
         "background": "/static/image/services/oculus/oculus_rift_min.jpg",
         "description": {

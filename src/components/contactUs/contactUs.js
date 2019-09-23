@@ -15,7 +15,7 @@ const ContactUs = () => (
       <Contact />
       <div className="contact-us__contact-detailes">
         <div className="tel">
-          <div>טל: 050-6666666</div>
+          <div>טל: 050-6471048</div>
           <div>
             {" "}
             Email:{" "}
