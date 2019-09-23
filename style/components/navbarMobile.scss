@@ -6,6 +6,8 @@
   left: 36px;
   top: 36px;
   color: white;
+  background: $black-opacity;
+  box-shadow: 0 0 12px black ;
   /* Position and sizing of clickable cross button */
   span.bm-cross-button.cross-button {
     height: 24px;
@@ -42,7 +44,7 @@
 
 /* General sidebar styles */
 .bm-menu {
-  background: $black;
+  background: $darkBlack;
   font-size: 1.15em;
   position: relative;
   top: 0;
@@ -51,7 +53,7 @@
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-  fill: $black;
+  fill: $darkBlack;
 }
 
 /* Wrapper for item list */

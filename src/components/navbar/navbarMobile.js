@@ -40,7 +40,6 @@ const NavbarMobile = ({ cartItems }) => {
           {parseMenuItems()}
           {parseSubMenuItems()}
 
-          <Link href={"#footer"}>צור קשר</Link>
           <CartIcon nItems={cartItems} />
         </div>
       </BmMenu>
