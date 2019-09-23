@@ -4,7 +4,7 @@ import Swiper from "react-id-swiper";
 const parseSlides = list => {
   if (list)
     return list.map(({ src }) => {
-      return <img key={src} src={src} className="swiper__item" />;
+      return <img key={src} src={src} alt="vr-glasses" className="swiper__item" />;
     });
 };
 
