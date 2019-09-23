@@ -1,34 +1,34 @@
-@import './styleTools.scss';
-@import '~slick-carousel/slick/slick.css';
-@import './slick/slick-theme.scss';
-@import './components/hero.scss';
-@import './components/navbar.scss';
-@import './components/carousle.scss';
-@import './components/footer.scss';
-@import './components/teaser.scss';
-@import './components/swiper.scss';
-@import './components/gallery.scss';
-@import './components/servicePage.scss';
-@import './screens/static-container.scss';
-@import './screens/vr-glasss.scss';
-@import './components/cardAcardsList.scss';
-@import './components/eventPage.scss';
-@import './components/modal.scss';
-@import './components/recommendation.scss';
-@import './components/layout.scss';
-@import './components/templates/cardDetailes.scss';
-@import './components/BuySellFooter.scss';
-@import './screens/cart.scss';
-@import './screens/about.scss';
-@import './components/cartIcon.scss';
-@import './components/payment.scss';
-@import './components/contact.scss';
-@import './components/navbarMobile.scss';
-@import './components/contactUs.scss';
-@import './screens/terms.scss';
-@import './screens/order-recieved.scss';
+@import "./styleTools.scss";
+@import "~slick-carousel/slick/slick.css";
+@import "./slick/slick-theme.scss";
+@import "./components/hero.scss";
+@import "./components/navbar.scss";
+@import "./components/carousle.scss";
+@import "./components/footer.scss";
+@import "./components/teaser.scss";
+@import "./components/swiper.scss";
+@import "./components/gallery.scss";
+@import "./components/servicePage.scss";
+@import "./screens/static-container.scss";
+@import "./screens/vr-glasss.scss";
+@import "./components/cardAcardsList.scss";
+@import "./components/eventPage.scss";
+@import "./components/modal.scss";
+@import "./components/recommendation.scss";
+@import "./components/layout.scss";
+@import "./components/templates/cardDetailes.scss";
+@import "./components/BuySellFooter.scss";
+@import "./screens/cart.scss";
+@import "./screens/about.scss";
+@import "./components/cartIcon.scss";
+@import "./components/payment.scss";
+@import "./components/contact.scss";
+@import "./components/navbarMobile.scss";
+@import "./components/contactUs.scss";
+@import "./screens/terms.scss";
+@import "./screens/order-recieved.scss";
 html {
-  background:$black;
+  background: $black;
 }
 #__next,
 .home {
@@ -84,4 +84,17 @@ p {
 }
 .pointer {
   cursor: pointer;
+}
+
+.seo-hack {
+  position: absolute;
+  z-index: -1;
+  font-size: 22px;
+  color: "#161616";
+  h1,
+  a,
+  h2,
+  p {
+    color: $black;
+  }
 }
