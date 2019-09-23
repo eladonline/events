@@ -14,7 +14,7 @@ const SeoHack = () => {
   </div>;
 };
 
-const style = { position: "absolute", Zindex: "-1" };
+const style = { position: "absolute", Zindex: "-1", fontSize:'22px' };
 
 
 export default SeoHack

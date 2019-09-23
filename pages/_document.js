@@ -20,6 +20,7 @@ export default class MyDocument extends Document {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
+          <meta name="google-site-verification" content="MmvE2hsgIJXVTeL36J17JkvpmIAxv1VpWnyfxowZxiI" />
           <Meta />
           <Title />
           <link
