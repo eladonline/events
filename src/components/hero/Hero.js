@@ -9,7 +9,11 @@ const Hero = ({ data }) => {
   return (
     <>
       <div className="hero">
-        <SlideSwipe list={isMobile ? data.mobile : data.desktop} />
+        {isMobile ? (
+          <SlideSwipe list={data.mobile} />
+        ) : (
+          <SlideSwipe list={data.desktop} />
+        )}
 
         <div className="hero__overlay">
           <header>

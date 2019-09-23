@@ -18,9 +18,9 @@ const ContactUs = () => (
           <div>טל: 050-6471048</div>
           <div>
             {" "}
-            Email:{" "}
-            <a href="mailto:vr.era.store@gmail.com">
-              vr.era.store@gmail.com
+            צ'אט פייסבוק:{" "}
+            <a href="https://m.me/108400477228002">
+              Messanger
             </a>{" "}
           </div>
         </div>
