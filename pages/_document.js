@@ -41,6 +41,7 @@ export default class MyDocument extends Document {
           />
           <style>{`body { margin: 0 }`}</style>
         </Head>
+
         <body>
           <Main />
           <NextScript />
@@ -54,9 +55,9 @@ const MicroData = () => (
   <div
     style={{ position: "fixed", zIndex: "-1" }}
     itemscope
-    itemtype="http://schema.org/Person"
+    itemtype="http://schema.org/Organization"
   >
-    <span itemprop="name">משקפי מציאות מדומה</span>
+    <span itemprop="name">חנות מציאות מדומה</span>
     <span itemprop="company">VR ERA</span>
     <a itemprop="email" href="mailto:vr.era.store@gmail.com">
       vr.era.store@gmail.com
