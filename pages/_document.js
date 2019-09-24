@@ -34,6 +34,7 @@ export default class MyDocument extends Document {
             href="/static/image/favicon.ico"
             type="image/x-icon"
           />
+          <MicroData />
           <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css"
@@ -49,4 +50,16 @@ export default class MyDocument extends Document {
   }
 }
 
-
+const MicroData = () => (
+  <div
+    style={{ position: "fixed", zIndex: "-1" }}
+    itemscope
+    itemtype="http://schema.org/Person"
+  >
+    <span itemprop="name">משקפי מציאות מדומה</span>
+    <span itemprop="company">VR ERA</span>
+    <a itemprop="email" href="mailto:vr.era.store@gmail.com">
+      vr.era.store@gmail.com
+    </a>
+  </div>
+);

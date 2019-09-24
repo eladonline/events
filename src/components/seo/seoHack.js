@@ -1,14 +1,21 @@
 const SeoHack = () => {
   return (
     <div className="seo-hack">
-      <h1>משקפי מציאות מדומה תל אביב, מציאות מדומה בזול, משקפי vr מחיר</h1>
+      <h1>משקפי מציאות מדומה בזול, מציאות וירטואלית תל אביב, משקפי vr</h1>
       <h2>
-        משקפי מציאות מדומה במחיר זול אוקלוס ריפט אס htc vive מחיר vavle index
-        מחיר חנות למציאות מדומה
+        virtual reality במחיר זול אוקלוס ריפט אס htc vive מחיר vavle index חנות
+        למציאות מדומה
       </h2>
       <p>
-        מהם משקפי של מציאות מדומה? מהם משקפי וגם מציאות מדומה? להבין את התחום
-        ויש ואת האפשרויות הרבותאם שהוא מעמיד לרשותנו
+        חנות משקפי מציאות מדומה vr-era תמצא כאן את סוגים שונים של משקפי VR
+        ביניהם אוקולוד ריפט אס oculus rift s פימקס pimax htc vive vive index כמו
+        כן ניתן למצוא באתר אביזרים למציאות מדומה כגון טראקר ל htc tracker בנוסף
+        יש גם אדפטר למשקפי מציאות מדומה כיסויים לבקרים ג'וייסטיקים וגם למשקפיים
+        עצמם
+      </p>
+      <p>
+        מהם משקפי של מציאות מדומה? מהם משקפי וגם vr era? להבין את התחום ויש ואת
+        האפשרויות הרבותאם שהוא מעמיד לרשותנו
       </p>
       <p>
         מה זה מציאות מדומה ? המושג 'מציאות מדומה' נזרק די שכן הרבה בתקופה היא
@@ -25,9 +32,9 @@ const SeoHack = () => {
       </p>
       <p>
         משקפי מציאות מדומה טובות, עושות שימוש utz בשילוב עדשות בזוית שונה לכל
-        עין
+        עין vr-era
       </p>
-      <p>למה לבחור במשקפי מציאות מדומה ?</p>
+      <p> למה לבחור במשקפי מציאות מדומה בזול ?</p>
       <p>
         הגדרת השימוש עבור המשקפיים שתרצו תוכל לצמצם משמעותית את המבחר וטווח
         המחירים.
@@ -35,25 +42,23 @@ const SeoHack = () => {
       <p>
         לשחקנים מתחילים ומתקדמים מומלץ לרכוש בכל מקרה בנוסף לערכת המשקפי מציאות
         מדומה גם ג'ויסטיק תואם או לפחות לוודא שמשקפיים יהיו מסוגלות להתחבר
-        לג'ויסטיק בעתיד..
+        מציאות וירטואלית תל אביב לג'ויסטיק בעתיד.. vr-era
       </p>
-      <a href="https://www.oculus.com/medium/">וירטואל ריאליטי</a>
-      <a href="https://medium.com/">חנות מציאות מדומה</a>
-      <a href="https://medium.com/wonda-vr">משקפי מציאות מדומה</a>
-      <a href="https://www.pcmag.com/compare/368050/oculus-quest-vs-oculus-rift-s-which-vr-headset-should-you">
-        אוקולוס ריפט אס
+      <a title="מידע על אוקלוס במדיום" href="https://www.oculus.com/medium/">מידע על אוקלוס במדיום</a>
+      <a title='אילו משקפי המציאות מדומה הכי כדאי לקנות' href="https://www.techradar.com/news/the-best-vr-headset">משקפי המציאות מדומה הכי כדאי לקנות</a>
+      <a title='wonda vr' href="https://medium.com/wonda-vr">wonda vr</a>
+      <a title="אוקולוס קווסט או אוקולוס ריפד אס" href="https://www.pcmag.com/compare/368050/oculus-quest-vs-oculus-rift-s-which-vr-headset-should-you">
+      אוקולוס קווסט או אוקולוס ריפד אס
       </a>
-      <a href="https://www.windowscentral.com/oculus-rift-s-vs-htc-vive">
-        אוקולוס
+      <a title="אוקולוס ריפט או htc vive" href="https://www.windowscentral.com/oculus-rift-s-vs-htc-vive">
+      אוקולוס ריפט אס  או htc vive
       </a>
-      <a href="https://www.techradar.com/news/wearables/htc-vive-vs-oculus-rift-1301375">
-        htc vive חנות
+      <a title="טקרדאר" href="https://www.techradar.com/news/wearables/htc-vive-vs-oculus-rift-1301375">
+      אוקולוס ריפט או htc vive
       </a>
-      <a href="https://www.techradar.com/news/wearables/htc-vive-vs-oculus-rift-1301343">
-        משקפי vr
-      </a>
-      <a href="https://www.newegg.com/vr/guides/oculus-rift-vs-htc-vive.html">
-        חנות מציאות מדומה חולון
+   
+      <a title="pimax or valve index" href="https://www.reddit.com/r/virtualreality/comments/bprrt1/pimax_5k_vs_valve_index/">
+        פימקס או וואלב אינדקס
       </a>
     </div>
   );
