@@ -25,8 +25,8 @@ const Homepage = props => {
       <div className="background-provider">
         {lazyLoad && <Navbar />}
         {lazyLoad && <Carousle slide={Slide} slides={data.serviceSlides} />}
-        {lazyLoad &&<Teaser />}
-        <About />
+        {lazyLoad && <Teaser />}
+        {lazyLoad && <About />}
         <ContactUs />
 
         {/* <Recommendation data={data} /> */}
