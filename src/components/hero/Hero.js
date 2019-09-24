@@ -1,19 +1,21 @@
-import { useEffect, useState } from "react";
 import { SlideSwipe } from "../swiper/swiper";
 
-const Hero = ({ data }) => {
-  const [isMobile, setisMobile] = useState(false);
-  useEffect(() => {
-    setisMobile(innerWidth < 768);
-  }, []);
+const SlideSwiper = ({data, lazyLoad}) => {
+  if (lazyLoad) {
+    const mobile = innerWidth < 768;
+    return mobile ? (
+      <SlideSwipe list={data.mobile} />
+    ) : (
+      <SlideSwipe list={data.desktop} />
+    );
+  }
+};
+
+const Hero = (props) => {
   return (
     <>
       <div className="hero">
-        {isMobile ? (
-          <SlideSwipe list={data.mobile} />
-        ) : (
-          <SlideSwipe list={data.desktop} />
-        )}
+        <SlideSwiper {...props} />
 
         <div className="hero__overlay">
           <header>

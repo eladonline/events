@@ -15,14 +15,14 @@ const ContactUs = () => (
       <Contact />
       <div className="contact-us__contact-detailes">
         <div className="tel">
-          <div>טל: 050-6471048</div>
+          <div>טל: ניתן לבקש בצ'אט או במייל</div>
           <div>
             {" "}
             צ'אט פייסבוק:{" "}
             <a href="https://m.me/108400477228002">
               פתח צ'אט
             </a>{" "}
-          </div>
+          </div>\
         </div>
       </div>
     </section>
