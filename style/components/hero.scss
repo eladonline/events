@@ -26,10 +26,15 @@ $shardHeight: 80vh;
     color: transparent;
     text-align: center;
     @include grid(1em, center, center, auto, auto);
-    background: rgba($black,0.2);
-    h1,
-    h2 {
-      @extend .text-shadow;
+    background: rgba($black, 0.2);
+    header {
+      div {
+        @extend h1;
+      }
+      div,
+      h2 {
+        @extend .text-shadow;
+      }
     }
   }
 }

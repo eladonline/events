@@ -19,7 +19,7 @@ const Hero = (props) => {
 
         <div className="hero__overlay">
           <header>
-            <h1>VR-Era</h1>
+            <div>VR-Era</div>
             <h2>חנות למציאות מדומה</h2>
           </header>
         </div>

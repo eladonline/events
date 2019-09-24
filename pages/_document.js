@@ -12,7 +12,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <html>
+      <html lang="he">
         <Head>
           <meta charSet="utf-8" />
           <meta name="author" content="VR-Era" />

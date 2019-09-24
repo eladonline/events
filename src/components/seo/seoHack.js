@@ -6,6 +6,8 @@ const SeoHack = () => {
         virtual reality במחיר זול אוקלוס ריפט אס htc vive מחיר vavle index חנות
         למציאות מדומה
       </h2>
+      <h3>עולם שלם נפתח בפניכם ברוכים הבאים</h3>
+
       <p>
         חנות משקפי מציאות מדומה vr-era תמצא כאן את סוגים שונים של משקפי VR
         ביניהם אוקולוד ריפט אס oculus rift s פימקס pimax htc vive vive index כמו
