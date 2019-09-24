@@ -57,8 +57,8 @@ const MicroData = () => (
   >
     <span itemprop="name">חנות מציאות מדומה</span>
     <span itemprop="company">VR ERA</span>
-    <a itemprop="email" href="mailto:vr.era.store@gmail.com">
-      vr.era.store@gmail.com
+    <a itemprop="url" href="vr-era.netlify.com">
+      vr-era.netlify.com
     </a>
   </div>
 );
