@@ -19,7 +19,7 @@ const Homepage = props => {
   useEffect(() => {
     setLazyLoad(true);
     setTimeout(() => {
-      setTeaserLoad(true)
+      setTeaserLoad(true);
     }, 1000);
   }, []);
   return (
@@ -29,8 +29,8 @@ const Homepage = props => {
       <div className="background-provider">
         {lazyLoad && <Navbar />}
         {lazyLoad && <Carousle slide={Slide} slides={data.serviceSlides} />}
-        {teaserLoad && <Teaser />}
-        {lazyLoad && <About />}
+        <Teaser teaserLoad={teaserLoad} />
+        <About />
         <ContactUs />
 
         {/* <Recommendation data={data} /> */}

@@ -8,9 +8,12 @@
   .grid {
     @include grid(2em, initial, initial, auto, auto);
     text-align: center;
-    iframe {
-      margin-top: 50px;
-      box-shadow: 0 0 40px 1px black;
+    .iframe-container {
+      height: 545px;
+      iframe {
+        margin-top: 50px;
+        box-shadow: 0 0 40px 1px black;
+      }
     }
     p {
       max-width: 500px;
@@ -18,5 +21,3 @@
     }
   }
 }
-
-
