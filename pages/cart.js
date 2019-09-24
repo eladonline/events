@@ -1,11 +1,10 @@
 import Cart from "src/screens/cart";
-import React, { useEffect } from "react";
-import ReactGA from "react-ga";
+import { NextSeo } from "next-seo";
+import { cart } from "src/components/seo/seoDesc";
 
-export default () => {
-  useEffect(() => {
-    ReactGA.initialize("UA-148541360-1");
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
-  return <Cart />;
-};
+export default () => (
+  <>
+    <NextSeo {...cart} />
+    <Cart />
+  </>
+);

@@ -20,16 +20,16 @@ const FooterItems = () => {
 
 export default FooterItems;
 
-const A = ({ data }) => {
+const A = ({ data },i) => {
   return (
-    <a href={data.url} target="_blank">
+    <a key={`footerItem${data.title}`} href={data.url} target="_blank">
       <Icon type={data.title} />
     </a>
   );
 };
 const Alink = ({ data }) => {
   return (
-    <Link href={data.url}>
+    <Link key={`footerItem${data.title}`} href={data.url}>
       <div className="pointer">{data.title}</div>
     </Link>
   );

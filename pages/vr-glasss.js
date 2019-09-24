@@ -1,5 +1,7 @@
 import VrGlasss from "src/screens/vr-glasss.js";
 
+import { vrGlass } from "src/components/seo/seoDesc";
+import { NextSeo } from "next-seo";
 import React, { useEffect } from "react";
 import ReactGA from "react-ga";
 
@@ -8,5 +10,10 @@ export default () => {
     ReactGA.initialize("UA-148541360-1");
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
-  return <VrGlasss />;
+  return (
+    <>
+      <NextSeo {...vrGlass} />
+      <VrGlasss />
+    </>
+  );
 };

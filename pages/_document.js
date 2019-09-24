@@ -24,8 +24,6 @@ export default class MyDocument extends Document {
             name="google-site-verification"
             content="E_rWZqzkQ2qq5dpP1gcuSgNSSbXqb-WacDj0I1CN11w"
           />
-          <Meta />
-          <Title />
           <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css"
@@ -40,14 +38,3 @@ export default class MyDocument extends Document {
     );
   }
 }
-
-const Title = () => (
-  <title>חנות מציאות מדומה VR-Era מכירת משקפי מציאות מדומה</title>
-);
-
-const Meta = () => (
-  <meta
-    name="description"
-    content=" חנות למכירת משקפי מציאות מדומה נקראים גם משקפי vr המחסן נמצא באיזור תל אביב, בחנות ניתן למצוא משקפי מציאות מדומה במחיר זול משקפי מציאות כגון אוקולוס ריפט אס, htc vive , pimax , valve index יש אביזרי מציאות מדומה יש אחריות של יצרן "
-  />
-);
