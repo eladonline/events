@@ -23,9 +23,9 @@ const Homepage = props => {
       <SeoHack />
       {lazyLoad && <Hero lazyLoad={lazyLoad} data={data.hero} />}
       <div className="background-provider">
-        <Navbar />
+        {lazyLoad && <Navbar />}
         {lazyLoad && <Carousle slide={Slide} slides={data.serviceSlides} />}
-        <Teaser />
+        {lazyLoad &&<Teaser />}
         <About />
         <ContactUs />
 
