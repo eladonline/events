@@ -14,9 +14,13 @@ import SeoHack from "../components/seo/seoHack";
 
 const Homepage = props => {
   const [lazyLoad, setLazyLoad] = useState(false);
+  const [teaserLoad, setTeaserLoad] = useState(false);
 
   useEffect(() => {
     setLazyLoad(true);
+    setTimeout(() => {
+      setTeaserLoad(true)
+    }, 1000);
   }, []);
   return (
     <div className="home">
@@ -25,7 +29,7 @@ const Homepage = props => {
       <div className="background-provider">
         {lazyLoad && <Navbar />}
         {lazyLoad && <Carousle slide={Slide} slides={data.serviceSlides} />}
-        {lazyLoad && <Teaser />}
+        {teaserLoad && <Teaser />}
         {lazyLoad && <About />}
         <ContactUs />
 
