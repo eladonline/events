@@ -22,14 +22,14 @@ export default FooterItems;
 
 const A = ({ data },i) => {
   return (
-    <a key={`footerItem${data.title}`} href={data.url} target="_blank">
+    <a title={data.title} key={`footerItem${data.title}`} href={data.url} target="_blank">
       <Icon type={data.title} />
     </a>
   );
 };
 const Alink = ({ data }) => {
   return (
-    <Link key={`footerItem${data.title}`} href={data.url}>
+    <Link title={data.title} key={`footerItem${data.title}`} href={data.url}>
       <div className="pointer">{data.title}</div>
     </Link>
   );

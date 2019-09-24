@@ -33,10 +33,7 @@ export default class MyDocument extends Document {
             type="image/x-icon"
           />
           <MicroData />
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css"
-          />
+
           <style>{`body { margin: 0 }`}</style>
         </Head>
 

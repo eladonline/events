@@ -1,7 +1,7 @@
 export const DEFAULT_SEO = {
   title: "חנות מציאות מדומה VR-Era מחירים הוגנים",
   description:
-    "מכירת משקפי מציאות מדומה נקרא גם משקפי vr בחנות ניתן למצוא משקפי מציאות מדומה במחיר זול כגון אוקולוס ריפט אס, htc vive, pimax, valve index, oculus יש אביזרי מציאות מדומה",
+    "חנות מציאות מדומה נקרא גם משקפי vr בחנות משקפי מציאות מדומה במחיר זול אוקולוס ריפט אס, htc vive, pimax, valve index, oculus יש אביזרי מציאות מדומה",
   openGraph: {
     type: "website",
     locale: "en_IE",
