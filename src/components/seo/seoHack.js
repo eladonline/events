@@ -62,6 +62,9 @@ const SeoHack = () => {
       <a title="pimax or valve index" href="https://www.reddit.com/r/virtualreality/comments/bprrt1/pimax_5k_vs_valve_index/">
         פימקס או וואלב אינדקס
       </a>
+      <a title="virtual reality blog" href="https://medium.com/@eladbenaderet/virtual-reality-era-97d29d151c3?sk=b56796c596dd372c5480c5bd63a5a881">
+        בלוג שלנו
+      </a>
     </div>
   );
 };
