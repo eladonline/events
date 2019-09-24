@@ -42,7 +42,7 @@ export default class MyDocument extends Document {
 }
 
 const Title = () => (
-  <title>חנות למשקפי מציאות מדומה, משקפי vr, חנות מציאות וירטואלית במרכז</title>
+  <title>חנות מציאות מדומה VR-Era מכירת משקפי מציאות מדומה</title>
 );
 
 const Meta = () => (
