@@ -22,7 +22,7 @@ const ContactUs = () => (
             <a href="https://m.me/108400477228002">
               פתח צ'אט
             </a>{" "}
-          </div>\
+          </div>
         </div>
       </div>
     </section>
