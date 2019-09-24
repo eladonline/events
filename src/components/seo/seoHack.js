@@ -65,6 +65,9 @@ const SeoHack = () => {
       <a title="virtual reality blog" href="https://medium.com/@eladbenaderet/virtual-reality-era-97d29d151c3?sk=b56796c596dd372c5480c5bd63a5a881">
         בלוג שלנו
       </a>
+      <a title="fxp תראו מה רשמו לגבי המציאות המדומה" href="https://www.fxp.co.il/showthread.php?t=19888235&p=199360798#post199360798">
+        בלוג שלנו
+      </a>
     </div>
   );
 };
