@@ -1,7 +1,8 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import Navbar from "../../components/navbar/navbar";
 import { SwiperCoverFlow, SwiperCube } from "../../components/swiper/swiper";
 import Link from "next/link";
+import AdsStrip from "../adsStrip/adsStrip";
 const ProductPage = ({ data }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -23,6 +24,7 @@ const ProductPage = ({ data }) => {
           <ProductCards list={data.products} />
         </div>
       </div>
+      <AdsStrip />
     </div>
   );
 };

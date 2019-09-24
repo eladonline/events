@@ -1,0 +1,40 @@
+{
+  "ads": [
+    {
+      "head": "מעמד לאוקולוס",
+      "text": "מעמד שולחני למשקפי מציאות מדומה.",
+      "src": "/static/image/services/accessories/stands/oculus_stand_min.jpg",
+      "link": "/accessories/stands"
+    },
+    {
+      "head": "מעמד גלובאלי",
+      "text": "מעמד שולחני למשקפי מציאות מדומה.",
+      "src": "/static/image/services/accessories/stands/global_stand.jpg",
+      "link": "/accessories/stands"
+    },
+    {
+      "head": "מאחזי סיליקון ל htc vive",
+      "text": "כיסוי סיליקון לאחיזה טובה יותר והגנה על השלטים.",
+      "src": "/static/image/accessories/htc_silicon_grip.jpg",
+      "link": "/accessories/general-accessories"
+    },
+    {
+      "head": "מעמד לחיישני בסיס",
+      "text": "מעמד לחיישני תנועה למי שרוצה להשתמש בחיישנים ללא קיבוע לקיר גובהה 2 מטר יחידה.",
+      "src": "/static/image/services/accessories/controllers/sensor_stand_min.jpg",
+      "link": "/accessories/general-accessories"
+    },
+    {
+      "head": "רכיב עוקב למשקפי htc-vive",
+      "text": "רכיב מעקב לשימוש על רובים או מחבטים למשקפי htc vive.",
+      "src": "/static/image/services/accessories/controllers/htc_tracker_min.jpg",
+      "link": "/accessories/controllers"
+    },
+    {
+      "head": "חיישני בסיס SteamVR 2.0",
+      "text": "חיישני בסיס ל SteamVR יחידה אחת.",
+      "src": "/static/image/services/accessories/controllers/steam_vr_bs.jpg",
+      "link": "/accessories/controllers"
+    }
+  ]
+}

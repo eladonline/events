@@ -6,6 +6,7 @@ import ParseItemsFromCart from "../components/cart/parseItemsFromCart";
 import { priceFormatter } from "../components/helpers";
 import Payment from "../components/cart/payment/payment";
 import Link from "next/link";
+import AdsStrip from "../components/adsStrip/adsStrip";
 
 const Cart = () => {
   // trigger the change in the cart so it will update
@@ -66,6 +67,7 @@ const Cart = () => {
           <Payment items={cartItems} sum={totalSum} />
         ) : null}
       </div>
+      <AdsStrip />
     </div>
   );
 };

@@ -28,7 +28,7 @@ const Homepage = props => {
       {lazyLoad && <Hero lazyLoad={lazyLoad} data={data.hero} />}
       <div className="background-provider">
         {lazyLoad && <Navbar />}
-        {lazyLoad && <Carousle slide={Slide} slides={data.serviceSlides} />}
+        {lazyLoad && <Carousle Slide={Slide} slides={data.serviceSlides} />}
         <Teaser teaserLoad={teaserLoad} />
         <About />
         <ContactUs />

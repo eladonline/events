@@ -8,7 +8,14 @@ export const DEFAULT_SEO = {
     url: "https://vr-era.netlify.com/",
     title: "עידן המציאות המדומה",
     description: "חנות מכירת ציוד מציאות מדומה",
-    image: "/static/image/logo_black.jpg",
+    images: [
+      {
+        url: "/static/image/logo_black.jpg",
+        width: 800,
+        height: 600,
+        alt: "Og Image Alt"
+      }
+    ],
     site_name: "VR-ERA",
     imageWidth: 800,
     imageHeight: 800

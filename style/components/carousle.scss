@@ -24,7 +24,7 @@
     }
     @include flex-column(flex-end, flex-end);
     &.flex-center {
-      @include flex-column(center, center);
+      @include flex-column(flex-end, center);
     }
   }
 }

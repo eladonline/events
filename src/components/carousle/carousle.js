@@ -1,18 +1,10 @@
-import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 
-const Carousle = ({ slides, flexCenter, slide }) => {
-  const [test, setTest] = useState(false);
-  useEffect(() => {
-    setTimeout(() => {
-      setTest(true);
-    }, 500);
-  }, []);
-
+const Carousle = ({ slides, flexCenter, Slide, autoplay = false }) => {
   const parseSlidesList = list => {
     // if true text is in center of the slide
     // the slide component
-    const Slide = slide;
+
     return list.map((obj, i) => {
       const key = Object.keys(obj);
       return (
@@ -29,9 +21,11 @@ const Carousle = ({ slides, flexCenter, slide }) => {
     dots: false,
     infinite: true,
     lazyLoad: true,
+    pauseOnHover: true,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
+    autoplay: autoplay,
     responsive: [
       {
         breakpoint: 1024,
@@ -58,7 +52,7 @@ const Carousle = ({ slides, flexCenter, slide }) => {
   };
   return (
     <div>
-      {test && <Slider {...settings}>{parseSlidesList(slides)}</Slider>}
+      <Slider {...settings}>{parseSlidesList(slides)}</Slider>
     </div>
   );
 };
