@@ -19,7 +19,7 @@ export const DEFAULT_SEO = {
   }
 };
 
-export const About = {
+export const about = {
   title: "עלינו",
   description: "חנות מציאות מדומה אודות"
 };
