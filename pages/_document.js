@@ -26,6 +26,7 @@ export default class MyDocument extends Document {
             href="/static/image/favicon.ico"
             type="image/x-icon"
           />
+          <link href="https://vr-era.netlify.com" rel="canonical"></link>
           <link
             rel="icon"
             href="/static/image/favicon.ico"
