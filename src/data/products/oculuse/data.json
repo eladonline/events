@@ -15,7 +15,7 @@
           "detailes": {
             "manufacture": "oculus",
             "mfctrUrl": "https://www.oculus.com/rift-s/",
-            "supplyTime": 7,
+            "supplyTime": 14,
             "warranty": 1,
             "price": 3099
           }
@@ -37,7 +37,7 @@
           "detailes": {
             "manufacture": "oculus",
             "mfctrUrl": "https://www.oculus.com/quest",
-            "supplyTime": 7,
+            "supplyTime": 14,
             "warranty": 1,
             "price": 3199
           }
@@ -61,7 +61,7 @@
           "detailes": {
             "manufacture": "oculus",
             "mfctrUrl": "https://www.oculus.com/quest",
-            "supplyTime": 7,
+            "supplyTime": 14,
             "warranty": 1,
             "price": 3499
           }
