@@ -24,8 +24,17 @@ export default class MyDocument extends Document {
             name="google-site-verification"
             content="E_rWZqzkQ2qq5dpP1gcuSgNSSbXqb-WacDj0I1CN11w"
           />
-          <link rel="shortcut icon" href="/static/image/favicon.ico" type="image/x-icon" />
-          <link rel="icon" href="/static/image/favicon.ico" type="image/x-icon" />
+          <MicroData />
+          <link
+            rel="shortcut icon"
+            href="/static/image/favicon.ico"
+            type="image/x-icon"
+          />
+          <link
+            rel="icon"
+            href="/static/image/favicon.ico"
+            type="image/x-icon"
+          />
           <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css"
@@ -40,3 +49,13 @@ export default class MyDocument extends Document {
     );
   }
 }
+
+const MicroData = () => (
+  <div itemscope itemtype="http://schema.org/Person">
+    <span itemprop="name">משקפי מציאות וירטואלית</span>
+    <span itemprop="company">VR ERA</span>
+    <a itemprop="email" href="mailto:vr.era.store@gmail.com">
+      vr.era.store@gmail.com
+    </a>
+  </div>
+);
