@@ -20,7 +20,7 @@ export default class About extends PureComponent {
         )}
         <section className="grid">
           <header>
-            <h1>עלינו</h1>
+            <h2>עלינו</h2>
           </header>
           <p>
             אנחנו שני טכנאי מחשבים שהם גם גיימרים בנשמה התוודענו למציאות המדומה
@@ -48,7 +48,7 @@ export default class About extends PureComponent {
         </section>
         <section className="grid">
           <header>
-            <h1>למה כדאי לרכוש מאיתנו</h1>
+            <h2>למה כדאי לרכוש מאיתנו</h2>
           </header>
           <p>
             <u> שירות:</u> מלכתחילה הקמנו את החנות כדי לתת שירות לאלו בארץ
