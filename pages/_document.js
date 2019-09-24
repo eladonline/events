@@ -24,6 +24,8 @@ export default class MyDocument extends Document {
             name="google-site-verification"
             content="E_rWZqzkQ2qq5dpP1gcuSgNSSbXqb-WacDj0I1CN11w"
           />
+          <link rel="shortcut icon" href="/static/image/favicon.ico" type="image/x-icon" />
+          <link rel="icon" href="/static/image/favicon.ico" type="image/x-icon" />
           <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css"
