@@ -24,7 +24,6 @@ export default class MyDocument extends Document {
             name="google-site-verification"
             content="E_rWZqzkQ2qq5dpP1gcuSgNSSbXqb-WacDj0I1CN11w"
           />
-          <MicroData />
           <link
             rel="shortcut icon"
             href="/static/image/favicon.ico"
@@ -50,12 +49,4 @@ export default class MyDocument extends Document {
   }
 }
 
-const MicroData = () => (
-  <div itemscope itemtype="http://schema.org/Person">
-    <span itemprop="name">משקפי מציאות וירטואלית</span>
-    <span itemprop="company">VR ERA</span>
-    <a itemprop="email" href="mailto:vr.era.store@gmail.com">
-      vr.era.store@gmail.com
-    </a>
-  </div>
-);
+
