@@ -91,6 +91,58 @@
             "src": "/static/image/services/accessories/controllers/sensor_stand_min_4.jpg"
           }
         ]
+      },
+      {
+        "service": "אקדח HTC",
+        "id": "3111AM-HV-gun",
+        "background": "/static/image/accessories/htc_gun_red.jpg",
+        "description": {
+          "text": "אקדח מציאות מדומה עםם חיבור לטראקר, עבוד מעולה.",
+          "detailes": {
+            "manufacture": "לא צויין",
+            "mfctrUrl": "#לא צויין",
+            "supplyTime": 14,
+            "warranty": 1,
+            "price": 479
+          }
+        },
+        "img": [
+          {
+            "src": "/static/image/accessories/htc_gun_red.jpg"
+          },
+          {
+            "src": "/static/image/accessories/htc_gun_red_2.jpg"
+          },
+          {
+            "src": "/static/image/accessories/htc_gun_red_3.jpg"
+          }
+        ]
+      },
+      {
+        "service": "מאריך טניס לאוקולוס",
+        "id": "3112AM-OC-tennis",
+        "background": "/static/image/accessories/oculus_extenders.jpg",
+        "description": {
+          "text": "ידית מחבט לחיבור שלט האוקלוס לשימוש כמחבט טניס.",
+          "detailes": {
+            "manufacture": "לא צויין",
+            "mfctrUrl": "#לא צויין",
+            "supplyTime": 14,
+            "warranty": 1,
+            "price": 259
+          }
+        },
+        "img": [
+          {
+            "src": "/static/image/accessories/oculus_extenders.jpg"
+          },
+          {
+            "src": "/static/image/accessories/oculus_extenders_2.jpg"
+          },
+          {
+            "src": "/static/image/accessories/oculus_extenders_3.jpg"
+          }
+        ]
       }
     ]
   }

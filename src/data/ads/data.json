@@ -35,6 +35,12 @@
       "text": "חיישני בסיס ל SteamVR יחידה אחת.",
       "src": "/static/image/services/accessories/controllers/steam_vr_bs.jpg",
       "link": "/accessories/controllers"
+    },
+    {
+      "head": "מאריך טניס לאוקולוס",
+      "text": "ידית מחבט לחיבור שלט האוקלוס לשימוש כמחבט טניס.",
+      "src": "/static/image/accessories/oculus_extenders.jpg",
+      "link": "/accessories/controllers"
     }
   ]
 }
