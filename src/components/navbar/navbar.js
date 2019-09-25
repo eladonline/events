@@ -9,20 +9,20 @@ import data from "src/data/navbar.json";
 import NavbarMobile from "./navbarMobile";
 
 class Navbar extends PureComponent {
-  state = { top: false, cartItems: 0 };
+  state = { top: false, cartItems: 0, mounted: false };
 
   componentDidMount = () => {
     const navbar = document.querySelector(".menu-navbar");
     document.addEventListener("scroll", () => {
       const distance = distanceMeasure(navbar, "top");
-
+      this.setState({ mounted: true });
       if (distance < 10 && !this.state.top) this.setState({ top: true });
       else if (distance > 10 && this.state.top) this.setState({ top: false });
     });
     this.setState({ cartItems: getItemsFromStorage().length });
   };
   componentDidUpdate(prevProps) {
-    if (prevProps.addCartTrigger !== this.props.addCartTrigger) {
+    if (prevProps.addCartTrigger !== this.props.addCartTrigger && this.state.mounted) {
       this.setState({ cartItems: getItemsFromStorage().length });
     }
   }
@@ -31,7 +31,6 @@ class Navbar extends PureComponent {
     const { top } = this.state;
     return (
       <div className="menu-navbar" data-top={top}>
-        
         <NavbarDesktop cartItems={this.state.cartItems} top={top} />
         <NavbarMobile cartItems={this.state.cartItems} />
       </div>

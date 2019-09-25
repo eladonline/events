@@ -7,7 +7,7 @@ const parseMenuItems = () => {
   return data.menuItem.map(item => {
     return (
       <Link key={item.title} href={item.link}>
-        {item.title}
+        <a>{item.title}</a>
       </Link>
     );
   });
@@ -17,7 +17,7 @@ const parseSubMenuItems = () => {
     return subMenuItems.map(item => {
       return (
         <Link key={item.title} href={item.link}>
-          {item.title}
+          <a>{item.title}</a>
         </Link>
       );
     });
@@ -25,10 +25,6 @@ const parseSubMenuItems = () => {
 };
 
 const NavbarMobile = ({ cartItems }) => {
-  const showSettings = event => {
-    event.preventDefault();
-  };
-
   // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
   return (
     <div className="mobileOnly">
