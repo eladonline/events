@@ -140,6 +140,33 @@
             "src": "/static/image/services/accessories/controllers/steam_vr_bs.jpg"
           }
         ]
+      },
+      {
+        "page": "accessories/controllers",
+        "service": "2 בקרי index valve",
+        "id": "2221AM-IV-controllers",
+        "background": "/static/image/accessories/valve_index_controllers.jpg",
+        "description": {
+          "text": "חיישני בסיס ל SteamVR יחידה אחת.",
+          "detailes": {
+            "manufacture": "SteamVR",
+            "mfctrUrl": "https://store.steampowered.com/valveindex",
+            "supplyTime": 14,
+            "warranty": "שנה אחת (למימוש אחריות הרוכש יפנה ליצרן ולא החנות)",
+            "price": 2200
+          }
+        },
+        "img": [
+          {
+            "src": "/static/image/accessories/valve_index_controllers.jpg"
+          },
+          {
+            "src": "/static/image/accessories/valve_index_controllers_2.jpg"
+          },
+          {
+            "src": "/static/image/accessories/valve_index_controllers_3.jpg"
+          }
+        ]
       }
     ]
   }
