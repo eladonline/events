@@ -8,6 +8,8 @@ import Payment from "../components/cart/payment/payment";
 import Link from "next/link";
 import AdsStrip from "../components/adsStrip/adsStrip";
 
+const Shipping = 70;
+
 const Cart = () => {
   // trigger the change in the cart so it will update
   const [cartChange, setcartChange] = useState(false);
@@ -46,9 +48,14 @@ const Cart = () => {
                 setcartChange={setcartChange}
                 setTotalSum={setTotalSum}
               />
+              <div className="cart__shipping">
+                * במידה והס"כ לתשלום נמוך מ 1500 ש"ח יתווספו {Shipping} ש"ח בדף
+                התשלום דמי משלוח.
+              </div>
               <div className="cart__total-pay">
                 סה''כ לתשלום: {priceFormatter(totalSum)}
               </div>
+
               <CartFooter
                 paymentState={isPaymentState}
                 setIsPaymentState={setIsPaymentState}

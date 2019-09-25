@@ -13,6 +13,10 @@
       text-align: end;
       @extend %fs24;
     }
+    .cart__shipping {
+      text-align: start;
+      font-size: 16px;
+    }
   }
   // Empty cart \\
   .cart-is-empty {

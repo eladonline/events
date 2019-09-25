@@ -1,10 +1,11 @@
 const billingAdapt = (data, cartItems, sum) => {
   const { name, family, phone, email, city, street, houseNum, zipCode } = data;
+  const price = sum < 1500 ? sum + 50 : sum
   // תיאור המוצר
   const cd = `cd=${cartItems
     .map(({ item, quantity }) => ` מוצר: ${item.service} כמות: ${quantity}, `)
     .join("")}`;
-  const cs = `cs=${sum}`;
+  const cs = `cs=${price}`;
   const full_name = `full_name=${name} ${family}`;
   const ccfname = `ccfname=${name}`;
   const cclname = `cclname=${family}`;
