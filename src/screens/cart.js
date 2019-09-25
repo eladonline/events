@@ -55,7 +55,10 @@ const Cart = () => {
                 setcartChange={setcartChange}
               />
               <div className="cart__order-terms">
-                *בקנייה באתר אתה מסכים <Link href="/terms">לתנאי השימוש</Link>{" "}
+                *בקנייה באתר אתה מסכים{" "}
+                <Link href="/terms">
+                  <a>לתנאי השימוש</a>
+                </Link>{" "}
                 שלנו.
               </div>
             </>
