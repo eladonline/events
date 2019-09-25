@@ -49,7 +49,7 @@ const Cart = () => {
                 setTotalSum={setTotalSum}
               />
               <div className="cart__shipping">
-                * במידה והס"כ לתשלום נמוך מ 1500 ש"ח יתווספו {Shipping} ש"ח בדף
+                * במידה והסה"כ לתשלום נמוך מ 1500 ש"ח יתווספו {Shipping} ש"ח בדף
                 התשלום דמי משלוח.
               </div>
               <div className="cart__total-pay">
