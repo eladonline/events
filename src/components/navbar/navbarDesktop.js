@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React  from "react";
 import { Menu } from "antd";
 import data from "src/data/navbar.json";
 import Router from "next/router";

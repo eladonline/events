@@ -1,9 +1,8 @@
 import VrAccessories from "src/screens/vr-accessories.js";
-
 import { vrAccessories } from "src/components/seo/seoDesc";
-import { NextSeo } from "next-seo";
 import React, { useEffect } from "react";
 import ReactGA from "react-ga";
+import { NextSeo } from "next-seo";
 
 export default () => {
   useEffect(() => {

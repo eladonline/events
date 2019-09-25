@@ -26,13 +26,13 @@ export default class MyDocument extends Document {
             href="/static/image/favicon.ico"
             type="image/x-icon"
           />
-          <link href="https://vr-era.netlify.com" rel="canonical"></link>
+          <link href="https://vr-era.netlify.com" rel="canonical" />
           <link
             rel="icon"
             href="/static/image/favicon.ico"
             type="image/x-icon"
           />
-          <MicroData />
+          {/* <MicroData /> */}
 
           <style>{`body { margin: 0 }`}</style>
         </Head>
@@ -46,16 +46,3 @@ export default class MyDocument extends Document {
   }
 }
 
-const MicroData = () => (
-  <div
-    style={{ position: "fixed", zIndex: "-1" }}
-    itemscope
-    itemtype="http://schema.org/Organization"
-  >
-    <span itemprop="name">חנות מציאות מדומה</span>
-    <span itemprop="company">VR ERA</span>
-    <a itemprop="url" href="vr-era.netlify.com">
-      vr-era.netlify.com
-    </a>
-  </div>
-);
