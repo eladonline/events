@@ -17,10 +17,20 @@ const CardDetailesTemplate = ({
         {manufacture}
       </a>{" "}
     </li>
-    <li>זמן אספקה: עד {supplyTime} ימי עסקים (לרוב מגיע לפני) </li>
+    {typeof supplyTime === "number" ? (
+      <NumberSupply supplyTime={supplyTime} />
+    ) : (
+      <StringSupply supplyTime={supplyTime} />
+    )}
     <li>שנות אחריות: {warranty}</li>
     <li> מחיר כולל מע''מ: {priceFormatter(price)}</li>
   </div>
 );
 
 export default CardDetailesTemplate;
+
+const NumberSupply = ({ supplyTime }) => (
+  <li>זמן אספקה: עד {supplyTime} ימי עסקים (לרוב מגיע לפני) </li>
+);
+
+const StringSupply = ({ supplyTime }) => <li>זמן אספקה: {supplyTime}</li>;
