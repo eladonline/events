@@ -1,5 +1,10 @@
 import Blogs from "../../src/screens/blogs/blogs";
+import { NextSeo } from "next-seo";
+import { blogs } from "src/components/seo/seoDesc";
 
 export default () => {
-  return <Blogs />;
+  return   <>
+  <NextSeo {...blogs} />
+  <Blogs />
+</>;
 };

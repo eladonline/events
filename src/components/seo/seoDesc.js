@@ -30,6 +30,14 @@ export const about = {
   title: "עלינו",
   description: "חנות מציאות מדומה אודות"
 };
+export const blogs = {
+  title: "בלוגים",
+  description: "בלוגים בנושא המציאות המדומה"
+};
+export const blogGetOverDissyness = {
+  title: "להתגבר על 'מחלת מציאות מדומה'",
+  description: "בלוג בנושא מחלת מציאות מדומה למה זה קורה ואיך מתגברים ע זה"
+};
 export const controllers = {
   title: "בקרים",
   description: "חנות מציאות מדומה בקרים"
