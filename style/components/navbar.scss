@@ -47,7 +47,6 @@ $menu-tabs-width-mobile: 100px;
     .ant-menu-item {
       @extend %tabs-common;
       background: $darkBlack;
-
       &-active {
         color: $red;
         border-bottom: 2px solid $red !important;
@@ -58,6 +57,8 @@ $menu-tabs-width-mobile: 100px;
 
       // the text inside
       a {
+      text-align: center;
+
         color: white !important;
         @extend %Varela;
       }
@@ -75,7 +76,7 @@ $menu-tabs-width-mobile: 100px;
     .ant-menu-item {
       padding: 30px 30px;
       font-size: 14px;
-      @include flex-column(center);
+      @include flex-column(center, center);
       @include sm {
         font-size: 16px !important;
       }

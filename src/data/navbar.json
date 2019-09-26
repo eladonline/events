@@ -12,13 +12,26 @@
           "link": "vr-accessories"
         }
       ]
+    },
+    {
+      "title": "עלינו",
+      "subMenuItems": [
+        {
+          "title": "עלינו",
+          "link": "about"
+        },
+        {
+          "title": "בלוגים",
+          "link": "blogs"
+        }
+      ]
     }
   ],
   "menuItem": [
   
     {
-      "title": "עלינו",
-      "link": "about"
+      "title": "בית",
+      "link": "/"
     },
     {
       "title": "צור קשר",

@@ -17,7 +17,7 @@ const NavbarDesktop = ({ top, cartItems }) => {
     <div className="notMobile">
       <CartIcon nItems={cartItems} />
       <Menu onClick={handleClick} current={"[]"} mode="horizontal">
-        <Menu.Item key={" "}>בית</Menu.Item>
+        {/* <Menu.Item key={" "}>בית</Menu.Item> */}
 
         {data.menusWithSubMenus.map(item => {
           return (

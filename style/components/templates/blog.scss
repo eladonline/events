@@ -1,0 +1,11 @@
+.blog {
+    padding: 50px 0;
+    min-height: 80vh;
+    .blog__hero {
+        width: 100%;
+        img {
+            height:250px;
+            margin: 50px 0;
+        }
+    }
+}
