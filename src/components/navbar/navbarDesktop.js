@@ -9,7 +9,7 @@ const SubMenu = Menu.SubMenu;
 
 const handleClick = e => {
   const { key } = e;
-  Router.push(`/${key}`);
+  Router.push(`${key}`);
 };
 
 const NavbarDesktop = ({ top, cartItems }) => {

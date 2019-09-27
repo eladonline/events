@@ -5,11 +5,11 @@
       "subMenuItems": [
         {
           "title": "משקפי מציאות מדומה",
-          "link": "vr-glasss"
+          "link": "/vr-glasss"
         },
         {
           "title": "אביזרים למציאות מדומה",
-          "link": "vr-accessories"
+          "link": "/vr-accessories"
         }
       ]
     },
@@ -18,11 +18,11 @@
       "subMenuItems": [
         {
           "title": "עלינו",
-          "link": "about"
+          "link": "/about"
         },
         {
           "title": "בלוגים",
-          "link": "blogs"
+          "link": "/blogs"
         }
       ]
     }
@@ -35,7 +35,7 @@
     },
     {
       "title": "צור קשר",
-      "link": "#footer"
+      "link": "/#footer"
     }
   ]
 }
