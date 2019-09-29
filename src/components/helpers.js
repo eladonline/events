@@ -43,6 +43,6 @@ export const strLengthSlicer = (str, maxLength, dots = true) => {
 };
 
 export const priceFormatter = number =>
-  new Intl.NumberFormat("heb-isr", { style: "currency", currency: "ILS" }).format(
+  new Intl.NumberFormat("he-IL", { style: "currency", currency: "ILS" }).format(
     number
   );
