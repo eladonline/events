@@ -58,7 +58,9 @@ module.exports = compose([
         "/accessories/controllers": { page: "/accessories/controllers" },
         "/accessories/general-accessories": {
           page: "/accessories/general-accessories"
-        }
+        },
+        "/blogs/": {page: "/blogs/index"},
+        "/blogs/get-over-dissyness": {page: "/blogs/get-over-dissyness"}
       };
     },
     webpack(config, options) {
