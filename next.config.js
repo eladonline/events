@@ -59,8 +59,9 @@ module.exports = compose([
         "/accessories/general-accessories": {
           page: "/accessories/general-accessories"
         },
-        "/blogs/": {page: "/blogs/index"},
-        "/blogs/get-over-dissyness": {page: "/blogs/get-over-dissyness"}
+        "/blogs/": { page: "/blogs/index" },
+        "/blogs/get-over-dissyness": { page: "/blogs/get-over-dissyness" },
+        "/blogs/what-vr-tobuy": { page: "/blogs/what-vr-tobuy" }
       };
     },
     webpack(config, options) {
