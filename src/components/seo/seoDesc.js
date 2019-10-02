@@ -1,7 +1,7 @@
 export const DEFAULT_SEO = {
-  title: "חנות מציאות מדומה VR-Era מחירים הוגנים",
+  title: "חנות מציאות מדומה | vr-era",
   description:
-    "חנות למציאות מדומה, תמצאו מוצרי oculus, htc vive, valve index, pimax, ניתן למצוא גם אביזרים נילווים למשקפי vr כמו מחבטי טניס, או טראקר",
+    "חנות למשקפי למציאות מדומה, תמצאו מוצרי oculus, htc vive, valve index, pimax, ניתן למצוא גם אביזרים נילווים למשקפי vr כמו מחבטי טניס, או טראקר",
   openGraph: {
     type: "website",
     locale: "en_IE",
