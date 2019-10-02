@@ -38,6 +38,10 @@ export const blogGetOverDissyness = {
   title: "להתגבר על 'מחלת מציאות מדומה'",
   description: "בלוג בנושא מחלת מציאות מדומה למה זה קורה ואיך מתגברים ע זה"
 };
+export const blogwhatVrTobuy = {
+  title: "אילו משקפי מציאות מדומה הכי מומלצים'",
+  description: "בלוג בנושא אילו משקפי מציאות מדומה הכי כדאי לקנות"
+};
 export const controllers = {
   title: "בקרים",
   description: "חנות מציאות מדומה בקרים"

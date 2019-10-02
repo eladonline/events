@@ -6,7 +6,7 @@
     margin-bottom: 60px;
   }
   .blogs__blogs-container {
-    @include grid(1em, flex-start, flex-start, 1fr, auto);
+    @include grid(30px, flex-start, flex-start, 1fr 1fr, auto);
     .blogs__card {
       height: 300px;
       background-position: center;
